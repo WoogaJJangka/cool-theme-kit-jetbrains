@@ -84,8 +84,15 @@ abstract class SyncCoolIcons : DefaultTask() {
     @get:InputDirectory
     abstract val iconsDir: DirectoryProperty
 
-    @get:OutputDirectory
-    abstract val flatDir: DirectoryProperty
+    /** The icon styles besides glass, each copied into <stylesDir>/coolicons-<style> */
+    @get:Input
+    abstract val iconStyles: ListProperty<String>
+
+    @get:Internal
+    abstract val stylesDir: DirectoryProperty
+
+    @get:OutputDirectories
+    val styleDirs get() = iconStyles.get().map { stylesDir.get().dir("coolicons-$it") }
 
     @TaskAction
     fun sync() {
@@ -241,64 +248,76 @@ abstract class SyncCoolIcons : DefaultTask() {
         fixtures.deleteRecursively()
         fixtures.mkdirs()
         accentFile.copyTo(fixtures.resolve("accent.json"), overwrite = true)
-        // iconStyle flat: the same, for the flat icons (checked and listed once they are copied, below)
-        @Suppress("UNCHECKED_CAST")
-        val usedFlat = (folderColor["flat"] as Map<String, Map<String, String>>).filterKeys { it in copied }.toSortedMap()
-        val json = groovy.json.JsonOutput.toJson(folderColor + mapOf("icons" to used, "flat" to usedFlat))
-        fixtures.resolve("folder-color.json").writeText(groovy.json.JsonOutput.prettyPrint(json) + "\n", Charsets.UTF_8)
         logger.lifecycle("Accent: ${used.size} icons take the folder color, fixtures -> $fixtures")
 
-        // iconStyle flat: the flat svg of every icon copied above. The flat theme points every name to the same icons, only
-        // drawn otherwise (checked here); its files carry the hash of the settings (<stem>~<n>.svg).
-        val flat = iconsExport.resolve("flat")
-        val flatTheme = flat.resolve("a-file-icon-vscode-icon-theme.json")
-        check(flatTheme.isFile) { "$flatTheme not found: run `bun run export:jetbrains-icons` in Cool Theme Kit first" }
-
-        @Suppress("UNCHECKED_CAST")
-        val flatJson = JsonSlurper().parse(flatTheme, "UTF-8") as Map<String, Any?>
-
-        @Suppress("UNCHECKED_CAST")
-        val flatDefinitions = flatJson["iconDefinitions"] as Map<String, Map<String, String>>
+        // The other icon styles (iconStyles in gradle.properties: flat, glossy): the svg of that style of every icon copied
+        // above, into coolicons-<style>/. Each theme points every name to the same icons, only drawn otherwise (checked
+        // here); its files carry the hash of the settings (<stem>~<n>.svg). Then the icons of the style the folder color
+        // changes, as for the glass ones (folder-color.txt, and the fixtures of CoolFolderColorTest).
         val hash = Regex("~-?\\d+$")
         fun stemOf(definitions: Map<String, Map<String, String>>, id: String?): String? =
             id?.let { definitions[it]?.get("iconPath")?.split('/')?.takeLast(2)?.joinToString("/")?.removeSuffix(".svg")?.replace(hash, "") }
 
-        @Suppress("UNCHECKED_CAST")
-        val flatLight = flatJson["light"] as Map<String, Any?>?
-        for (kind in listOf("fileNames", "fileExtensions", "languageIds", "folderNames", "folderNamesExpanded")) {
-            for ((sections, flatSections) in listOf(theme to flatJson, light to flatLight)) {
-                val flatSection = section(flatSections, kind)
-                for ((key, id) in section(sections, kind)) {
-                    check(stemOf(definitions, id) == stemOf(flatDefinitions, flatSection[key])) {
-                        "$kind $key is not the same icon in the flat theme: run `bun run export:jetbrains-icons` again"
+        val styleFixtures = mutableMapOf<String, Any>()
+        val stylesOut = stylesDir.get().asFile
+        for (style in iconStyles.get()) {
+            val styleExport = iconsExport.resolve(style)
+            val styleTheme = styleExport.resolve("a-file-icon-vscode-icon-theme.json")
+            check(styleTheme.isFile) {
+                "$styleTheme not found: run `bun run export:jetbrains-icons` in a Cool Theme Kit that has iconStyle $style"
+            }
+
+            @Suppress("UNCHECKED_CAST")
+            val styleJson = JsonSlurper().parse(styleTheme, "UTF-8") as Map<String, Any?>
+
+            @Suppress("UNCHECKED_CAST")
+            val styleDefinitions = styleJson["iconDefinitions"] as Map<String, Map<String, String>>
+
+            @Suppress("UNCHECKED_CAST")
+            val styleLight = styleJson["light"] as Map<String, Any?>?
+            for (kind in listOf("fileNames", "fileExtensions", "languageIds", "folderNames", "folderNamesExpanded")) {
+                for ((sections, styleSections) in listOf(theme to styleJson, light to styleLight)) {
+                    val styleSection = section(styleSections, kind)
+                    for ((key, id) in section(sections, kind)) {
+                        check(stemOf(definitions, id) == stemOf(styleDefinitions, styleSection[key])) {
+                            "$kind $key is not the same icon in the $style theme: run `bun run export:jetbrains-icons` again"
+                        }
                     }
                 }
             }
-        }
-        val flatFiles = mutableMapOf<String, File>()
-        for (dir in listOf("files", "folders", "foldersOpen")) {
-            flat.resolve(dir).listFiles()?.filter { it.name.endsWith(".svg") }?.forEach {
-                flatFiles["$dir/${it.name.removeSuffix(".svg").replace(hash, "")}"] = it
+            val styleFiles = mutableMapOf<String, File>()
+            for (dir in listOf("files", "folders", "foldersOpen")) {
+                styleExport.resolve(dir).listFiles()?.filter { it.name.endsWith(".svg") }?.forEach {
+                    styleFiles["$dir/${it.name.removeSuffix(".svg").replace(hash, "")}"] = it
+                }
             }
-        }
-        val flatOut = flatDir.get().asFile
-        flatOut.deleteRecursively()
-        for (key in copied.sorted()) {
-            val src = flatFiles[key] ?: error("no flat icon for $key: run `bun run export:jetbrains-icons` again")
-            src.copyTo(flatOut.resolve("$key.svg"), overwrite = true)
-        }
-        logger.lifecycle("Flat icons: ${copied.size} SVG files -> $flatOut")
-        for ((icon, svgs) in usedFlat) {
-            check(flatOut.resolve("$icon.svg").readText(Charsets.UTF_8) == svgs["default"]) {
-                "flat $icon differs from out/jetbrains: run `bun run export:jetbrains` and `bun run export:jetbrains-icons` again"
+            val styleOut = stylesOut.resolve("coolicons-$style")
+            styleOut.deleteRecursively()
+            for (key in copied.sorted()) {
+                val src = styleFiles[key] ?: error("no $style icon for $key: run `bun run export:jetbrains-icons` again")
+                src.copyTo(styleOut.resolve("$key.svg"), overwrite = true)
             }
+
+            @Suppress("UNCHECKED_CAST")
+            val styleColored = (folderColor[style] as Map<String, Map<String, String>>?)
+                ?: error("$folderColorFile has no $style icons: run `bun run export:jetbrains` again")
+            val usedStyle = styleColored.filterKeys { it in copied }.toSortedMap()
+            for ((icon, svgs) in usedStyle) {
+                check(styleOut.resolve("$icon.svg").readText(Charsets.UTF_8) == svgs["default"]) {
+                    "$style $icon differs from out/jetbrains: run `bun run export:jetbrains` and `bun run export:jetbrains-icons` again"
+                }
+            }
+            styleOut.resolve("folder-color.txt").writeText(
+                "# Generated by `gradlew syncIcons` from Cool Theme Kit. Do not edit.\n" +
+                    "# The $style icons the folder color changes (<dir>/<stem>), drawn here with ${folderColor["defaultColor"]}\n" +
+                    usedStyle.keys.joinToString("\n", postfix = "\n"),
+                Charsets.UTF_8,
+            )
+            styleFixtures[style] = usedStyle
+            logger.lifecycle("Icon style $style: ${copied.size} SVG files, ${usedStyle.size} take the folder color -> $styleOut")
         }
-        flatOut.resolve("folder-color.txt").writeText(
-            "# Generated by `gradlew syncIcons` from Cool Theme Kit. Do not edit.\n" +
-                "# The flat icons the folder color changes (<dir>/<stem>), drawn here with ${folderColor["defaultColor"]}\n" +
-                usedFlat.keys.joinToString("\n", postfix = "\n"),
-            Charsets.UTF_8,
-        )
+        val json = groovy.json.JsonOutput.toJson(folderColor + mapOf("icons" to used) + styleFixtures)
+        fixtures.resolve("folder-color.json").writeText(groovy.json.JsonOutput.prettyPrint(json) + "\n", Charsets.UTF_8)
 
         // The associations: sample settings and the icons VS Code gives with them (CoolAssociationsParityTest)
         @Suppress("UNCHECKED_CAST")
@@ -341,7 +360,8 @@ tasks.register<SyncCoolIcons>("syncIcons") {
     exportDir = layout.projectDirectory.dir(providers.gradleProperty("coolThemeKitDir").map { "$it/out/jetbrains" })
     fixturesDir = layout.projectDirectory.dir("src/test/resources/coolthemekit")
     iconsDir = layout.projectDirectory.dir(providers.gradleProperty("coolThemeKitDir").map { "$it/out/jetbrains-icons" })
-    flatDir = layout.projectDirectory.dir("src/main/resources/coolicons-flat")
+    iconStyles = providers.gradleProperty("iconStyles").map { it.split(',').map(String::trim).filter(String::isNotEmpty) }
+    stylesDir = layout.projectDirectory.dir("src/main/resources")
 }
 
 // syncIcons writes into the sources: `./gradlew syncIcons test` copies the resources once they are written

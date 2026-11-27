@@ -11,7 +11,8 @@ other JetBrains IDEs.
   The marks can be turned off in **Settings | Appearance & Behavior | Cool Theme Kit** (`roleMarks` in VS Code).
 - An expanded folder shows the open folder icon, as in the VS Code explorer.
 - The same settings as in VS Code, in **Settings | Appearance & Behavior | Cool Theme Kit**: the icon style (`iconStyle`:
-  glass, or flat as the JetBrains icon plugin draws them), and your own icons for names (`filesAssociations`,
+  glass; glossy, the icons in their own shape with the shading of the glass style; or flat, as the JetBrains icon plugin
+  draws them), and your own icons for names (`filesAssociations`,
   `foldersAssociations`, `languagesAssociations`: `*.foo` → `rust`, `README.md` → `docs`, a folder `src` → `tests`, or
   the path of an SVG file). The entries of your VS Code settings can be copied as they are.
 - Source, test and resource roots and excluded folders keep the icons of the IDE, which tell what the folder is in the
@@ -64,9 +65,10 @@ Install the zip with **Settings | Plugins | ⚙ | Install Plugin from Disk...**.
 - The IDE asks a tree node for one icon, never whether it is expanded. `CoolFolderIcon` holds the closed and the open
   folder and picks one when painted: a tree paints a row by placing the renderer at the row's bounds, so the row being
   painted is the one at the renderer's position. Outside a tree it is the closed folder.
-- The flat icons (`src/main/resources/coolicons-flat/`) are the same names drawn with `iconStyle: "flat"`: Cool Theme Kit
-  writes that theme with `bun run export:jetbrains-icons`, and `syncIcons` checks that it points every name to the same
-  icons.
+- The other icon styles (`src/main/resources/coolicons-<style>/`, `iconStyles` in `gradle.properties`: `flat`,
+  `glossy`) are the same names drawn with that `iconStyle`: Cool Theme Kit writes those themes with
+  `bun run export:jetbrains-icons`, and `syncIcons` checks that each points every name to the same icons. The glossy
+  style needs a Cool Theme Kit that has it (`iconStyle: "glossy"`, its pull request #96 until it is merged).
 - `CoolAssociations` applies the associations as Cool Theme Kit does when it generates the theme: they win over the
   theme, a file name of the theme still wins over an extension of yours, and a name with a role (`main.py`) under an
   extension you give a bundled icon gets that icon with the mark of its role. `CoolAssociationsParityTest` checks sample

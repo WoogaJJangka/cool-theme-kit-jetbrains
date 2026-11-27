@@ -20,11 +20,12 @@ import static org.junit.Assert.assertTrue;
  * each icon VS Code draws with the default folder color and with a probe color ({@code bun run export:jetbrains}).
  */
 public class CoolFolderColorTest {
-    private static void sameIconsAsVsCode(boolean flat) throws Exception {
+    private static void sameIconsAsVsCode(String style) throws Exception {
         JsonObject fixture = CoolAccentTest.fixture("folder-color.json");
         assertEquals(CoolFolderColor.DEFAULT_COLOR, fixture.get("defaultColor").getAsString());
         String probe = fixture.get("probeColor").getAsString();
-        JsonObject icons = fixture.getAsJsonObject(flat ? "flat" : "icons");
+        JsonObject icons = fixture.getAsJsonObject(CoolIconsSettings.GLASS.equals(style) ? "icons" : style);
+        assertNotNull(style, icons);
         assertTrue(icons.size() > 30);
 
         Set<String> listed = new TreeSet<>();
@@ -32,15 +33,15 @@ public class CoolFolderColorTest {
         for (Map.Entry<String, com.google.gson.JsonElement> entry : icons.entrySet()) {
             String icon = entry.getKey();
             listed.add(icon);
-            assertTrue(icon, CoolRecoloredIcons.takesFolderColor(icon, flat));
+            assertTrue(icon, CoolRecoloredIcons.takesFolderColor(icon, style));
             String shipped;
-            try (InputStream in = CoolFolderColorTest.class.getResourceAsStream((flat ? "/coolicons-flat/" : "/coolicons/") + icon + ".svg")) {
+            try (InputStream in = CoolFolderColorTest.class.getResourceAsStream(CoolIcons.root(style) + icon + ".svg")) {
                 assertNotNull(icon, in);
                 shipped = new String(in.readAllBytes(), StandardCharsets.UTF_8);
             }
             JsonObject svgs = entry.getValue().getAsJsonObject();
             assertEquals(icon, svgs.get("default").getAsString(), shipped);
-            String recolored = flat ? CoolFolderColor.recolorFlat(shipped, probe) : CoolFolderColor.recolor(shipped, probe);
+            String recolored = CoolFolderColor.recolor(shipped, probe, style);
             if (!recolored.equals(svgs.get("probe").getAsString())) wrong.add(icon);
         }
         assertEquals(wrong.toString(), 0, wrong.size());
@@ -50,20 +51,25 @@ public class CoolFolderColorTest {
 
     @Test
     public void sameGlassIconsAsVsCode() throws Exception {
-        sameIconsAsVsCode(false);
+        sameIconsAsVsCode(CoolIconsSettings.GLASS);
     }
 
     @Test
     public void sameFlatIconsAsVsCode() throws Exception {
-        sameIconsAsVsCode(true);
+        sameIconsAsVsCode(CoolIconsSettings.FLAT);
+    }
+
+    @Test
+    public void sameGlossyIconsAsVsCode() throws Exception {
+        sameIconsAsVsCode(CoolIconsSettings.GLOSSY);
     }
 
     @Test
     public void otherIconsKeepTheirColor() {
-        for (boolean flat : new boolean[]{false, true}) {
-            assertTrue(!CoolRecoloredIcons.takesFolderColor("folders/src", flat));
-            assertTrue(!CoolRecoloredIcons.takesFolderColor("files/python", flat));
-            assertTrue(!CoolRecoloredIcons.takesFolderColor("folders/folder-root", flat));
+        for (String style : CoolIconsSettings.STYLES) {
+            assertTrue(!CoolRecoloredIcons.takesFolderColor("folders/src", style));
+            assertTrue(!CoolRecoloredIcons.takesFolderColor("files/python", style));
+            assertTrue(!CoolRecoloredIcons.takesFolderColor("folders/folder-root", style));
         }
     }
 

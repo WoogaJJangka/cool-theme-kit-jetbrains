@@ -43,8 +43,7 @@ final class CoolIcons {
     /** The file names with a role ({@code main.py} -> {@code run}), and the icon of those that have one of their own. */
     private static final Map<String, String> ROLE_NAMES = new HashMap<>();
     private static final Map<String, String> ROLE_OWN = new HashMap<>();
-    /** The flat icons ({@code iconStyle: "flat"}): the same names, drawn as the JetBrains icon plugin draws them. */
-    private static final String FLAT_ROOT = "/coolicons-flat/";
+
 
     /**
      * The VS Code language id of a JetBrains language whose id is not the same in lower case. An empty value: VS Code has
@@ -228,14 +227,22 @@ final class CoolIcons {
     static @Nullable Icon load(@Nullable String ref) {
         if (ref == null) return null;
         if (ref.startsWith(CoolAssociations.USER_FILE)) return loadUserFile(ref.substring(CoolAssociations.USER_FILE.length()));
-        boolean flat = CoolIconsSettings.flatIcons();
+        String style = CoolIconsSettings.iconStyle();
         String folderColor = CoolIconsSettings.folderColor();
         // each style lists the icons it draws in the folder color (folder-color.txt of coolicons and coolicons-flat)
-        if (folderColor != null && CoolRecoloredIcons.takesFolderColor(ref, flat)) {
-            Icon recolored = CoolRecoloredIcons.load(ref, folderColor, flat);
+        if (folderColor != null && CoolRecoloredIcons.takesFolderColor(ref, style)) {
+            Icon recolored = CoolRecoloredIcons.load(ref, folderColor, style);
             if (recolored != null) return recolored;
         }
-        return IconLoader.findIcon((flat ? FLAT_ROOT : ROOT) + ref + ".svg", CoolIcons.class.getClassLoader());
+        return IconLoader.findIcon(root(style) + ref + ".svg", CoolIcons.class.getClassLoader());
+    }
+
+    /**
+     * The resources of an icon style ({@link CoolIconsSettings#STYLES}): {@code coolicons/} for glass, the default, and
+     * {@code coolicons-<style>/} for the others (the same names, drawn otherwise; copied by {@code syncIcons}).
+     */
+    static @NotNull String root(@NotNull String style) {
+        return CoolIconsSettings.GLASS.equals(style) ? ROOT : "/coolicons-" + style + "/";
     }
 
     /**

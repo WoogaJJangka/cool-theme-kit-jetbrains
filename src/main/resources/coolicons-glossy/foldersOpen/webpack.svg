@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><filter id="ctk-w" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><filter id="ctk-n" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><mask id="ctk-s" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/></mask><mask id="ctk-e" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/><use href="#ctk-i" y="0.8" filter="url(#ctk-n)"/></mask><linearGradient id="ctk-g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.32"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-opacity="0"/><stop offset="1" stop-opacity="0.24"/></linearGradient></defs><g id="ctk-i"><svg x="0" y="0" width="16" height="16" viewBox="0 0 24 24" overflow="visible"><g clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.4142">
+<path fill="#03a9f4" data-folderColor="Webpack"
+      d="M20,18H4V8H20M20,6H12L10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6Z"/>
+  <g transform="matrix(.66328 0 0 .66328 9.1921 7.4804)" data-folderIconColor="Webpack" fill="#8ed6fb">
+        <path d="m19.376 15.988-7.7084 4.4505-7.7084-4.4505v-8.9009l7.7084-4.4505 7.7084 4.4505z" fill="none"
+        />
+    <path
+        d="m12.286 1.9792c-0.21 0-0.41031 0.059687-0.57031 0.17969l-7.9004 4.4395c-0.32 0.17-0.5293 0.50086-0.5293 0.88086v9c0 0.38 0.2093 0.71086 0.5293 0.88086l7.9004 4.4395c0.16 0.12 0.36031 0.17969 0.57031 0.17969s0.41031-0.05969 0.57031-0.17969l7.9004-4.4395c0.32-0.17 0.5293-0.50086 0.5293-0.88086v-9c0-0.38-0.2093-0.71086-0.5293-0.88086l-7.9004-4.4395c-0.16-0.12-0.36031-0.17969-0.57031-0.17969zm0 2.1504 7 3.9395v2.1035h-0.01563v5.1777h0.01563v0.53906l-7 3.9395-7-3.9395v-7.8203zm0 2.0801l-4.9004 2.8301 4.9004 2.8301 4.9004-2.8301zm-5 5.0801v3.5801l4 2.3086v-3.5801zm10 0-4 2.3086v3.5801l4-2.3086z"
+    />
+    <path d="m12.286 6.2097-4.9004 2.8301 4.9004 2.8301 4.9004-2.8301zm-5 5.0801v3.5801l4 2.3086v-3.5801zm10 0-4 2.3086v3.5801l4-2.3086z"
+    />
+    </g>
+</g></svg></g><rect width="16" height="16" fill="url(#ctk-g)" mask="url(#ctk-s)"/><rect width="16" height="16" fill="#fff" fill-opacity="0.6" mask="url(#ctk-e)"/></svg>

@@ -154,23 +154,26 @@ public class CoolAssociationsParityTest {
     }
 
     @Test
-    public void everyIconHasAFlatOne() throws IOException {
+    public void everyIconHasOneInEachStyle() throws IOException {
         // the sources (the tests run in the project folder): the resources may be in a jar
         Path glassRoot = Path.of("src/main/resources/coolicons");
-        Path flatRoot = Path.of("src/main/resources/coolicons-flat");
         assertTrue(Files.isDirectory(glassRoot));
-        assertTrue("coolicons-flat is missing: run `gradlew syncIcons`", Files.isDirectory(flatRoot));
-        int different = 0;
-        int count = 0;
-        try (Stream<Path> paths = Files.walk(glassRoot)) {
-            for (Path path : paths.filter(path -> path.toString().endsWith(".svg")).toList()) {
-                Path other = flatRoot.resolve(glassRoot.relativize(path).toString());
-                assertTrue("no flat " + other, Files.isRegularFile(other));
-                count++;
-                if (!Files.readString(path).equals(Files.readString(other))) different++;
+        for (String style : CoolIconsSettings.STYLES) {
+            if (style.equals(CoolIconsSettings.GLASS)) continue;
+            Path styleRoot = Path.of("src/main/resources/coolicons-" + style);
+            assertTrue("coolicons-" + style + " is missing: run `gradlew syncIcons`", Files.isDirectory(styleRoot));
+            int different = 0;
+            int count = 0;
+            try (Stream<Path> paths = Files.walk(glassRoot)) {
+                for (Path path : paths.filter(path -> path.toString().endsWith(".svg")).toList()) {
+                    Path other = styleRoot.resolve(glassRoot.relativize(path).toString());
+                    assertTrue("no " + style + " " + other, Files.isRegularFile(other));
+                    count++;
+                    if (!Files.readString(path).equals(Files.readString(other))) different++;
+                }
             }
+            assertTrue(count > 1000);
+            assertNotEquals("the " + style + " icons are drawn differently", 0, different);
         }
-        assertTrue(count > 1000);
-        assertNotEquals("the flat icons are drawn differently", 0, different);
     }
 }

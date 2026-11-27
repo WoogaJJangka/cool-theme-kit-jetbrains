@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><filter id="ctk-w" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><filter id="ctk-n" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><mask id="ctk-s" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/></mask><mask id="ctk-e" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/><use href="#ctk-i" y="0.8" filter="url(#ctk-n)"/></mask><linearGradient id="ctk-g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.32"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-opacity="0"/><stop offset="1" stop-opacity="0.24"/></linearGradient></defs><g id="ctk-i"><svg x="0" y="0" width="16" height="16" viewBox="0 0 200 200" overflow="visible"><g >
+  <defs>
+    <mask id="Mask">
+      <circle cx="90" cy="90" r="86" fill="white"/>
+      <path
+          d="M64,56 C71.5490744,56 78.4876056,58.7774238 83.9597969,63.4229874 L75.9013457,74.4302155 C73.151103,71.0556355 69.5027384,69 65.5,69 C56.9395864,69 50,78.4020203 50,90 C50,101.59798 56.9395864,111 65.5,111 C69.8072991,111 73.7042455,108.619645 76.5132895,104.776905 L84.2559877,116.322496 C78.739004,121.120951 71.6859434,124 64,124 C46.326888,124 32,108.777681 32,90 C32,71.2223185 46.326888,56 64,56 Z"
+          id="C" fill="black">
+      </path>
+      <path
+          d="M85.5,58.5874023 L103.203613,58.5874023 L115.477051,109.667969 L129.157715,58.5874023 L147.118652,58.5874023 L123.617188,128.739258 C122.775391,130.755859 121.020508,133.252604 118.352539,136.229492 C114.350586,140.694824 113.276198,140.816073 109.259277,143.235352 C105.242356,145.65463 104.953681,145.72072 100.856934,146.766602 C98.1257683,147.463856 95.3404493,147.712879 92.5009766,147.513672 L90,136.229492 C94.2547967,135.295813 97.6177524,134.291744 100.088867,133.217285 C102.559982,132.142827 104.939214,130.650151 107.226562,128.739258 L85.5,58.5874023 Z"
+          id="Y" fill="black">
+      </path>
+    </mask>
+  </defs>
+  <g fill="#58cf9d" data-iconColor="Cypress Files" transform="translate(10.000000, 10.000000)" mask="url(#Mask)">
+    <circle cx="90" cy="90" r="86">
+    </circle>
+    <path
+        d="M64,56 C71.5490744,56 78.4876056,58.7774238 83.9597969,63.4229874 L75.9013457,74.4302155 C73.151103,71.0556355 69.5027384,69 65.5,69 C56.9395864,69 50,78.4020203 50,90 C50,101.59798 56.9395864,111 65.5,111 C69.8072991,111 73.7042455,108.619645 76.5132895,104.776905 L84.2559877,116.322496 C78.739004,121.120951 71.6859434,124 64,124 C46.326888,124 32,108.777681 32,90 C32,71.2223185 46.326888,56 64,56 Z"
+        id="C" fill="#FFFFFF">
+    </path>
+    <path
+        d="M85.5,58.5874023 L103.203613,58.5874023 L115.477051,109.667969 L129.157715,58.5874023 L147.118652,58.5874023 L123.617188,128.739258 C122.775391,130.755859 121.020508,133.252604 118.352539,136.229492 C114.350586,140.694824 113.276198,140.816073 109.259277,143.235352 C105.242356,145.65463 104.953681,145.72072 100.856934,146.766602 C98.1257683,147.463856 95.3404493,147.712879 92.5009766,147.513672 L90,136.229492 C94.2547967,135.295813 97.6177524,134.291744 100.088867,133.217285 C102.559982,132.142827 104.939214,130.650151 107.226562,128.739258 L85.5,58.5874023 Z"
+        id="Y" fill="#FFFFFF">
+    </path>
+  </g>
+</g></svg></g><rect width="16" height="16" fill="url(#ctk-g)" mask="url(#ctk-s)"/><rect width="16" height="16" fill="#fff" fill-opacity="0.6" mask="url(#ctk-e)"/></svg>

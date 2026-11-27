@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><filter id="ctk-w" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><filter id="ctk-n" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><mask id="ctk-s" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/></mask><mask id="ctk-e" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/><use href="#ctk-i" y="0.8" filter="url(#ctk-n)"/></mask><linearGradient id="ctk-g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.32"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-opacity="0"/><stop offset="1" stop-opacity="0.24"/></linearGradient></defs><g id="ctk-i"><svg x="0" y="0" width="16" height="16" viewBox="0 0 256 256" overflow="visible"><g >
+  <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)"
+     fill="#924e96" stroke="none" data-iconColor="ThunderClient">
+    <path d="M1175 2554 c-317 -34 -580 -158 -796 -373 -246 -246 -373 -553 -373
+-901 0 -348 127 -655 373 -901 246 -246 553 -373 901 -373 348 0 655 127 901
+373 246 246 373 553 373 901 0 348 -127 655 -373 901 -187 186 -414 306 -669
+353 -87 17 -269 27 -337 20z m365 -193 c337 -90 590 -295 739 -599 82 -166
+106 -276 106 -482 0 -103 -5 -186 -13 -220 -87 -359 -295 -625 -610 -779 -166
+-82 -276 -106 -482 -106 -206 0 -316 24 -482 106 -315 154 -523 420 -610 779
+-8 34 -13 117 -13 220 0 167 6 209 47 340 119 374 457 676 838 749 30 6 64 13
+75 15 11 3 90 3 175 1 114 -2 175 -9 230 -24z"/>
+    <path d="M1297 2208 c-14 -13 -168 -236 -342 -497 -351 -523 -341 -503 -275
+-563 l30 -28 190 0 190 0 0 -29 c0 -17 -16 -176 -35 -355 -22 -210 -32 -334
+-26 -348 21 -56 103 -83 145 -48 14 11 516 722 699 989 46 66 50 119 12 156
+l-24 25 -235 0 c-129 0 -237 3 -239 8 -2 4 13 144 33 312 24 200 33 315 28
+335 -17 63 -102 87 -151 43z"/>
+  </g>
+</g></svg></g><rect width="16" height="16" fill="url(#ctk-g)" mask="url(#ctk-s)"/><rect width="16" height="16" fill="#fff" fill-opacity="0.6" mask="url(#ctk-e)"/></svg>

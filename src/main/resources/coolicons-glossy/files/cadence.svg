@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><filter id="ctk-w" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><filter id="ctk-n" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><mask id="ctk-s" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/></mask><mask id="ctk-e" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/><use href="#ctk-i" y="0.8" filter="url(#ctk-n)"/></mask><linearGradient id="ctk-g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.32"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-opacity="0"/><stop offset="1" stop-opacity="0.24"/></linearGradient></defs><g id="ctk-i"><svg x="0" y="0" width="16" height="16" viewBox="0 0 100 100" overflow="visible"><g >
+    <defs>
+        <mask id="Mask">
+            <g>
+                <circle cx="50" cy="50" r="50" fill="white"/>
+              <rect x="57.8" y="42.2" width="14.1" height="14.1" fill="black"/>
+              <path fill="black" d="M43.7,61.6c0,2.9-2.4,5.3-5.3,5.3s-5.3-2.4-5.3-5.3c0-2.9,2.4-5.3,5.3-5.3c0,0,0,0,0,0h5.3V42.2
+                				h-5.3C27.7,42.2,19,50.9,19,61.6S27.7,81,38.4,81s19.4-8.7,19.4-19.4l0,0v-5.3H43.7V61.6z"/>
+              <path fill="black"
+                    d="M63.1,35.1H79V21H63.1c-10.7,0-19.4,8.7-19.4,19.4v1.8h14.1v-1.8C57.8,37.5,60.2,35.1,63.1,35.1z"/>
+              <polygon points="57.8,42.2 57.8,42.2 43.7,42.2 43.7,56.3 57.8,56.3"/>
+            </g>
+        </mask>
+    </defs>
+  <g mask="url(#Mask)" fill="#00ef8b" data-iconColor="Cadence">
+        <circle cx="50" cy="50" r="50"/>
+    <rect x="57.8" y="42.2" width="14.1" height="14.1" fill="white"/>
+    <path fill="white" d="M43.7,61.6c0,2.9-2.4,5.3-5.3,5.3s-5.3-2.4-5.3-5.3c0-2.9,2.4-5.3,5.3-5.3c0,0,0,0,0,0h5.3V42.2
+				h-5.3C27.7,42.2,19,50.9,19,61.6S27.7,81,38.4,81s19.4-8.7,19.4-19.4l0,0v-5.3H43.7V61.6z"/>
+    <path fill="white"
+          d="M63.1,35.1H79V21H63.1c-10.7,0-19.4,8.7-19.4,19.4v1.8h14.1v-1.8C57.8,37.5,60.2,35.1,63.1,35.1z"/>
+    <polygon points="57.8,42.2 57.8,42.2 43.7,42.2 43.7,56.3 57.8,56.3"/>
+    </g>
+</g></svg></g><rect width="16" height="16" fill="url(#ctk-g)" mask="url(#ctk-s)"/><rect width="16" height="16" fill="#fff" fill-opacity="0.6" mask="url(#ctk-e)"/></svg>

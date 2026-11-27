@@ -64,7 +64,7 @@ public final class CoolIconsConfigurable implements Configurable {
     @Override
     public @Nullable JComponent createComponent() {
         roleMarks = new JBCheckBox(CoolThemeKitBundle.message("settings.roleMarks"));
-        iconStyle = new ComboBox<>(new String[]{CoolIconsSettings.GLASS, CoolIconsSettings.FLAT});
+        iconStyle = new ComboBox<>(CoolIconsSettings.STYLES.toArray(String[]::new));
         iconStyle.setRenderer(new SimpleListCellRenderer<>() {
             @Override
             public void customize(@NotNull JList<? extends String> list, String style, int index, boolean selected, boolean focused) {
@@ -182,7 +182,7 @@ public final class CoolIconsConfigurable implements Configurable {
     public boolean isModified() {
         CoolIconsSettings.State state = CoolIconsSettings.getInstance().getState();
         return roleMarks.isSelected() != state.roleMarks
-                || !Objects.equals(iconStyle.getSelectedItem(), CoolIconsSettings.flatIcons() ? CoolIconsSettings.FLAT : CoolIconsSettings.GLASS)
+                || !Objects.equals(iconStyle.getSelectedItem(), CoolIconsSettings.iconStyle())
                 || !filesAssociations.getValue().equals(orEmpty(state.filesAssociations))
                 || !foldersAssociations.getValue().equals(orEmpty(state.foldersAssociations))
                 || !languagesAssociations.getValue().equals(orEmpty(state.languagesAssociations))
@@ -216,7 +216,7 @@ public final class CoolIconsConfigurable implements Configurable {
     public void reset() {
         CoolIconsSettings.State state = CoolIconsSettings.getInstance().getState();
         roleMarks.setSelected(state.roleMarks);
-        iconStyle.setSelectedItem(CoolIconsSettings.flatIcons() ? CoolIconsSettings.FLAT : CoolIconsSettings.GLASS);
+        iconStyle.setSelectedItem(CoolIconsSettings.iconStyle());
         filesAssociations.setValue(orEmpty(state.filesAssociations));
         foldersAssociations.setValue(orEmpty(state.foldersAssociations));
         languagesAssociations.setValue(orEmpty(state.languagesAssociations));

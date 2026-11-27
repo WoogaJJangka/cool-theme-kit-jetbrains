@@ -62,6 +62,14 @@ final class CoolFolderColor {
         return svg.replaceAll("(?i)fill=\"" + DEFAULT_COLOR + "\"", "fill=\"" + color.toLowerCase(Locale.ROOT) + "\"");
     }
 
+    /**
+     * The icon of a style ({@link CoolIconsSettings#STYLES}) drawn with {@code color}: the glass icons derive their colors
+     * from it, the flat and the glossy ones (the flat icon under the shading of the glass style) are painted in it.
+     */
+    static @NotNull String recolor(@NotNull String svg, @NotNull String color, @NotNull String style) {
+        return CoolIconsSettings.GLASS.equals(style) ? recolor(svg, color) : recolorFlat(svg, color);
+    }
+
     /** The stops of the gradient {@code ctk-<id>}, top to bottom */
     private static String gradient(String svg, String id, String... stops) {
         Matcher gradient = Pattern.compile("<linearGradient id=\"ctk-" + id + "\"[^>]*>.*?</linearGradient>", Pattern.DOTALL).matcher(svg);

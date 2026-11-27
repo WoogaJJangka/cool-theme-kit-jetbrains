@@ -32,7 +32,7 @@ public final class CoolIconsSettings implements PersistentStateComponent<CoolIco
         public String accentColor = "";
         /** VS Code {@code accentTargets}: {@code controls}, {@code tabs}, {@code folders} also take the accent */
         public List<String> accentTargets = new ArrayList<>();
-        /** VS Code {@code iconStyle}: {@code glass} (the default) or {@code flat} */
+        /** VS Code {@code iconStyle}: {@code glass} (the default), {@code glossy} or {@code flat} */
         public String iconStyle = GLASS;
         /** VS Code {@code filesAssociations}: {@code *.ext} or a file name -> a bundled icon name or an SVG file */
         public Map<String, String> filesAssociations = new LinkedHashMap<>();
@@ -43,7 +43,10 @@ public final class CoolIconsSettings implements PersistentStateComponent<CoolIco
     }
 
     static final String GLASS = "glass";
+    static final String GLOSSY = "glossy";
     static final String FLAT = "flat";
+    /** The values of {@code iconStyle}, in the order of VS Code */
+    static final List<String> STYLES = List.of(GLASS, GLOSSY, FLAT);
 
     private State state = new State();
     /** The associations of the state, read once for every icon asked for. */
@@ -84,9 +87,11 @@ public final class CoolIconsSettings implements PersistentStateComponent<CoolIco
         return accent != null ? accent : CoolAccent.DEFAULT_ACCENT;
     }
 
-    /** Whether the icons are the flat ones; false without an application (the unit tests). */
-    static boolean flatIcons() {
-        return ApplicationManager.getApplication() != null && FLAT.equals(getInstance().state.iconStyle);
+    /** The icon style, one of {@link #STYLES}; glass without an application (the unit tests) or for an unknown value. */
+    static @NotNull String iconStyle() {
+        if (ApplicationManager.getApplication() == null) return GLASS;
+        String style = getInstance().state.iconStyle;
+        return STYLES.contains(style) ? style : GLASS;
     }
 
     /** The associations of the user; none without an application (the unit tests). */
@@ -120,7 +125,7 @@ public final class CoolIconsSettings implements PersistentStateComponent<CoolIco
     /** Sets the icon style and the associations; the icons change at once. */
     void setIcons(@NotNull String iconStyle, @NotNull Map<String, String> files, @NotNull Map<String, String> folders,
                   @NotNull Map<String, String> languages) {
-        String style = FLAT.equals(iconStyle) ? FLAT : GLASS;
+        String style = STYLES.contains(iconStyle) ? iconStyle : GLASS;
         if (style.equals(state.iconStyle) && files.equals(orEmpty(state.filesAssociations))
                 && folders.equals(orEmpty(state.foldersAssociations)) && languages.equals(orEmpty(state.languagesAssociations))) {
             return;

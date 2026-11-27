@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><filter id="ctk-w" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><filter id="ctk-n" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><mask id="ctk-s" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/></mask><mask id="ctk-e" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/><use href="#ctk-i" y="0.8" filter="url(#ctk-n)"/></mask><linearGradient id="ctk-g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.32"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-opacity="0"/><stop offset="1" stop-opacity="0.24"/></linearGradient></defs><g id="ctk-i"><svg x="1.0672" y="0" width="13.8656" height="16" viewBox="0 0 903 1042" overflow="visible"><g >
+  <defs>
+    <mask id="Mask">
+      <path fill="white" id="Polygon"
+            d="M451.015 0L902.03 260.394V781.181L451.015 1041.57L0 781.181V260.394L451.015 0Z"
+      />
+      <g id="Union" fill="black">
+        <path d="M757.013 781.321L830.013 739.115V427L757.013 469.206V781.321Z" fill="black"/>
+        <path d="M703.013 812.543L631.013 854.171V542.056L703.013 500.428V812.543Z" fill="black"/>
+        <path d="M505.013 927.021V614.905L577.013 573.277V885.393L505.013 927.021Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M451.015 0L902.03 260.394V781.181L451.015 1041.57L0 781.181V260.394L451.015 0ZM451.013 21L884.025 271H675.59L451.013 521L18.0001 271L451.013 21ZM18 333L18.0001 771L451.013 1021L884.025 771L884.025 333L451.013 583L18 333Z"
+        />
+      </g>
+    </mask>
+  </defs>
+  <g id="mark" mask="url(#Mask)" fill="#90A4AE" data-iconColor="Public Code">
+    <path id="Polygon" d="M451.015 0L902.03 260.394V781.181L451.015 1041.57L0 781.181V260.394L451.015 0Z"
+    />
+    <g id="Union">
+      <path d="M757.013 781.321L830.013 739.115V427L757.013 469.206V781.321Z"/>
+      <path d="M703.013 812.543L631.013 854.171V542.056L703.013 500.428V812.543Z"/>
+      <path d="M505.013 927.021V614.905L577.013 573.277V885.393L505.013 927.021Z"/>
+      <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M451.015 0L902.03 260.394V781.181L451.015 1041.57L0 781.181V260.394L451.015 0ZM451.013 21L884.025 271H675.59L451.013 521L18.0001 271L451.013 21ZM18 333L18.0001 771L451.013 1021L884.025 771L884.025 333L451.013 583L18 333Z"
+      />
+    </g>
+  </g>
+</g></svg></g><rect width="16" height="16" fill="url(#ctk-g)" mask="url(#ctk-s)"/><rect width="16" height="16" fill="#fff" fill-opacity="0.6" mask="url(#ctk-e)"/></svg>

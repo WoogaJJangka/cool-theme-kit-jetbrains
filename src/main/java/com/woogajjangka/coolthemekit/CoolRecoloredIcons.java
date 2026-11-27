@@ -19,15 +19,15 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * The icons drawn in the folder color ({@code folder-color.txt} of {@code coolicons} and {@code coolicons-flat}), drawn
+ * The icons drawn in the folder color ({@code folder-color.txt} of {@code coolicons} and of each other style), drawn
  * again in another color ({@link CoolFolderColor}) for {@code accentTargets: folders}. The IDE loads an icon from a
  * file, so each color gets its files in the system folder of the IDE
- * ({@code <system>/cool-theme-kit/folder-color/<glass|flat>/<rrggbb>/}).
+ * ({@code <system>/cool-theme-kit/folder-color/<style>/<rrggbb>/}).
  */
 final class CoolRecoloredIcons {
     private static final Logger LOG = Logger.getInstance(CoolRecoloredIcons.class);
-    private static final Set<String> GLASS = readList("/coolicons/");
-    private static final Set<String> FLAT = readList("/coolicons-flat/");
+    /** By icon style ({@link CoolIconsSettings#STYLES}) */
+    private static final Map<String, Set<String>> LISTS = new ConcurrentHashMap<>();
     private static final Map<String, Icon> LOADED = new ConcurrentHashMap<>();
 
     private CoolRecoloredIcons() {
@@ -48,8 +48,8 @@ final class CoolRecoloredIcons {
     }
 
     /** Whether the icon ({@code <dir>/<stem>}) of the style is drawn in the folder color */
-    static boolean takesFolderColor(@NotNull String ref, boolean flat) {
-        return (flat ? FLAT : GLASS).contains(ref);
+    static boolean takesFolderColor(@NotNull String ref, @NotNull String style) {
+        return LISTS.computeIfAbsent(style, key -> readList(CoolIcons.root(key))).contains(ref);
     }
 
     static void clear() {
@@ -58,18 +58,16 @@ final class CoolRecoloredIcons {
     }
 
     /** The icon in the color ({@code #rrggbb}), or null when it cannot be written */
-    static @Nullable Icon load(@NotNull String ref, @NotNull String color, boolean flat) {
-        String style = flat ? "flat" : "glass";
-        return LOADED.computeIfAbsent(style + "/" + color + "/" + ref, key -> write(ref, color, flat));
+    static @Nullable Icon load(@NotNull String ref, @NotNull String color, @NotNull String style) {
+        return LOADED.computeIfAbsent(style + "/" + color + "/" + ref, key -> write(ref, color, style));
     }
 
-    private static @Nullable Icon write(String ref, String color, boolean flat) {
-        String root = flat ? "/coolicons-flat/" : "/coolicons/";
-        try (InputStream in = CoolRecoloredIcons.class.getResourceAsStream(root + ref + ".svg")) {
+    private static @Nullable Icon write(String ref, String color, String style) {
+        try (InputStream in = CoolRecoloredIcons.class.getResourceAsStream(CoolIcons.root(style) + ref + ".svg")) {
             if (in == null) return null;
             String original = new String(in.readAllBytes(), StandardCharsets.UTF_8);
-            String svg = flat ? CoolFolderColor.recolorFlat(original, color) : CoolFolderColor.recolor(original, color);
-            String folder = "cool-theme-kit/folder-color/" + (flat ? "flat/" : "glass/") + color.substring(1) + "/";
+            String svg = CoolFolderColor.recolor(original, color, style);
+            String folder = "cool-theme-kit/folder-color/" + style + "/" + color.substring(1) + "/";
             Path file = PathManager.getSystemDir().resolve(folder + ref + ".svg");
             byte[] bytes = svg.getBytes(StandardCharsets.UTF_8);
             if (!Files.isRegularFile(file) || !java.util.Arrays.equals(Files.readAllBytes(file), bytes)) {
