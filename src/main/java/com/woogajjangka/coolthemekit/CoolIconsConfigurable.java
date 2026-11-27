@@ -38,8 +38,11 @@ public final class CoolIconsConfigurable implements Configurable {
     /** The entry of the accent list for a color that is not a preset */
     private static final CoolAccent.Preset CUSTOM = new CoolAccent.Preset("custom", "", null);
 
+    private com.intellij.openapi.ui.TextFieldWithBrowseButton vsCodeSettings;
     private JBCheckBox roleMarks;
     private JBCheckBox iconThemeLayers;
+    private ComboBox<String> folderTheme;
+    private JBCheckBox hideFileIcons;
     private ComboBox<String> iconStyle;
     private CoolAssociationsTable filesAssociations;
     private CoolAssociationsTable foldersAssociations;
@@ -69,8 +72,25 @@ public final class CoolIconsConfigurable implements Configurable {
 
     @Override
     public @Nullable JComponent createComponent() {
+        vsCodeSettings = new com.intellij.openapi.ui.TextFieldWithBrowseButton();
+        vsCodeSettings.setText(CoolVsCodeSettings.defaultPath().toString());
+        vsCodeSettings.addBrowseFolderListener(null,
+                com.intellij.openapi.fileChooser.FileChooserDescriptorFactory.singleFile());
+        javax.swing.JButton importButton = new javax.swing.JButton(CoolThemeKitBundle.message("settings.vscode.import"));
+        importButton.addActionListener(event -> importFromVsCode());
+        JPanel vsCodeRow = new JPanel(new java.awt.BorderLayout(JBUI.scale(8), 0));
+        vsCodeRow.add(vsCodeSettings, java.awt.BorderLayout.CENTER);
+        vsCodeRow.add(importButton, java.awt.BorderLayout.EAST);
         roleMarks = new JBCheckBox(CoolThemeKitBundle.message("settings.roleMarks"));
         iconThemeLayers = new JBCheckBox(CoolThemeKitBundle.message("settings.iconThemeLayers"));
+        folderTheme = new ComboBox<>(CoolIconsSettings.FOLDER_THEMES.toArray(String[]::new));
+        folderTheme.setRenderer(new SimpleListCellRenderer<>() {
+            @Override
+            public void customize(@NotNull JList<? extends String> list, String theme, int index, boolean selected, boolean focused) {
+                if (theme != null) setText(CoolThemeKitBundle.message("settings.folderTheme." + theme));
+            }
+        });
+        hideFileIcons = new JBCheckBox(CoolThemeKitBundle.message("settings.hideFileIcons"));
         iconStyle = new ComboBox<>(CoolIconsSettings.STYLES.toArray(String[]::new));
         iconStyle.setRenderer(new SimpleListCellRenderer<>() {
             @Override
@@ -144,12 +164,16 @@ public final class CoolIconsConfigurable implements Configurable {
         }
 
         JPanel panel = FormBuilder.createFormBuilder()
+                .addLabeledComponent(CoolThemeKitBundle.message("settings.vscode"), vsCodeRow)
+                .addComponentToRightColumn(hint(CoolThemeKitBundle.message("settings.vscode.hint")), 0)
                 .addLabeledComponent(CoolThemeKitBundle.message("settings.iconStyle"), iconStyle)
                 .addComponentToRightColumn(hint(CoolThemeKitBundle.message("settings.iconStyle.hint")), 0)
                 .addComponent(roleMarks)
                 .addComponentToRightColumn(hint(CoolThemeKitBundle.message("settings.roleMarks.hint")), 0)
                 .addComponent(iconThemeLayers)
                 .addComponentToRightColumn(hint(CoolThemeKitBundle.message("settings.iconThemeLayers.hint")), 0)
+                .addLabeledComponent(CoolThemeKitBundle.message("settings.folderTheme"), folderTheme)
+                .addComponent(hideFileIcons)
                 .addComponent(new TitledSeparator(CoolThemeKitBundle.message("settings.colors.title")), JBUI.scale(12))
                 .addLabeledComponent(CoolThemeKitBundle.message("settings.folderColor"), folderColor)
                 .addComponentToRightColumn(hint(CoolThemeKitBundle.message("settings.folderColor.hint")), 0)
@@ -212,6 +236,8 @@ public final class CoolIconsConfigurable implements Configurable {
         CoolIconsSettings.State state = CoolIconsSettings.getInstance().getState();
         return roleMarks.isSelected() != state.roleMarks
                 || iconThemeLayers.isSelected() != state.iconThemeLayers
+                || !Objects.equals(folderTheme.getSelectedItem(), CoolIconsSettings.folderTheme())
+                || hideFileIcons.isSelected() != state.hideFileIcons
                 || !Objects.equals(iconStyle.getSelectedItem(), CoolIconsSettings.iconStyle())
                 || !filesAssociations.getValue().equals(orEmpty(state.filesAssociations))
                 || !foldersAssociations.getValue().equals(orEmpty(state.foldersAssociations))
@@ -230,6 +256,7 @@ public final class CoolIconsConfigurable implements Configurable {
         CoolIconsSettings settings = CoolIconsSettings.getInstance();
         settings.setRoleMarks(roleMarks.isSelected());
         settings.setIconThemeLayers(iconThemeLayers.isSelected());
+        settings.setFolderTheme((String) Objects.requireNonNull(folderTheme.getSelectedItem()), hideFileIcons.isSelected());
         settings.setIcons((String) Objects.requireNonNull(iconStyle.getSelectedItem()), filesAssociations.getValue(),
                 foldersAssociations.getValue(), languagesAssociations.getValue());
         CoolIconsSettings.State state = settings.getState();
@@ -251,12 +278,33 @@ public final class CoolIconsConfigurable implements Configurable {
         Notifications.Bus.notify(notification);
     }
 
+    /**
+     * Fills the form with the Cool Theme Kit settings of VS Code; Apply saves them. A setting VS Code does not have gets
+     * its default value, as in VS Code.
+     */
+    private void importFromVsCode() {
+        java.nio.file.Path path = java.nio.file.Path.of(vsCodeSettings.getText().trim());
+        try {
+            fill(CoolVsCodeSettings.read(java.nio.file.Files.readString(path)));
+        } catch (java.io.IOException | IllegalArgumentException e) {
+            com.intellij.openapi.ui.Messages.showErrorDialog(vsCodeSettings,
+                    CoolThemeKitBundle.message("settings.vscode.error", path, e.getMessage()),
+                    CoolThemeKitBundle.message("settings.vscode.import"));
+        }
+    }
+
     @Override
     public void reset() {
-        CoolIconsSettings.State state = CoolIconsSettings.getInstance().getState();
+        fill(CoolIconsSettings.getInstance().getState());
+    }
+
+    /** The form with the values of a state: the saved one, or the one read from VS Code */
+    private void fill(@NotNull CoolIconsSettings.State state) {
         roleMarks.setSelected(state.roleMarks);
         iconThemeLayers.setSelected(state.iconThemeLayers);
-        iconStyle.setSelectedItem(CoolIconsSettings.iconStyle());
+        folderTheme.setSelectedItem(CoolIconsSettings.FOLDER_THEMES.contains(state.folderTheme) ? state.folderTheme : CoolIconsSettings.FOLDERS_SPECIFIC);
+        hideFileIcons.setSelected(state.hideFileIcons);
+        iconStyle.setSelectedItem(CoolIconsSettings.STYLES.contains(state.iconStyle) ? state.iconStyle : CoolIconsSettings.GLASS);
         filesAssociations.setValue(orEmpty(state.filesAssociations));
         foldersAssociations.setValue(orEmpty(state.foldersAssociations));
         languagesAssociations.setValue(orEmpty(state.languagesAssociations));
@@ -266,11 +314,11 @@ public final class CoolIconsConfigurable implements Configurable {
         monochromeColor.setEnabled(state.monochrome);
         opacity.setNumber((int) Math.round(Math.max(0, Math.min(1, state.opacity)) * 100));
         saturation.setNumber((int) Math.round(Math.max(0, Math.min(1, state.saturation)) * 100));
-        String accent = CoolIconsSettings.accent();
+        String accent = CoolAccent.normalize(state.accentColor);
         Color color = CoolAccent.toColor(accent != null ? accent : CoolAccent.DEFAULT_ACCENT);
         setColor(color);
         selectPreset(color);
-        List<String> chosen = CoolIconsSettings.accentTargets();
+        List<String> chosen = CoolIconsSettings.known(state.accentTargets);
         for (JBCheckBox box : targets) box.setSelected(chosen.contains((String) box.getClientProperty("target")));
     }
 
@@ -300,8 +348,11 @@ public final class CoolIconsConfigurable implements Configurable {
 
     @Override
     public void disposeUIResources() {
+        vsCodeSettings = null;
         roleMarks = null;
         iconThemeLayers = null;
+        folderTheme = null;
+        hideFileIcons = null;
         iconStyle = null;
         filesAssociations = null;
         foldersAssociations = null;

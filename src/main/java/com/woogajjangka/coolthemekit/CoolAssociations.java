@@ -113,8 +113,17 @@ final class CoolAssociations {
 
     /** The icon of a folder from its name, the user's first, or the plain folder icon. */
     @Nullable String folderIcon(@NotNull String folderName, boolean expanded) {
+        return folderIcon(folderName, expanded, true);
+    }
+
+    /**
+     * The icon of a folder; {@code specific} false is VS Code {@code folderTheme: "classic"}: the folder icon for every
+     * name the user gave no icon to (the theme and the other themes mixed in give none).
+     */
+    @Nullable String folderIcon(@NotNull String folderName, boolean expanded, boolean specific) {
         String icon = (expanded ? folderNamesExpanded : folderNames).get(CoolIcons.normalize(folderName));
-        return icon != null ? icon : CoolIcons.folderIcon(folderName, expanded);
+        if (icon != null) return icon;
+        return specific ? CoolIcons.folderIcon(folderName, expanded) : CoolIcons.defaultFolderIcon(expanded);
     }
 
     private record Extension(String icon, boolean ofUser) {

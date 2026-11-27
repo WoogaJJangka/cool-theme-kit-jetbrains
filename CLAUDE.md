@@ -78,9 +78,15 @@ PyCharm·JetBrains IDE 에서 쓰게 하는 플러그인. 2026-11-26 만듦.
   스타일을 층과 함께 만들고, `syncIcons` 는 이제 `dist/` 대신 `out/jetbrains-icons/glass/` 에서 이름을 가져온다(Cool Icons 의 이름은
   그대로, `layers/` 약 5,500개 추가). 층 아이콘의 라이트 판 이름이 다르면(`<x>_light.svg`) 다크 판을 `<x>_light_dark.svg` 로 복사.
   라이선스는 `coolicons/layers/LICENSE-material-icon-theme.txt`. 설정에서 끄면(`iconThemeLayers` 체크박스) `layers/` 아이콘을 건너뛴다.
-- 남은 차이 후보: `folderTheme`(classic·none)·`hideFileIcons`·`activeIconPacks`, 층 설정의 세부(`iconThemeByName`, 모드 override,
-  다른 테마), 번들에 없는 역할 표시 아이콘(연결로 생긴 `role-<역할>-<x>` 가 dist 에 없으면 표시 없이), VS Code 사용자 설정을 직접 읽기
-  (지금은 설정 화면에 같은 값을 넣어야 한다).
+- **폴더 아이콘 종류·파일 아이콘 숨기기(2026-11-27)**: VS Code `folderTheme`(specific·classic·none)·`hideFileIcons`. classic = 이름별
+  아이콘 없이(층도) 사용자 `foldersAssociations` 와 기본·루트 폴더만, none = 폴더 아이콘 없음, hideFileIcons = 파일 아이콘 없음(기본
+  아이콘도). "없음"은 `EmptyIcon.ICON_16`(null 이면 IDE 아이콘이 나와서). 소스·테스트·리소스 루트·제외 폴더는 그대로 IDE 아이콘.
+- **VS Code 설정 가져오기(2026-11-27)**: 설정 화면의 "Import from VS Code" 가 `settings.json`(JSONC, 기본은
+  `%APPDATA%\Code\User\settings.json`, 프로필은 `User/profiles/<id>/` 를 직접 고름)의 `a-file-icon-vscode.*` 로 화면을 채운다
+  (`CoolVsCodeSettings`, 없는 설정은 VS Code 기본값, `iconThemeLayers` 는 material-icon-theme 이 있는지만). 적용을 눌러야 저장.
+  이 PC 의 settings.json 은 파일 연결 12개·폴더 연결 7개로 읽히고, 그 아이콘이 모두 플러그인에 있다(2026-11-27 확인).
+- 남은 차이 후보: `activeIconPacks`, 층 설정의 세부(`iconThemeByName`, 모드 override, 다른 테마), 번들에 없는 역할 표시 아이콘(연결로
+  생긴 `role-<역할>-<x>` 가 dist 에 없으면 표시 없이), VS Code 설정을 계속 따라가기(지금은 버튼으로 한 번 가져온다).
 - **강조색(2026-11-27)**: VS Code `accentColor`·`accentTargets`(`controls`·`tabs`·`folders`)와 같은 설정·프리셋·색
   (`CoolAccent` = Cool Theme Kit `src/themes/accent.ts` 포팅). Islands Dark·Light 에만 적용(VS Code 가 Cool Islands 에만 칠하듯).
   - 테마 색: `CoolThemeCustomizer` 가 플랫폼의 `UIThemeCustomizer`(`open` 서비스, `overrides="true"`)로 테마를 읽을 때

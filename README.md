@@ -20,6 +20,10 @@ other JetBrains IDEs.
 - Names Cool Icons has no icon for (about 5,500: `.resx`, a folder `cargo`) get the icon of
   [Material Icon Theme](https://github.com/material-extensions/vscode-material-icon-theme), as VS Code does with
   `iconThemeLayers` by default. It can be turned off in the same settings.
+- The folder icons can be the plain folder for every name or none (`folderTheme`: specific, classic, none), and the file
+  icons can be hidden (`hideFileIcons`).
+- **Import from VS Code** fills the settings page with the Cool Theme Kit settings (`a-file-icon-vscode.*`) of your VS Code
+  `settings.json` (the default profile is found by itself; pick the file of another profile). Apply saves them.
 - Source, test and resource roots and excluded folders keep the icons of the IDE, which tell what the folder is in the
   project.
 
