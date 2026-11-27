@@ -20,6 +20,14 @@ import static org.junit.Assert.assertTrue;
  * each icon VS Code draws with the default folder color and with a probe color ({@code bun run export:jetbrains}).
  */
 public class CoolFolderColorTest {
+    /**
+     * The text of an svg with LF line ends: git keeps the icons with LF (.gitattributes), VS Code writes them with the
+     * line ends of its sources, and the recoloring does not depend on them.
+     */
+    private static String lf(String svg) {
+        return svg.replace("\r\n", "\n");
+    }
+
     private static void sameIconsAsVsCode(String style) throws Exception {
         JsonObject fixture = CoolAccentTest.fixture("folder-color.json");
         assertEquals(CoolFolderColor.DEFAULT_COLOR, fixture.get("defaultColor").getAsString());
@@ -37,12 +45,12 @@ public class CoolFolderColorTest {
             String shipped;
             try (InputStream in = CoolFolderColorTest.class.getResourceAsStream(CoolIcons.root(style) + icon + ".svg")) {
                 assertNotNull(icon, in);
-                shipped = new String(in.readAllBytes(), StandardCharsets.UTF_8);
+                shipped = lf(new String(in.readAllBytes(), StandardCharsets.UTF_8));
             }
             JsonObject svgs = entry.getValue().getAsJsonObject();
-            assertEquals(icon, svgs.get("default").getAsString(), shipped);
+            assertEquals(icon, lf(svgs.get("default").getAsString()), shipped);
             String recolored = CoolFolderColor.recolor(shipped, probe, style);
-            if (!recolored.equals(svgs.get("probe").getAsString())) wrong.add(icon);
+            if (!recolored.equals(lf(svgs.get("probe").getAsString()))) wrong.add(icon);
         }
         assertEquals(wrong.toString(), 0, wrong.size());
         assertTrue(listed.contains("folders/folder"));
