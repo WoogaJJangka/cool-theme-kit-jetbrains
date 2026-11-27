@@ -58,8 +58,9 @@ PyCharm·JetBrains IDE 에서 쓰게 하는 플러그인. 2026-11-26 만듦.
   플러그인이 가진 모든 svg 를 `coolicons-<style>/` 로 복사한다(파일 이름의 설정 해시 `~<n>` 는 뗌). 이름 → 아이콘은 모든 스타일이
   같아서(`syncIcons` 가 확인) `mapping.tsv` 는 하나. 폴더 색은 스타일마다 `folder-color.txt` 와 `CoolFolderColorTest` 가 따로 있고,
   glossy·flat 은 기본 폴더 색 칠을 바꾸고 glass 는 색을 다시 계산한다(`CoolFolderColor.recolor(svg, color, style)`).
-  glossy 는 Cool Theme Kit PR #96(`feat/glossy-icons`, 2026-11-27 미병합)에만 있어서, 병합 전에는 그 브랜치의 worktree 를 빌드하고
-  `-PcoolThemeKitDir=<worktree>` 로 `syncIcons` 를 돌렸다(`iconGenerator` 서브모듈·`node_modules` 는 정션으로 빌려 씀).
+  glossy 는 Cool Theme Kit PR #96 으로 2026-11-27 main 에 들어갔다: 이제 `../cool-theme-kit` 체크아웃(main 이후)으로 `syncIcons` 를
+  돌린다(main 빌드로 동기화해도 리소스가 그대로임을 확인). 다른 브랜치의 아이콘이 필요하면 그 worktree 를 빌드하고
+  `-PcoolThemeKitDir=<worktree>`.
 - **아이콘 연결(2026-11-27)**: VS Code `filesAssociations`·`foldersAssociations`·`languagesAssociations` = `CoolAssociations`
   (설정 화면의 표 세 개). VS Code 생성기 규칙 그대로: `*.x`/`**.x` = 확장자, 그 밖 = 파일 이름, 폴더는 `.이름`·`_이름` 도, 값은
   번들 아이콘 이름(대소문자 무시, `mapping.tsv` 의 `fileIcon`·`folderIcon(Expanded)` = dist 의 모든 아이콘) 또는 SVG 경로(절대·`~`,
