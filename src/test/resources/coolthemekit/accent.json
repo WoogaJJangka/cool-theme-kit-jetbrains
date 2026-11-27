@@ -1,0 +1,5995 @@
+{
+  "cases": [
+    {
+      "accent": "#3871e1",
+      "base": "#131a28",
+      "expected": "#131a28",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#131a28",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#131a28",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#182337",
+      "expected": "#182337",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#182337",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#182337",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#1b283f",
+      "expected": "#1b283f",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#1b283f",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#1b283f",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#233558",
+      "expected": "#233558",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#233558",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#233558",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#2a4371",
+      "expected": "#2a4371",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#2a4371",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#2a4371",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#2e4d89",
+      "expected": "#2e4d89",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#2e4d89",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#2e4d89",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#2f5eb9",
+      "expected": "#2f5eb9",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#2f5eb9",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#2f5eb9",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#3871e1",
+      "expected": "#3871e1",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#3871e1",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#3871e1",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#538af9",
+      "expected": "#538af9",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#538af9",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#538af9",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#71a1fe",
+      "expected": "#71a1fe",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#71a1fe",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#71a1fe",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#92b7ff",
+      "expected": "#92b7ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#92b7ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#92b7ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#a7c5ff",
+      "expected": "#a7c5ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#a7c5ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#a7c5ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#bdd3ff",
+      "expected": "#bdd3ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#bdd3ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#bdd3ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#d0dffe",
+      "expected": "#d0dffe",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#d0dffe",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#d0dffe",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#e3ebfe",
+      "expected": "#e3ebfe",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#e3ebfe",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#e3ebfe",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#f7f8ff",
+      "expected": "#f7f8ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#f7f8ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#f7f8ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#2f5eb9b3",
+      "expected": "#2f5eb9b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#2f5eb9b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#2f5eb9b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#ffffff",
+      "expected": "#ffffff",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#000000",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#80808059",
+      "expected": "#3871e159",
+      "kind": "target"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#ffffff29",
+      "expected": "#3871e129",
+      "kind": "target"
+    },
+    {
+      "accent": "#3871e1",
+      "base": "#73767c",
+      "expected": "#3871e1",
+      "kind": "target"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#131a28",
+      "expected": "#1a2516",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#1a2516",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#1a2516",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#182337",
+      "expected": "#22321d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#22321d",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#22321d",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#1b283f",
+      "expected": "#273921",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#273921",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#273921",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#233558",
+      "expected": "#34502b",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#34502b",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#34502b",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#2a4371",
+      "expected": "#416635",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#416635",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#416635",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#2e4d89",
+      "expected": "#4b7b3c",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#4b7b3c",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#4b7b3c",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#2f5eb9",
+      "expected": "#5ba345",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#5ba345",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#498337",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#3871e1",
+      "expected": "#6ec752",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#6ec752",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#3f832b",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#538af9",
+      "expected": "#87df6d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#87df6d",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#3f9f23",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#71a1fe",
+      "expected": "#9ee887",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#9ee887",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#46b823",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#92b7ff",
+      "expected": "#b5eea3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#b5eea3",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#4dcd26",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#a7c5ff",
+      "expected": "#c3f1b5",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#c3f1b5",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#69dc45",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#bdd3ff",
+      "expected": "#d2f5c7",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#d2f5c7",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#93e67a",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#d0dffe",
+      "expected": "#def7d7",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#def7d7",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#b4eca4",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#e3ebfe",
+      "expected": "#ebfae7",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#ebfae7",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#d2f3ca",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#f7f8ff",
+      "expected": "#f8fef8",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#f8fef8",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#ecfbeb",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#2f5eb9b3",
+      "expected": "#5ba345b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#5ba345b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#498337b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#ffffff",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#000000",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#80808059",
+      "expected": "#79cb6059",
+      "kind": "target"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#ffffff29",
+      "expected": "#79cb6029",
+      "kind": "target"
+    },
+    {
+      "accent": "#79cb60",
+      "base": "#73767c",
+      "expected": "#79cb60",
+      "kind": "target"
+    },
+    {
+      "accent": "#009688",
+      "base": "#131a28",
+      "expected": "#0f2c29",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#0f2c29",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#0f2c29",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#182337",
+      "expected": "#123d38",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#123d38",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#123d38",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#1b283f",
+      "expected": "#154540",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#154540",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#154540",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#233558",
+      "expected": "#1a615b",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#1a615b",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#1a615b",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#2a4371",
+      "expected": "#1d7e73",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#1d7e73",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#1d7e73",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#2e4d89",
+      "expected": "#1e998d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#1e998d",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#1a847a",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#2f5eb9",
+      "expected": "#17d1bf",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#17d1bf",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#0e8378",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#3871e1",
+      "expected": "#1affea",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#1affea",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#008579",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#538af9",
+      "expected": "#4dffef",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#4dffef",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#009f91",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#71a1fe",
+      "expected": "#70fff1",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#70fff1",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#00b2a1",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#92b7ff",
+      "expected": "#92fff5",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#92fff5",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#00cab7",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#a7c5ff",
+      "expected": "#a7fff6",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#a7fff6",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#00dac5",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#bdd3ff",
+      "expected": "#bdfff9",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#bdfff9",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#00ebd6",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#d0dffe",
+      "expected": "#cffffb",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#cffffb",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#00f8e3",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#e3ebfe",
+      "expected": "#e2fffd",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#e2fffd",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#7cfff8",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#f7f8ff",
+      "expected": "#f7feff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#f7feff",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#e8fcff",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#2f5eb9b3",
+      "expected": "#17d1bfb3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#009688",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#17d1bfb3",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#0e8378b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#009688",
+      "base": "#ffffff",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#009688",
+      "base": "#000000",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#009688",
+      "base": "#80808059",
+      "expected": "#00968859",
+      "kind": "target"
+    },
+    {
+      "accent": "#009688",
+      "base": "#ffffff29",
+      "expected": "#00968829",
+      "kind": "target"
+    },
+    {
+      "accent": "#009688",
+      "base": "#73767c",
+      "expected": "#009688",
+      "kind": "target"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#131a28",
+      "expected": "#0f282c",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#0f282c",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#0f282c",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#182337",
+      "expected": "#12383d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#12383d",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#12383d",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#1b283f",
+      "expected": "#154145",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#154145",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#154145",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#233558",
+      "expected": "#1a5961",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#1a5961",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#1a5961",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#2a4371",
+      "expected": "#1d747e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#1d747e",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#1d747e",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#2e4d89",
+      "expected": "#1e8c99",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#1e8c99",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#1b808c",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#2f5eb9",
+      "expected": "#17bdd1",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#17bdd1",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#108391",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#3871e1",
+      "expected": "#1ae5ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#1ae5ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#007f8f",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#538af9",
+      "expected": "#4deaff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#4deaff",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#0099ae",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#71a1fe",
+      "expected": "#70efff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#70efff",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#00b1c7",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#92b7ff",
+      "expected": "#92f3ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#92f3ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#00c6de",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#a7c5ff",
+      "expected": "#a7f5ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#a7f5ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#00d4ee",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#bdd3ff",
+      "expected": "#bdf7ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#bdf7ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#29e6ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#d0dffe",
+      "expected": "#cff9ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#cff9ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#7defff",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#e3ebfe",
+      "expected": "#e2fbff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#e2fbff",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#b9f4ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#f7f8ff",
+      "expected": "#f7fcff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#f7fcff",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#edf9ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#2f5eb9b3",
+      "expected": "#17bdd1b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#17bdd1b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#108391b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#ffffff",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#000000",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#80808059",
+      "expected": "#00bcd459",
+      "kind": "target"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#ffffff29",
+      "expected": "#00bcd429",
+      "kind": "target"
+    },
+    {
+      "accent": "#00bcd4",
+      "base": "#73767c",
+      "expected": "#00bcd4",
+      "kind": "target"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#131a28",
+      "expected": "#0f2c2c",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#0f2c2c",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#0f2c2c",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#182337",
+      "expected": "#123d3c",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#123d3c",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#123d3c",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#1b283f",
+      "expected": "#154544",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#154544",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#154544",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#233558",
+      "expected": "#1a6161",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#1a6161",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#1a6161",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#2a4371",
+      "expected": "#1d7e7c",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#1d7e7c",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#1d7e7c",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#2e4d89",
+      "expected": "#1e9999",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#1e9999",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#1a8483",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#2f5eb9",
+      "expected": "#17d1d1",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#17d1d1",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#0e8383",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#3871e1",
+      "expected": "#1affff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#1affff",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#008080",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#538af9",
+      "expected": "#4dfeff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#4dfeff",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#009e9f",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#71a1fe",
+      "expected": "#70ffff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#70ffff",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#00b2b2",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#92b7ff",
+      "expected": "#92ffff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#92ffff",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#00caca",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#a7c5ff",
+      "expected": "#a7ffff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#a7ffff",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#00dad9",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#bdd3ff",
+      "expected": "#bdffff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#bdffff",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#00e5e6",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#d0dffe",
+      "expected": "#cffeff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#cffeff",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#00f5f8",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#e3ebfe",
+      "expected": "#e2feff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#e2feff",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#95fbff",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#f7f8ff",
+      "expected": "#f7fdff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#f7fdff",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#e8faff",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#2f5eb9b3",
+      "expected": "#17d1d1b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#17d1d1b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#0e8383b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#ffffff",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#000000",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#80808059",
+      "expected": "#84ffff59",
+      "kind": "target"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#ffffff29",
+      "expected": "#84ffff29",
+      "kind": "target"
+    },
+    {
+      "accent": "#84ffff",
+      "base": "#73767c",
+      "expected": "#84ffff",
+      "kind": "target"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#131a28",
+      "expected": "#0f1a2c",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#0f1a2c",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#0f1a2c",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#182337",
+      "expected": "#12233d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#142540",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#12233d",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#1b283f",
+      "expected": "#152845",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#162a49",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#152845",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#233558",
+      "expected": "#1a3561",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#1b3765",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#1a3561",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#2a4371",
+      "expected": "#1d437e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#1d437e",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#1d437e",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#2e4d89",
+      "expected": "#1e4c99",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#1e4c99",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#1e4c99",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#2f5eb9",
+      "expected": "#175dd1",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#175dd1",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#175dd1",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#3871e1",
+      "expected": "#1a70ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#1a70ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#156cff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#538af9",
+      "expected": "#4d8eff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#4d8eff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#4388ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#71a1fe",
+      "expected": "#70a6ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#70a6ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#66a0ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#92b7ff",
+      "expected": "#92bbff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#92bbff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#8db8ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#a7c5ff",
+      "expected": "#a7c8ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#a7c8ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#a2c5ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#bdd3ff",
+      "expected": "#bdd5ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#bdd5ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#b8d2ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#d0dffe",
+      "expected": "#cfe0ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#cfe0ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#caddff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#e3ebfe",
+      "expected": "#e2ecff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#e2ecff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#dde8ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#f7f8ff",
+      "expected": "#f7f8ff",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#f7f8ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#f2f4ff",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#2f5eb9b3",
+      "expected": "#175dd1b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#175dd1b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#175dd1b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#ffffff",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#000000",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#80808059",
+      "expected": "#2979ff59",
+      "kind": "target"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#ffffff29",
+      "expected": "#2979ff29",
+      "kind": "target"
+    },
+    {
+      "accent": "#2979ff",
+      "base": "#73767c",
+      "expected": "#2979ff",
+      "kind": "target"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#131a28",
+      "expected": "#1c1724",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#1c1724",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#1c1724",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#182337",
+      "expected": "#241e31",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#272034",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#241e31",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#1b283f",
+      "expected": "#292238",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#2e253f",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#292238",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#233558",
+      "expected": "#392d4e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#3e3055",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#392d4e",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#2a4371",
+      "expected": "#473764",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#4e3c6e",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#473764",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#2e4d89",
+      "expected": "#533f78",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#5a4482",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#533f78",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#2f5eb9",
+      "expected": "#6848a0",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#7451b0",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#6848a0",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#3871e1",
+      "expected": "#7e57c2",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#8966c7",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#7e57c2",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#538af9",
+      "expected": "#9871db",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#9871db",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#9871db",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#71a1fe",
+      "expected": "#ab8be4",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#ab8be4",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#ab8be4",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#92b7ff",
+      "expected": "#bfa6eb",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#bfa6eb",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#bfa6eb",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#a7c5ff",
+      "expected": "#cbb7ef",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#cbb7ef",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#cbb7ef",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#bdd3ff",
+      "expected": "#d9c9f3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#d9c9f3",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#d9c9f3",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#d0dffe",
+      "expected": "#e3d8f6",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#e3d8f6",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#e3d8f6",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#e3ebfe",
+      "expected": "#efe8f9",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#efe8f9",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#efe8f9",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#f7f8ff",
+      "expected": "#fbf8fe",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#fbf8fe",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#f9f4fd",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#2f5eb9b3",
+      "expected": "#6848a0b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#7451b0b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#6848a0b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#ffffff",
+      "expected": "#ffffff",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#000000",
+      "expected": "#ffffff",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#80808059",
+      "expected": "#7e57c259",
+      "kind": "target"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#ffffff29",
+      "expected": "#7e57c229",
+      "kind": "target"
+    },
+    {
+      "accent": "#7e57c2",
+      "base": "#73767c",
+      "expected": "#7e57c2",
+      "kind": "target"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#131a28",
+      "expected": "#221724",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#221724",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#221724",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#182337",
+      "expected": "#2e1e31",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#2e1e31",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#2e1e31",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#1b283f",
+      "expected": "#352238",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#352238",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#352238",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#233558",
+      "expected": "#492d4e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#492d4e",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#492d4e",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#2a4371",
+      "expected": "#5d3764",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#5d3764",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#5d3764",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#2e4d89",
+      "expected": "#703f78",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#703f78",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#703f78",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#2f5eb9",
+      "expected": "#9348a0",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#9348a0",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#9348a0",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#3871e1",
+      "expected": "#b257c2",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#b257c2",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#ad4cbe",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#538af9",
+      "expected": "#cc72da",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#cc72da",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#c765d7",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#71a1fe",
+      "expected": "#d78be4",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#d78be4",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#d483e2",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#92b7ff",
+      "expected": "#e1a6eb",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#e1a6eb",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#de9ee9",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#a7c5ff",
+      "expected": "#e7b7ef",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#e7b7ef",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#e5b3ee",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#bdd3ff",
+      "expected": "#edc9f3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#edc9f3",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#ecc5f2",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#d0dffe",
+      "expected": "#f2d8f6",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#f2d8f6",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#f0d4f5",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#e3ebfe",
+      "expected": "#f7e8f9",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#f7e8f9",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#f6e4f8",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#f7f8ff",
+      "expected": "#fef8fd",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#fef8fd",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#fdf4fc",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#2f5eb9b3",
+      "expected": "#9348a0b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#9348a0b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#9348a0b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#ffffff",
+      "expected": "#ffffff",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#000000",
+      "expected": "#ffffff",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#80808059",
+      "expected": "#ab47bc59",
+      "kind": "target"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#ffffff29",
+      "expected": "#ab47bc29",
+      "kind": "target"
+    },
+    {
+      "accent": "#ab47bc",
+      "base": "#73767c",
+      "expected": "#ab47bc",
+      "kind": "target"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#131a28",
+      "expected": "#27141d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#27141d",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#27141d",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#182337",
+      "expected": "#351a28",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#381c2a",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#351a28",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#1b283f",
+      "expected": "#3d1d2d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#401f30",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#3d1d2d",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#233558",
+      "expected": "#55263d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#55263d",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#55263d",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#2a4371",
+      "expected": "#6c2f4d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#6c2f4d",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#6c2f4d",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#2e4d89",
+      "expected": "#83345b",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#83345b",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#83345b",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#2f5eb9",
+      "expected": "#b03872",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#b03872",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#b03872",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#3871e1",
+      "expected": "#d6438a",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#d6438a",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#d33782",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#538af9",
+      "expected": "#ee5ea3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#ee5ea3",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#ed509b",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#71a1fe",
+      "expected": "#f57ab6",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#f57ab6",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#f476b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#92b7ff",
+      "expected": "#f899c7",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#f899c7",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#f899c7",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#a7c5ff",
+      "expected": "#f9add2",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#f9add2",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#f9add2",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#bdd3ff",
+      "expected": "#fbc1dd",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#fbc1dd",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#fbc1dd",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#d0dffe",
+      "expected": "#fbd3e6",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#fbd3e6",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#fbd3e6",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#e3ebfe",
+      "expected": "#fce5ef",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#fce5ef",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#fce5ef",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#f7f8ff",
+      "expected": "#fef8f9",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#fef8f9",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#fef3f6",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#2f5eb9b3",
+      "expected": "#b03872b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#b03872b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#b03872b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#ffffff",
+      "expected": "#ffffff",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#000000",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#80808059",
+      "expected": "#d3368259",
+      "kind": "target"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#ffffff29",
+      "expected": "#d3368229",
+      "kind": "target"
+    },
+    {
+      "accent": "#d33682",
+      "base": "#73767c",
+      "expected": "#d33682",
+      "kind": "target"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#131a28",
+      "expected": "#2c0f1f",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#2c0f1f",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#2c0f1f",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#182337",
+      "expected": "#3d122b",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#40142e",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#3d122b",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#1b283f",
+      "expected": "#451531",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#491634",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#451531",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#233558",
+      "expected": "#611a42",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#611a42",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#611a42",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#2a4371",
+      "expected": "#7e1d55",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#7e1d55",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#7e1d55",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#2e4d89",
+      "expected": "#991e64",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#991e64",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#991e64",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#2f5eb9",
+      "expected": "#d11781",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#d11781",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#d11781",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#3871e1",
+      "expected": "#ff1a9c",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#ff1a9c",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#e10080",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#538af9",
+      "expected": "#ff4db1",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#ff4db1",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#ff33a6",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#71a1fe",
+      "expected": "#ff70c2",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#ff70c2",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#ff6bbf",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#92b7ff",
+      "expected": "#ff92d0",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#ff92d0",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#ff92d0",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#a7c5ff",
+      "expected": "#ffa7d9",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#ffa7d9",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#ffa7d9",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#bdd3ff",
+      "expected": "#ffbde2",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#ffbde2",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#ffbde2",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#d0dffe",
+      "expected": "#ffcfea",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#ffcfea",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#ffcfea",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#e3ebfe",
+      "expected": "#ffe2f1",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#ffe2f1",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#ffe2f1",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#f7f8ff",
+      "expected": "#fff7fa",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#fff7fa",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#fff2f7",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#2f5eb9b3",
+      "expected": "#d11781b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#d11781b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#d11781b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#ffffff",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#000000",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#80808059",
+      "expected": "#ff79c559",
+      "kind": "target"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#ffffff29",
+      "expected": "#ff79c529",
+      "kind": "target"
+    },
+    {
+      "accent": "#ff79c5",
+      "base": "#73767c",
+      "expected": "#ff79c5",
+      "kind": "target"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#131a28",
+      "expected": "#2b1510",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#2b1510",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#2b1510",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#182337",
+      "expected": "#3b1a14",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#3b1a14",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#3b1a14",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#1b283f",
+      "expected": "#431c17",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#431c17",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#431c17",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#233558",
+      "expected": "#5f271c",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#5f271c",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#5f271c",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#2a4371",
+      "expected": "#7a2e21",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#7a2e21",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#7a2e21",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#2e4d89",
+      "expected": "#943423",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#943423",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#943423",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#2f5eb9",
+      "expected": "#ca381e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#ca381e",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#ca381e",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#3871e1",
+      "expected": "#f64423",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#f64423",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#e22b09",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#538af9",
+      "expected": "#ff6a4d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#ff6a4d",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#ff4c29",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#71a1fe",
+      "expected": "#ff8670",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#ff8670",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#ff7961",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#92b7ff",
+      "expected": "#ffa392",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#ffa392",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#ff9a88",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#a7c5ff",
+      "expected": "#ffb4a7",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#ffb4a7",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#ffb0a2",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#bdd3ff",
+      "expected": "#ffc8bd",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#ffc8bd",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#ffc3b8",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#d0dffe",
+      "expected": "#ffd7cf",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#ffd7cf",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#ffd3ca",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#e3ebfe",
+      "expected": "#ffe8e2",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#ffe8e2",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#ffe4dd",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#f7f8ff",
+      "expected": "#fffaf7",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#fffaf7",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#fff7f2",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#2f5eb9b3",
+      "expected": "#ca381eb3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#ca381eb3",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#ca381eb3",
+      "kind": "text"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#ffffff",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#000000",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#80808059",
+      "expected": "#f9826c59",
+      "kind": "target"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#ffffff29",
+      "expected": "#f9826c29",
+      "kind": "target"
+    },
+    {
+      "accent": "#f9826c",
+      "base": "#73767c",
+      "expected": "#f9826c",
+      "kind": "target"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#131a28",
+      "expected": "#2c200f",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#2c200f",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#2c200f",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#182337",
+      "expected": "#3d2b12",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#3d2b12",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#3d2b12",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#1b283f",
+      "expected": "#453115",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#453115",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#453115",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#233558",
+      "expected": "#61441a",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#61441a",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#61441a",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#2a4371",
+      "expected": "#7e551d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#7e551d",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#7e551d",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#2e4d89",
+      "expected": "#99671e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#99671e",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#99671e",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#2f5eb9",
+      "expected": "#d18517",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#d18517",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#a36812",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#3871e1",
+      "expected": "#ffa31a",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#ffa31a",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#a96500",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#538af9",
+      "expected": "#ffb84d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#ffb84d",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#c77800",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#71a1fe",
+      "expected": "#ffc570",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#ffc570",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#ea8b00",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#92b7ff",
+      "expected": "#ffd392",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#ffd392",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#ffa118",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#a7c5ff",
+      "expected": "#ffdba7",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#ffdba7",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#ffb64b",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#bdd3ff",
+      "expected": "#ffe5bd",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#ffe5bd",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#ffc876",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#d0dffe",
+      "expected": "#ffeccf",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#ffeccf",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#ffd89c",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#e3ebfe",
+      "expected": "#fff4e2",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#fff4e2",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#ffe8be",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#f7f8ff",
+      "expected": "#fffdf7",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#fffdf7",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#fff9de",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#2f5eb9b3",
+      "expected": "#d18517b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#d18517b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#a36812b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#ffffff",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#000000",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#80808059",
+      "expected": "#ff980059",
+      "kind": "target"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#ffffff29",
+      "expected": "#ff980029",
+      "kind": "target"
+    },
+    {
+      "accent": "#ff9800",
+      "base": "#73767c",
+      "expected": "#ff9800",
+      "kind": "target"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#131a28",
+      "expected": "#2c250f",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#2c250f",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#2c250f",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#182337",
+      "expected": "#3d3112",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#3d3112",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#3d3112",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#1b283f",
+      "expected": "#453815",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#453815",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#453815",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#233558",
+      "expected": "#614f1a",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#614f1a",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#614f1a",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#2a4371",
+      "expected": "#7e641d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#7e641d",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#7e641d",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#2e4d89",
+      "expected": "#99791e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#99791e",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#91731c",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#2f5eb9",
+      "expected": "#d1a117",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#d1a117",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#917010",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#3871e1",
+      "expected": "#ffc51a",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#ffc51a",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#946f00",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#538af9",
+      "expected": "#ffd34d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#ffd34d",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#b38600",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#71a1fe",
+      "expected": "#ffda70",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#ffda70",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#cc9700",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#92b7ff",
+      "expected": "#ffe392",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#ffe392",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#e9ad00",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#a7c5ff",
+      "expected": "#ffe8a7",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#ffe8a7",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#f9b800",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#bdd3ff",
+      "expected": "#ffeebd",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#ffeebd",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#ffcb2e",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#d0dffe",
+      "expected": "#fff3cf",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#fff3cf",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#ffda69",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#e3ebfe",
+      "expected": "#fff9e2",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#fff9e2",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#ffea9b",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#f7f8ff",
+      "expected": "#fffff7",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#fffff7",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#fffcb5",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#2f5eb9b3",
+      "expected": "#d1a117b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#d1a117b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#917010b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#ffffff",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#000000",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#80808059",
+      "expected": "#ffd86659",
+      "kind": "target"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#ffffff29",
+      "expected": "#ffd86629",
+      "kind": "target"
+    },
+    {
+      "accent": "#ffd866",
+      "base": "#73767c",
+      "expected": "#ffd866",
+      "kind": "target"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#131a28",
+      "expected": "#1e1e1e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#1e1e1e",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#1e1e1e",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#182337",
+      "expected": "#282828",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#282828",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#282828",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#2d2d2d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#2d2d2d",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#2d2d2d",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#233558",
+      "expected": "#3e3e3e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#3e3e3e",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#3e3e3e",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#4e4e4e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#4e4e4e",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#4e4e4e",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#5c5c5c",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#5c5c5c",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#5c5c5c",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#747474",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#747474",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#747474",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#8d8d8d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#8d8d8d",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#767676",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#538af9",
+      "expected": "#a6a6a6",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#a6a6a6",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#8c8c8c",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#b8b8b8",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#b8b8b8",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#a1a1a1",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#c9c9c9",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#c9c9c9",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#b7b7b7",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#d3d3d3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#d3d3d3",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#c4c4c4",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#dedede",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#dedede",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#d1d1d1",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#e7e7e7",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#e7e7e7",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#dddddd",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#f1f1f1",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#f1f1f1",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#e9e9e9",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#fbfbfb",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#fbfbfb",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#f6f6f6",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#747474b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#747474b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#747474b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#ffffff",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#000000",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#80808059",
+      "expected": "#ffffff59",
+      "kind": "target"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#ffffff29",
+      "expected": "#ffffff29",
+      "kind": "target"
+    },
+    {
+      "accent": "#ffffff",
+      "base": "#73767c",
+      "expected": "#ffffff",
+      "kind": "target"
+    },
+    {
+      "accent": "#000000",
+      "base": "#131a28",
+      "expected": "#1e1e1e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#1e1e1e",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#1e1e1e",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#182337",
+      "expected": "#282828",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#282828",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#282828",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#1b283f",
+      "expected": "#2d2d2d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#2d2d2d",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#2d2d2d",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#233558",
+      "expected": "#3e3e3e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#3e3e3e",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#3e3e3e",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#2a4371",
+      "expected": "#4e4e4e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#4e4e4e",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#4e4e4e",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#2e4d89",
+      "expected": "#5c5c5c",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#5c5c5c",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#5c5c5c",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#2f5eb9",
+      "expected": "#747474",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#747474",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#747474",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#3871e1",
+      "expected": "#8d8d8d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#8d8d8d",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#767676",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#538af9",
+      "expected": "#a6a6a6",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#a6a6a6",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#8c8c8c",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#71a1fe",
+      "expected": "#b8b8b8",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#b8b8b8",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#a1a1a1",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#92b7ff",
+      "expected": "#c9c9c9",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#c9c9c9",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#b7b7b7",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#a7c5ff",
+      "expected": "#d3d3d3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#d3d3d3",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#c4c4c4",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#bdd3ff",
+      "expected": "#dedede",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#dedede",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#d1d1d1",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#d0dffe",
+      "expected": "#e7e7e7",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#e7e7e7",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#dddddd",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#e3ebfe",
+      "expected": "#f1f1f1",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#f1f1f1",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#e9e9e9",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#f7f8ff",
+      "expected": "#fbfbfb",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#fbfbfb",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#f6f6f6",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#2f5eb9b3",
+      "expected": "#747474b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#000000",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#747474b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#747474b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#000000",
+      "base": "#ffffff",
+      "expected": "#ffffff",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#000000",
+      "base": "#000000",
+      "expected": "#ffffff",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#000000",
+      "base": "#80808059",
+      "expected": "#00000059",
+      "kind": "target"
+    },
+    {
+      "accent": "#000000",
+      "base": "#ffffff29",
+      "expected": "#00000029",
+      "kind": "target"
+    },
+    {
+      "accent": "#000000",
+      "base": "#73767c",
+      "expected": "#000000",
+      "kind": "target"
+    },
+    {
+      "accent": "#808080",
+      "base": "#131a28",
+      "expected": "#1e1e1e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#131a28",
+      "expected": "#1e1e1e",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#131a28",
+      "expected": "#1e1e1e",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#182337",
+      "expected": "#282828",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#182337",
+      "expected": "#282828",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#182337",
+      "expected": "#282828",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#1b283f",
+      "expected": "#2d2d2d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#1b283f",
+      "expected": "#2d2d2d",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#1b283f",
+      "expected": "#2d2d2d",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#233558",
+      "expected": "#3e3e3e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#233558",
+      "expected": "#3e3e3e",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#233558",
+      "expected": "#3e3e3e",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#2a4371",
+      "expected": "#4e4e4e",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#2a4371",
+      "expected": "#4e4e4e",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#2a4371",
+      "expected": "#4e4e4e",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#2e4d89",
+      "expected": "#5c5c5c",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#2e4d89",
+      "expected": "#5c5c5c",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#2e4d89",
+      "expected": "#5c5c5c",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#2f5eb9",
+      "expected": "#747474",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#2f5eb9",
+      "expected": "#747474",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#2f5eb9",
+      "expected": "#747474",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#3871e1",
+      "expected": "#8d8d8d",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#3871e1",
+      "expected": "#8d8d8d",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#3871e1",
+      "expected": "#767676",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#538af9",
+      "expected": "#a6a6a6",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#538af9",
+      "expected": "#a6a6a6",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#538af9",
+      "expected": "#8c8c8c",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#71a1fe",
+      "expected": "#b8b8b8",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#71a1fe",
+      "expected": "#b8b8b8",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#71a1fe",
+      "expected": "#a1a1a1",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#92b7ff",
+      "expected": "#c9c9c9",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#92b7ff",
+      "expected": "#c9c9c9",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#92b7ff",
+      "expected": "#b7b7b7",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#a7c5ff",
+      "expected": "#d3d3d3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#a7c5ff",
+      "expected": "#d3d3d3",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#a7c5ff",
+      "expected": "#c4c4c4",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#bdd3ff",
+      "expected": "#dedede",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#bdd3ff",
+      "expected": "#dedede",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#bdd3ff",
+      "expected": "#d1d1d1",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#d0dffe",
+      "expected": "#e7e7e7",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#d0dffe",
+      "expected": "#e7e7e7",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#d0dffe",
+      "expected": "#dddddd",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#e3ebfe",
+      "expected": "#f1f1f1",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#e3ebfe",
+      "expected": "#f1f1f1",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#e3ebfe",
+      "expected": "#e9e9e9",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#f7f8ff",
+      "expected": "#fbfbfb",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#f7f8ff",
+      "expected": "#fbfbfb",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#f7f8ff",
+      "expected": "#f6f6f6",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#2f5eb9b3",
+      "expected": "#747474b3",
+      "kind": "tint"
+    },
+    {
+      "accent": "#808080",
+      "background": "#191a1c",
+      "base": "#2f5eb9b3",
+      "expected": "#747474b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "background": "#ffffff",
+      "base": "#2f5eb9b3",
+      "expected": "#747474b3",
+      "kind": "text"
+    },
+    {
+      "accent": "#808080",
+      "base": "#ffffff",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#808080",
+      "base": "#000000",
+      "expected": "#000000",
+      "kind": "onAccent"
+    },
+    {
+      "accent": "#808080",
+      "base": "#80808059",
+      "expected": "#80808059",
+      "kind": "target"
+    },
+    {
+      "accent": "#808080",
+      "base": "#ffffff29",
+      "expected": "#80808029",
+      "kind": "target"
+    },
+    {
+      "accent": "#808080",
+      "base": "#73767c",
+      "expected": "#808080",
+      "kind": "target"
+    }
+  ],
+  "defaultAccent": "#3871e1",
+  "editorBackground": {
+    "dark": "#191a1c",
+    "light": "#ffffff"
+  },
+  "presets": [
+    {
+      "color": "#3871e1",
+      "id": "islandsBlue"
+    },
+    {
+      "color": "#79cb60",
+      "id": "green",
+      "source": "GitHub"
+    },
+    {
+      "color": "#009688",
+      "id": "teal",
+      "source": "Material Oceanic"
+    },
+    {
+      "color": "#00bcd4",
+      "id": "cyan",
+      "source": "Material Lighter"
+    },
+    {
+      "color": "#84ffff",
+      "id": "aqua",
+      "source": "Material Deep Ocean"
+    },
+    {
+      "color": "#2979ff",
+      "id": "blue",
+      "source": "Atom One Dark"
+    },
+    {
+      "color": "#7e57c2",
+      "id": "violet",
+      "source": "Night Owl"
+    },
+    {
+      "color": "#ab47bc",
+      "id": "purple",
+      "source": "Material Palenight"
+    },
+    {
+      "color": "#d33682",
+      "id": "magenta",
+      "source": "Solarized Dark"
+    },
+    {
+      "color": "#ff79c5",
+      "id": "pink",
+      "source": "Dracula"
+    },
+    {
+      "color": "#f9826c",
+      "id": "coral",
+      "source": "GitHub Dark"
+    },
+    {
+      "color": "#ff9800",
+      "id": "orange",
+      "source": "Material Darker"
+    },
+    {
+      "color": "#ffd866",
+      "id": "yellow",
+      "source": "Monokai Pro"
+    }
+  ]
+}

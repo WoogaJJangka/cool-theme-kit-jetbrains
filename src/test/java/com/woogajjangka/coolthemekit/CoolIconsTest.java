@@ -57,7 +57,7 @@ public class CoolIconsTest {
         try (InputStream in = CoolIcons.class.getResourceAsStream("/coolicons/mapping.tsv")) {
             assertNotNull(in);
             for (String line : new String(in.readAllBytes(), java.nio.charset.StandardCharsets.UTF_8).split("\n")) {
-                if (line.isEmpty() || line.startsWith("#")) continue;
+                if (line.isEmpty() || line.startsWith("#") || line.startsWith("roleName\t")) continue; // a role, not an icon
                 String ref = line.split("\t")[2];
                 assertNotNull(ref, CoolIcons.class.getResource("/coolicons/" + ref + ".svg"));
             }

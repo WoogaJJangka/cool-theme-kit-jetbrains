@@ -36,6 +36,15 @@ final class CoolIcons {
     private static final Map<String, String> FOLDER_NAMES = new HashMap<>();
     private static final Map<String, String> FOLDER_NAMES_EXPANDED = new HashMap<>();
     private static final Map<String, String> DEFAULTS = new HashMap<>();
+    /** Every bundled icon by its VS Code name in lower case, for the associations of the user ({@link CoolAssociations}). */
+    private static final Map<String, String> FILE_ICONS = new HashMap<>();
+    private static final Map<String, String> FOLDER_ICONS = new HashMap<>();
+    private static final Map<String, String> FOLDER_ICONS_EXPANDED = new HashMap<>();
+    /** The file names with a role ({@code main.py} -> {@code run}), and the icon of those that have one of their own. */
+    private static final Map<String, String> ROLE_NAMES = new HashMap<>();
+    private static final Map<String, String> ROLE_OWN = new HashMap<>();
+    /** The flat icons ({@code iconStyle: "flat"}): the same names, drawn as the JetBrains icon plugin draws them. */
+    private static final String FLAT_ROOT = "/coolicons-flat/";
 
     /**
      * The VS Code language id of a JetBrains language whose id is not the same in lower case. An empty value: VS Code has
@@ -95,6 +104,11 @@ final class CoolIcons {
                     case "folderNames" -> FOLDER_NAMES;
                     case "folderNamesExpanded" -> FOLDER_NAMES_EXPANDED;
                     case "default" -> DEFAULTS;
+                    case "fileIcon" -> FILE_ICONS;
+                    case "folderIcon" -> FOLDER_ICONS;
+                    case "folderIconExpanded" -> FOLDER_ICONS_EXPANDED;
+                    case "roleName" -> ROLE_NAMES;
+                    case "roleOwn" -> ROLE_OWN;
                     default -> null;
                 };
                 if (target != null) target.put(parts[1], parts[2]);
@@ -122,10 +136,51 @@ final class CoolIcons {
 
     /** The icon of a language, from its VS Code id or its JetBrains id ({@code Shell Script}), or null. */
     static @Nullable String languageIcon(@Nullable String languageId) {
+        String id = vscodeLanguageId(languageId);
+        return id == null ? null : LANGUAGE_IDS.get(id);
+    }
+
+    /** The VS Code id of a language id, VS Code or JetBrains, in lower case; null for none. */
+    static @Nullable String vscodeLanguageId(@Nullable String languageId) {
         if (languageId == null) return null;
         String id = normalize(languageId);
         id = VSCODE_LANGUAGE_IDS.getOrDefault(id, id);
-        return id.isEmpty() ? null : LANGUAGE_IDS.get(id);
+        return id.isEmpty() ? null : id;
+    }
+
+    /** The icon of a whole file name in the theme ({@code name} normalized), or null. */
+    static @Nullable String fileNameIcon(@NotNull String name) {
+        return FILE_NAMES.get(name);
+    }
+
+    /** The icon of one extension in the theme ({@code d.ts}, normalized), or null. */
+    static @Nullable String fileExtensionIcon(@NotNull String extension) {
+        return FILE_EXTENSIONS.get(extension);
+    }
+
+    /** A bundled file icon by its VS Code name ({@code rust}, {@code typeScript}), in any case, or null. */
+    static @Nullable String bundledFileIcon(@NotNull String name) {
+        return FILE_ICONS.get(normalize(name.trim()));
+    }
+
+    /** A bundled folder icon by its VS Code name ({@code tests} is {@code folder-tests}), closed or open, or null. */
+    static @Nullable String bundledFolderIcon(@NotNull String name, boolean expanded) {
+        return (expanded ? FOLDER_ICONS_EXPANDED : FOLDER_ICONS).get(normalize(name.trim()));
+    }
+
+    /** Whether an icon ({@code files/rust}) is one of the plugin. */
+    static boolean isBundled(@Nullable String ref) {
+        return ref != null && (FILE_ICONS.containsValue(ref) || FOLDER_ICONS.containsValue(ref) || FOLDER_ICONS_EXPANDED.containsValue(ref));
+    }
+
+    /** The role of a file name ({@code run} for {@code main.py}, normalized), or null. */
+    static @Nullable String roleOf(@NotNull String name) {
+        return ROLE_NAMES.get(name);
+    }
+
+    /** The icon a name with a role has of its own, without the mark ({@code __init__.py}: PyCharm Python), or null. */
+    static @Nullable String roleOwnIcon(@NotNull String name) {
+        return ROLE_OWN.get(name);
     }
 
     static @Nullable String defaultFileIcon() {
@@ -166,10 +221,42 @@ final class CoolIcons {
         return rootFolderIcon(false);
     }
 
-    /** Loads {@code <dir>/<stem>.svg}; the IDE picks {@code <stem>_dark.svg} in a dark theme when there is one. */
+    /**
+     * Loads {@code <dir>/<stem>.svg}; the IDE picks {@code <stem>_dark.svg} in a dark theme when there is one. An icon
+     * drawn in the folder color is drawn again in the accent when {@code accentTargets} has {@code folders}.
+     */
     static @Nullable Icon load(@Nullable String ref) {
         if (ref == null) return null;
-        return IconLoader.findIcon(ROOT + ref + ".svg", CoolIcons.class.getClassLoader());
+        if (ref.startsWith(CoolAssociations.USER_FILE)) return loadUserFile(ref.substring(CoolAssociations.USER_FILE.length()));
+        boolean flat = CoolIconsSettings.flatIcons();
+        String folderColor = CoolIconsSettings.folderColor();
+        // each style lists the icons it draws in the folder color (folder-color.txt of coolicons and coolicons-flat)
+        if (folderColor != null && CoolRecoloredIcons.takesFolderColor(ref, flat)) {
+            Icon recolored = CoolRecoloredIcons.load(ref, folderColor, flat);
+            if (recolored != null) return recolored;
+        }
+        return IconLoader.findIcon((flat ? FLAT_ROOT : ROOT) + ref + ".svg", CoolIcons.class.getClassLoader());
+    }
+
+    /**
+     * An SVG file of the user, at the size of the icons of the theme (VS Code draws every icon of a theme at the same size,
+     * whatever the size of its svg). The same file in dark and light themes, as in VS Code.
+     */
+    private static @Nullable Icon loadUserFile(@NotNull String path) {
+        try {
+            Icon icon = IconLoader.findIcon(new java.io.File(path).toURI().toURL(), true);
+            Icon reference = IconLoader.findIcon(ROOT + defaultFileIcon() + ".svg", CoolIcons.class.getClassLoader());
+            if (icon == null || reference == null || icon.getIconWidth() <= 0) return icon;
+            return com.intellij.util.IconUtil.scaleByIconWidth(icon, null, reference);
+        } catch (java.net.MalformedURLException e) {
+            LOG.warn("Cannot load " + path, e);
+            return null;
+        }
+    }
+
+    /** Forgets the icons drawn in another folder color (the accent changed) */
+    static void clearRecolored() {
+        CoolRecoloredIcons.clear();
     }
 
     /** A folder icon that is the open folder while its row is expanded in a tree ({@link CoolFolderIcon}). */

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><clipPath id="ctk-m"><path clip-rule="evenodd" d="M0 0H16V16H0ZM7.8 12.3a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0Z"/></clipPath></defs><g clip-path="url(#ctk-m)"><svg x="0.18" y="0.18" width="13.44" height="13.44" viewBox="0 0 16 16" overflow="visible"><g >
+  <path fill="#FF5370" data-iconColor="Scala"
+        d="M13,1c-0.737.877-7.155,1.55-9.99,1.867V6.16c2.726-.249,9.265-0.736,9.951-1.867ZM12.99,5.439C12.253,6.316,5.835,6.989,3,7.306V10.6c2.726-.249,9.266-0.736,9.951-1.867ZM13,9.84c-0.737.877-7.155,1.551-9.99,1.867V15c2.726-.249,9.266-0.736,9.952-1.867Z"
+  />
+</g></svg></g><circle cx="12.3" cy="12.3" r="3.7" fill="#43a047"/><g transform="translate(12.3 12.3)"><path d="M-1.05-1.7 1.75 0-1.05 1.7Z" fill="#fff" stroke="#fff" stroke-width=".8" stroke-linejoin="round"/></g></svg>

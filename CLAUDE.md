@@ -30,7 +30,7 @@ PyCharm·JetBrains IDE 에서 쓰게 하는 플러그인. 2026-11-26 만듦.
 | 플러그인 zip (`build/distributions/`) | `./gradlew buildPlugin` |
 | 단위 테스트 | `./gradlew test` |
 | 샌드박스 IDE (폴더 열기) | `./gradlew runIde -PrunIdeProject=<폴더>` (샌드박스는 `java.exe` 창, 끄면 gradle 도 끝남) |
-| 아이콘 다시 복사 | `./gradlew syncIcons` (먼저 `../cool-theme-kit` 에서 `bun run build`) |
+| 아이콘 다시 복사 | `./gradlew syncIcons` (먼저 `../cool-theme-kit` 에서 `bun run build` → `bun run export:jetbrains` → `bun run export:jetbrains-icons`) |
 
 ## 구조
 - `CoolIcons`: `mapping.tsv` 읽기 + 이름 맞추기(플랫폼 서비스 없이 도는 순수 조회, 단위 테스트 대상).
@@ -52,6 +52,16 @@ PyCharm·JetBrains IDE 에서 쓰게 하는 플러그인. 2026-11-26 만듦.
 - **역할 표시 켜고 끄기**: Settings | Appearance & Behavior | Cool Theme Kit(`CoolIconsSettings`, `coolThemeKit.xml`) = VS Code
   `roleMarks`(기본 켬). 끄면 `files/role-<역할>-<x>` → `files/<x>`(표시 아래 아이콘). VS Code 에서 끈 결과(확장자 아이콘)와 같은지
   `CoolIconsParityTest` 가 모든 역할 이름으로 확인. 화면 문구는 `messages/CoolThemeKitBundle(_ko).properties`(한국어 필수).
-- 남은 차이 후보: VS Code 의 `filesAssociations`·`foldersAssociations`(사용자 이름 → 아이콘), `iconStyle: "flat"`, 테마 섞기
-  (`iconThemeLayers`, 기본 Material Icon Theme 의 fill). flat 은 Cool Theme Kit 을 flat 으로 빌드한 dist 가 하나 더 있어야 한다.
+- **아이콘 스타일(2026-11-27)**: VS Code `iconStyle`(glass 기본, flat). `bun run export:jetbrains-icons`(Cool Theme Kit
+  `src/scripts/jetbrains/exportIconVariants.ts`)가 `out/jetbrains-icons/flat/` 에 flat 테마를 만들고, `syncIcons` 가 플러그인이
+  가진 모든 svg 의 flat 판을 `coolicons-flat/` 로 복사한다(파일 이름의 설정 해시 `~<n>` 는 뗌). 이름 → 아이콘은 두 스타일이 같아서
+  (`syncIcons` 가 확인) `mapping.tsv` 는 하나. 강조색으로 다시 칠한 폴더(`CoolRecoloredIcons`)는 유리 아이콘에서만 칠한다.
+- **아이콘 연결(2026-11-27)**: VS Code `filesAssociations`·`foldersAssociations`·`languagesAssociations` = `CoolAssociations`
+  (설정 화면의 표 세 개). VS Code 생성기 규칙 그대로: `*.x`/`**.x` = 확장자, 그 밖 = 파일 이름, 폴더는 `.이름`·`_이름` 도, 값은
+  번들 아이콘 이름(대소문자 무시, `mapping.tsv` 의 `fileIcon`·`folderIcon(Expanded)` = dist 의 모든 아이콘) 또는 SVG 경로(절대·`~`,
+  폴더는 `-open.svg`/`_open.svg`). 역할 이름은 사용자 확장자 아이콘 위에 표시를 다시 얹는다(`role-<역할>-<x>`), 단 표시 없이도
+  제 아이콘이 있는 이름(`roleOwn`, `__init__.py` 등)은 그 아이콘 그대로. `CoolAssociationsParityTest` 가 VS Code 생성기로 만든
+  `associations.tsv` 와 비교한다. 일부러 다른 것: 없는 아이콘 이름·없는 SVG 는 무시(VS Code 는 빈 아이콘).
+- 남은 차이 후보: 테마 섞기(`iconThemeLayers`, 기본 Material Icon Theme 이 Cool Icons 가 모르는 이름을 채움), 폴더 색·채도·
+  불투명도·단색, 번들에 없는 역할 표시 아이콘(연결로 생긴 `role-<역할>-<x>` 가 dist 에 없으면 표시 없이).
 - 샌드박스 창은 `java.exe`(PyCharm `jbr`)라 computer-use 로 보려면 따로 허락이 필요하다.
