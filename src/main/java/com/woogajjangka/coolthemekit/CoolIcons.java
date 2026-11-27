@@ -167,6 +167,11 @@ final class CoolIcons {
         return (expanded ? FOLDER_ICONS_EXPANDED : FOLDER_ICONS).get(normalize(name.trim()));
     }
 
+    /** The icon of a dark variant ({@code files/readme_dark} -> {@code files/readme}); any other is returned as it is. */
+    static @NotNull String withoutDark(@NotNull String ref) {
+        return ref.endsWith("_dark") ? ref.substring(0, ref.length() - "_dark".length()) : ref;
+    }
+
     /** Whether an icon ({@code files/rust}) is one of the plugin. */
     static boolean isBundled(@Nullable String ref) {
         return ref != null && (FILE_ICONS.containsValue(ref) || FOLDER_ICONS.containsValue(ref) || FOLDER_ICONS_EXPANDED.containsValue(ref));
@@ -228,11 +233,13 @@ final class CoolIcons {
         if (ref == null) return null;
         if (ref.startsWith(CoolAssociations.USER_FILE)) return loadUserFile(ref.substring(CoolAssociations.USER_FILE.length()));
         String style = CoolIconsSettings.iconStyle();
-        String folderColor = CoolIconsSettings.folderColor();
-        // each style lists the icons it draws in the folder color (folder-color.txt of coolicons and coolicons-flat)
-        if (folderColor != null && CoolRecoloredIcons.takesFolderColor(ref, style)) {
-            Icon recolored = CoolRecoloredIcons.load(ref, folderColor, style);
-            if (recolored != null) return recolored;
+        // the folder color, monochrome, opacity, saturation: the icon drawn again (CoolIconFilters)
+        CoolIconFilters.Settings filters = CoolIconsSettings.filters();
+        boolean changed = filters.monochromeColor() != null || filters.opacity() < 1 || filters.saturation() < 1
+                || filters.folderColor() != null && CoolRecoloredIcons.takesFolderColor(ref, style);
+        if (changed) {
+            Icon filtered = CoolRecoloredIcons.load(ref, style, filters);
+            if (filtered != null) return filtered;
         }
         return IconLoader.findIcon(root(style) + ref + ".svg", CoolIcons.class.getClassLoader());
     }
@@ -261,7 +268,7 @@ final class CoolIcons {
         }
     }
 
-    /** Forgets the icons drawn in another folder color (the accent changed) */
+    /** Forgets the icons drawn with other filters (the accent or the icon filters changed) */
     static void clearRecolored() {
         CoolRecoloredIcons.clear();
     }

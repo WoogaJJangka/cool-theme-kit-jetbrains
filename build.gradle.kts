@@ -94,6 +94,14 @@ abstract class SyncCoolIcons : DefaultTask() {
     @get:OutputDirectories
     val styleDirs get() = iconStyles.get().map { stylesDir.get().dir("coolicons-$it") }
 
+    /** The text with LF line ends, as git keeps the icons (.gitattributes); VS Code writes them with CRLF on Windows. */
+    private fun lf(text: String) = text.replace("\r\n", "\n")
+
+    private fun copySvg(source: File, target: File) {
+        target.parentFile.mkdirs()
+        target.writeText(lf(source.readText(Charsets.UTF_8)), Charsets.UTF_8)
+    }
+
     @TaskAction
     fun sync() {
         val dist = distDir.get().asFile
@@ -127,7 +135,7 @@ abstract class SyncCoolIcons : DefaultTask() {
             if (!copied.add(key)) return
             val src = dist.resolve("$dir/$stem.svg")
             check(src.isFile) { "$src not found" }
-            src.copyTo(out.resolve("$dir/$stem.svg"), overwrite = true)
+            copySvg(src, out.resolve("$dir/$stem.svg"))
         }
 
         // Resolves the icon of one key for both themes and returns "<dir>/<stem>" (the light/base name).
@@ -233,7 +241,7 @@ abstract class SyncCoolIcons : DefaultTask() {
         val icons = folderColor["icons"] as Map<String, Map<String, String>>
         val used = icons.filterKeys { it in copied }.toSortedMap()
         for ((icon, svgs) in used) {
-            check(out.resolve("$icon.svg").readText(Charsets.UTF_8) == svgs["default"]) {
+            check(out.resolve("$icon.svg").readText(Charsets.UTF_8) == lf(svgs.getValue("default"))) {
                 "$icon differs from out/jetbrains: run `bun run build` and `bun run export:jetbrains` again"
             }
             check("${icon}_dark" !in copied) { "$icon takes the folder color but has a dark variant" }
@@ -295,7 +303,7 @@ abstract class SyncCoolIcons : DefaultTask() {
             styleOut.deleteRecursively()
             for (key in copied.sorted()) {
                 val src = styleFiles[key] ?: error("no $style icon for $key: run `bun run export:jetbrains-icons` again")
-                src.copyTo(styleOut.resolve("$key.svg"), overwrite = true)
+                copySvg(src, styleOut.resolve("$key.svg"))
             }
 
             @Suppress("UNCHECKED_CAST")
@@ -303,7 +311,7 @@ abstract class SyncCoolIcons : DefaultTask() {
                 ?: error("$folderColorFile has no $style icons: run `bun run export:jetbrains` again")
             val usedStyle = styleColored.filterKeys { it in copied }.toSortedMap()
             for ((icon, svgs) in usedStyle) {
-                check(styleOut.resolve("$icon.svg").readText(Charsets.UTF_8) == svgs["default"]) {
+                check(styleOut.resolve("$icon.svg").readText(Charsets.UTF_8) == lf(svgs.getValue("default"))) {
                     "$style $icon differs from out/jetbrains: run `bun run export:jetbrains` and `bun run export:jetbrains-icons` again"
                 }
             }
@@ -349,6 +357,11 @@ abstract class SyncCoolIcons : DefaultTask() {
             rows += "folder\t${folder["name"]}\t${refOf(folder["closed"] as Map<String, String>)}\t${refOf(folder["open"] as Map<String, String>)}"
         }
         fixtures.resolve("associations.tsv").writeText(rows.joinToString("\n", postfix = "\n"), Charsets.UTF_8)
+
+        // The filters: sample icons as VS Code draws them with folderColor, monochrome, opacity and saturation (CoolIconFiltersTest)
+        val filtersFile = iconsExport.resolve("filters.json")
+        check(filtersFile.isFile) { "$filtersFile not found: run `bun run export:jetbrains-icons` in Cool Theme Kit again" }
+        filtersFile.copyTo(fixtures.resolve("filters.json"), overwrite = true)
     }
 }
 

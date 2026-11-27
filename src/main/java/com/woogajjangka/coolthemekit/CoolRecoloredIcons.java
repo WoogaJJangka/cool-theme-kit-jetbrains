@@ -19,10 +19,11 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * The icons drawn in the folder color ({@code folder-color.txt} of {@code coolicons} and of each other style), drawn
- * again in another color ({@link CoolFolderColor}) for {@code accentTargets: folders}. The IDE loads an icon from a
- * file, so each color gets its files in the system folder of the IDE
- * ({@code <system>/cool-theme-kit/folder-color/<style>/<rrggbb>/}).
+ * The icons drawn again with the filters of the settings ({@link CoolIconFilters}): the folder color (the icons of
+ * {@code folder-color.txt} of {@code coolicons} and of each other style, for {@code folderColor} or
+ * {@code accentTargets: folders}), monochrome, opacity and saturation. The IDE loads an icon from a file, so each set of
+ * filters gets its files in the system folder of the IDE ({@code <system>/cool-theme-kit/icons/<style>/<filters>/}), the
+ * dark variant ({@code <x>_dark.svg}) next to the icon, where the IDE looks for it.
  */
 final class CoolRecoloredIcons {
     private static final Logger LOG = Logger.getInstance(CoolRecoloredIcons.class);
@@ -57,18 +58,29 @@ final class CoolRecoloredIcons {
         LOADED.clear();
     }
 
-    /** The icon in the color ({@code #rrggbb}), or null when it cannot be written */
-    static @Nullable Icon load(@NotNull String ref, @NotNull String color, @NotNull String style) {
-        return LOADED.computeIfAbsent(style + "/" + color + "/" + ref, key -> write(ref, color, style));
+    /** The icon with the filters, or null when it cannot be written */
+    static @Nullable Icon load(@NotNull String ref, @NotNull String style, @NotNull CoolIconFilters.Settings filters) {
+        return LOADED.computeIfAbsent(style + "/" + filters.key() + "/" + ref, key -> write(ref, style, filters));
     }
 
-    private static @Nullable Icon write(String ref, String color, String style) {
-        try (InputStream in = CoolRecoloredIcons.class.getResourceAsStream(CoolIcons.root(style) + ref + ".svg")) {
-            if (in == null) return null;
-            String original = new String(in.readAllBytes(), StandardCharsets.UTF_8);
-            String svg = CoolFolderColor.recolor(original, color, style);
-            String folder = "cool-theme-kit/folder-color/" + style + "/" + color.substring(1) + "/";
-            Path file = PathManager.getSystemDir().resolve(folder + ref + ".svg");
+    private static @Nullable Icon write(String ref, String style, CoolIconFilters.Settings filters) {
+        try {
+            Path folder = PathManager.getSystemDir().resolve("cool-theme-kit/icons/" + style + "/" + filters.key());
+            Path file = folder.resolve(ref + ".svg");
+            if (!writeFiltered(ref, ref, style, filters, file)) return null;
+            writeFiltered(ref + "_dark", ref, style, filters, folder.resolve(ref + "_dark.svg"));
+            return IconLoader.findIcon(file.toUri().toURL());
+        } catch (IOException | RuntimeException e) {
+            LOG.warn("Cannot draw " + ref + " with " + filters, e);
+            return null;
+        }
+    }
+
+    /** Writes the resource {@code variant} of the icon {@code ref} with the filters; false when there is no such resource */
+    private static boolean writeFiltered(String variant, String ref, String style, CoolIconFilters.Settings filters, Path file) throws IOException {
+        try (InputStream in = CoolRecoloredIcons.class.getResourceAsStream(CoolIcons.root(style) + variant + ".svg")) {
+            if (in == null) return false;
+            String svg = CoolIconFilters.apply(new String(in.readAllBytes(), StandardCharsets.UTF_8), ref, style, filters);
             byte[] bytes = svg.getBytes(StandardCharsets.UTF_8);
             if (!Files.isRegularFile(file) || !java.util.Arrays.equals(Files.readAllBytes(file), bytes)) {
                 Files.createDirectories(file.getParent());
@@ -76,10 +88,7 @@ final class CoolRecoloredIcons {
                 Files.write(temporary, bytes);
                 Files.move(temporary, file, StandardCopyOption.REPLACE_EXISTING, StandardCopyOption.ATOMIC_MOVE);
             }
-            return IconLoader.findIcon(file.toUri().toURL());
-        } catch (IOException | RuntimeException e) {
-            LOG.warn("Cannot draw " + ref + " in " + color, e);
-            return null;
+            return true;
         }
     }
 }

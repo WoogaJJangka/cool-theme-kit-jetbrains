@@ -43,6 +43,11 @@ public final class CoolIconsConfigurable implements Configurable {
     private CoolAssociationsTable filesAssociations;
     private CoolAssociationsTable foldersAssociations;
     private CoolAssociationsTable languagesAssociations;
+    private ColorPanel folderColor;
+    private JBCheckBox monochrome;
+    private ColorPanel monochromeColor;
+    private com.intellij.ui.JBIntSpinner opacity;
+    private com.intellij.ui.JBIntSpinner saturation;
     private ComboBox<CoolAccent.Preset> accentPreset;
     private ColorPanel accentColor;
     private final List<JBCheckBox> targets = new ArrayList<>();
@@ -77,6 +82,19 @@ public final class CoolIconsConfigurable implements Configurable {
                 CoolThemeKitBundle.message("settings.associations.icon"));
         languagesAssociations = new CoolAssociationsTable(CoolThemeKitBundle.message("settings.associations.languages.name"),
                 CoolThemeKitBundle.message("settings.associations.icon"));
+
+        folderColor = new ColorPanel();
+        folderColor.setSupportTransparency(false);
+        monochrome = new JBCheckBox(CoolThemeKitBundle.message("settings.monochrome"));
+        monochromeColor = new ColorPanel();
+        monochromeColor.setSupportTransparency(false);
+        monochrome.addActionListener(event -> monochromeColor.setEnabled(monochrome.isSelected()));
+        JPanel monochromeRow = new JPanel(new FlowLayout(FlowLayout.LEFT, 0, 0));
+        monochromeRow.add(monochrome);
+        monochromeRow.add(javax.swing.Box.createHorizontalStrut(JBUI.scale(8)));
+        monochromeRow.add(monochromeColor);
+        opacity = new com.intellij.ui.JBIntSpinner(100, 0, 100, 5);
+        saturation = new com.intellij.ui.JBIntSpinner(100, 0, 100, 5);
 
         List<CoolAccent.Preset> presets = new ArrayList<>(CoolAccent.PRESETS);
         presets.add(CUSTOM);
@@ -128,6 +146,13 @@ public final class CoolIconsConfigurable implements Configurable {
                 .addComponentToRightColumn(hint(CoolThemeKitBundle.message("settings.iconStyle.hint")), 0)
                 .addComponent(roleMarks)
                 .addComponentToRightColumn(hint(CoolThemeKitBundle.message("settings.roleMarks.hint")), 0)
+                .addComponent(new TitledSeparator(CoolThemeKitBundle.message("settings.colors.title")), JBUI.scale(12))
+                .addLabeledComponent(CoolThemeKitBundle.message("settings.folderColor"), folderColor)
+                .addComponentToRightColumn(hint(CoolThemeKitBundle.message("settings.folderColor.hint")), 0)
+                .addComponent(monochromeRow)
+                .addLabeledComponent(CoolThemeKitBundle.message("settings.opacity"), opacity)
+                .addLabeledComponent(CoolThemeKitBundle.message("settings.saturation"), saturation)
+                .addComponentToRightColumn(hint(CoolThemeKitBundle.message("settings.colors.hint")), 0)
                 .addComponent(new TitledSeparator(CoolThemeKitBundle.message("settings.associations.title")), JBUI.scale(12))
                 .addComponent(hint(CoolThemeKitBundle.message("settings.associations.hint")))
                 .addLabeledComponent(CoolThemeKitBundle.message("settings.associations.files"), filesAssociations.getComponent(), true)
@@ -186,6 +211,11 @@ public final class CoolIconsConfigurable implements Configurable {
                 || !filesAssociations.getValue().equals(orEmpty(state.filesAssociations))
                 || !foldersAssociations.getValue().equals(orEmpty(state.foldersAssociations))
                 || !languagesAssociations.getValue().equals(orEmpty(state.languagesAssociations))
+                || !chosenColor(folderColor, state.folderColor).equals(state.folderColor)
+                || monochrome.isSelected() != state.monochrome
+                || !chosenColor(monochromeColor, state.monochromeColor).equals(state.monochromeColor)
+                || percent(opacity) != state.opacity
+                || percent(saturation) != state.saturation
                 || !Objects.equals(chosenAccent(), CoolIconsSettings.accent())
                 || !chosenTargets().equals(CoolIconsSettings.accentTargets());
     }
@@ -196,6 +226,9 @@ public final class CoolIconsConfigurable implements Configurable {
         settings.setRoleMarks(roleMarks.isSelected());
         settings.setIcons((String) Objects.requireNonNull(iconStyle.getSelectedItem()), filesAssociations.getValue(),
                 foldersAssociations.getValue(), languagesAssociations.getValue());
+        CoolIconsSettings.State state = settings.getState();
+        settings.setFilters(chosenColor(folderColor, state.folderColor), monochrome.isSelected(),
+                chosenColor(monochromeColor, state.monochromeColor), percent(opacity), percent(saturation));
         if (settings.setAccent(chosenAccent(), chosenTargets())) offerRestart();
     }
 
@@ -220,12 +253,38 @@ public final class CoolIconsConfigurable implements Configurable {
         filesAssociations.setValue(orEmpty(state.filesAssociations));
         foldersAssociations.setValue(orEmpty(state.foldersAssociations));
         languagesAssociations.setValue(orEmpty(state.languagesAssociations));
+        folderColor.setSelectedColor(colorOf(state.folderColor));
+        monochrome.setSelected(state.monochrome);
+        monochromeColor.setSelectedColor(colorOf(state.monochromeColor));
+        monochromeColor.setEnabled(state.monochrome);
+        opacity.setNumber((int) Math.round(Math.max(0, Math.min(1, state.opacity)) * 100));
+        saturation.setNumber((int) Math.round(Math.max(0, Math.min(1, state.saturation)) * 100));
         String accent = CoolIconsSettings.accent();
         Color color = CoolAccent.toColor(accent != null ? accent : CoolAccent.DEFAULT_ACCENT);
         setColor(color);
         selectPreset(color);
         List<String> chosen = CoolIconsSettings.accentTargets();
         for (JBCheckBox box : targets) box.setSelected(chosen.contains((String) box.getClientProperty("target")));
+    }
+
+    /** The color of a panel as the settings keep it ({@code #rrggbb}); the saved value when it is the same color */
+    private static String chosenColor(ColorPanel panel, String saved) {
+        Color color = panel.getSelectedColor();
+        if (color == null) return saved;
+        Color before = colorOf(saved);
+        return color.equals(before) ? saved : CoolAccent.toHex(color);
+    }
+
+    private static Color colorOf(String value) {
+        String hex = CoolIconsSettings.hexColor(value);
+        if (hex == null) hex = CoolFolderColor.DEFAULT_COLOR;
+        if (hex.length() == 4) hex = "#" + hex.charAt(1) + hex.charAt(1) + hex.charAt(2) + hex.charAt(2) + hex.charAt(3) + hex.charAt(3);
+        return CoolAccent.toColor(hex);
+    }
+
+    /** The value of a spinner of 0 to 100 as a value of 0 to 1 */
+    private static double percent(com.intellij.ui.JBIntSpinner spinner) {
+        return spinner.getNumber() / 100.0;
     }
 
     private static java.util.Map<String, String> orEmpty(@Nullable java.util.Map<String, String> map) {
@@ -239,6 +298,11 @@ public final class CoolIconsConfigurable implements Configurable {
         filesAssociations = null;
         foldersAssociations = null;
         languagesAssociations = null;
+        folderColor = null;
+        monochrome = null;
+        monochromeColor = null;
+        opacity = null;
+        saturation = null;
         accentPreset = null;
         accentColor = null;
         targets.clear();
