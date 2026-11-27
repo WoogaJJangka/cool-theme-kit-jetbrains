@@ -48,6 +48,8 @@ public final class CoolIconsSettings implements PersistentStateComponent<CoolIco
         /** VS Code {@code opacity} and {@code saturation}, from 0 to 1 */
         public double opacity = 1;
         public double saturation = 1;
+        /** VS Code {@code iconThemeLayers}: the names Cool Icons has no icon for get the one of Material Icon Theme */
+        public boolean iconThemeLayers = true;
     }
 
     static final String GLASS = "glass";
@@ -102,6 +104,17 @@ public final class CoolIconsSettings implements PersistentStateComponent<CoolIco
     /** A color of the settings ({@code #rgb} or {@code #rrggbb}, as VS Code accepts), or null */
     static @Nullable String hexColor(@Nullable String value) {
         return value != null && value.trim().matches("#([\\dA-Fa-f]{6}|[\\dA-Fa-f]{3})") ? value.trim() : null;
+    }
+
+    /** Whether the icons of Material Icon Theme fill the names Cool Icons has no icon for; true in the unit tests. */
+    static boolean iconThemeLayers() {
+        return ApplicationManager.getApplication() == null || getInstance().state.iconThemeLayers;
+    }
+
+    void setIconThemeLayers(boolean iconThemeLayers) {
+        if (state.iconThemeLayers == iconThemeLayers) return;
+        state.iconThemeLayers = iconThemeLayers;
+        refreshIcons();
     }
 
     /** The filters of the icons: the folder color (or accent), monochrome, opacity, saturation; none in the unit tests. */

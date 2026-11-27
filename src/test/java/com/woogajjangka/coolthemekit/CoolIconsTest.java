@@ -6,7 +6,9 @@ import java.io.InputStream;
 import java.text.Normalizer;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 /** Name matching follows VS Code, so a name gets the icon Cool Theme Kit gives it there. */
 public class CoolIconsTest {
@@ -50,6 +52,23 @@ public class CoolIconsTest {
     public void koreanNamesInNfdMatch() {
         String nfd = Normalizer.normalize("한글.py", Normalizer.Form.NFD);
         assertEquals(CoolIcons.fileIcon("한글.py", null), CoolIcons.fileIcon(nfd, null));
+    }
+
+    @Test
+    public void namesWithoutACoolIconGetTheOneOfMaterialIconTheme() throws Exception {
+        // iconThemeLayers by default: Material Icon Theme fills the names Cool Icons has no icon for, never the others
+        assertEquals("layers/material-icon-theme_xml", CoolIcons.nameIcon("Strings.resx"));
+        assertTrue(CoolIcons.folderIcon("-rust").startsWith(CoolIcons.LAYERS));
+        assertFalse("a name of Cool Icons keeps its icon", CoolIcons.nameIcon("x.py").startsWith(CoolIcons.LAYERS));
+        assertNotNull("the license of Material Icon Theme ships with its icons",
+                CoolIcons.class.getResource("/coolicons/layers/LICENSE-material-icon-theme.txt"));
+        long layered;
+        try (InputStream in = CoolIcons.class.getResourceAsStream("/coolicons/mapping.tsv")) {
+            assertNotNull(in);
+            layered = new String(in.readAllBytes(), java.nio.charset.StandardCharsets.UTF_8).lines()
+                    .filter(line -> line.contains("\t" + CoolIcons.LAYERS)).count();
+        }
+        assertTrue(layered + " names from other themes", layered > 1000);
     }
 
     @Test

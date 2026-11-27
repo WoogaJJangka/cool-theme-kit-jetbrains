@@ -39,6 +39,7 @@ public final class CoolIconsConfigurable implements Configurable {
     private static final CoolAccent.Preset CUSTOM = new CoolAccent.Preset("custom", "", null);
 
     private JBCheckBox roleMarks;
+    private JBCheckBox iconThemeLayers;
     private ComboBox<String> iconStyle;
     private CoolAssociationsTable filesAssociations;
     private CoolAssociationsTable foldersAssociations;
@@ -69,6 +70,7 @@ public final class CoolIconsConfigurable implements Configurable {
     @Override
     public @Nullable JComponent createComponent() {
         roleMarks = new JBCheckBox(CoolThemeKitBundle.message("settings.roleMarks"));
+        iconThemeLayers = new JBCheckBox(CoolThemeKitBundle.message("settings.iconThemeLayers"));
         iconStyle = new ComboBox<>(CoolIconsSettings.STYLES.toArray(String[]::new));
         iconStyle.setRenderer(new SimpleListCellRenderer<>() {
             @Override
@@ -146,6 +148,8 @@ public final class CoolIconsConfigurable implements Configurable {
                 .addComponentToRightColumn(hint(CoolThemeKitBundle.message("settings.iconStyle.hint")), 0)
                 .addComponent(roleMarks)
                 .addComponentToRightColumn(hint(CoolThemeKitBundle.message("settings.roleMarks.hint")), 0)
+                .addComponent(iconThemeLayers)
+                .addComponentToRightColumn(hint(CoolThemeKitBundle.message("settings.iconThemeLayers.hint")), 0)
                 .addComponent(new TitledSeparator(CoolThemeKitBundle.message("settings.colors.title")), JBUI.scale(12))
                 .addLabeledComponent(CoolThemeKitBundle.message("settings.folderColor"), folderColor)
                 .addComponentToRightColumn(hint(CoolThemeKitBundle.message("settings.folderColor.hint")), 0)
@@ -207,6 +211,7 @@ public final class CoolIconsConfigurable implements Configurable {
     public boolean isModified() {
         CoolIconsSettings.State state = CoolIconsSettings.getInstance().getState();
         return roleMarks.isSelected() != state.roleMarks
+                || iconThemeLayers.isSelected() != state.iconThemeLayers
                 || !Objects.equals(iconStyle.getSelectedItem(), CoolIconsSettings.iconStyle())
                 || !filesAssociations.getValue().equals(orEmpty(state.filesAssociations))
                 || !foldersAssociations.getValue().equals(orEmpty(state.foldersAssociations))
@@ -224,6 +229,7 @@ public final class CoolIconsConfigurable implements Configurable {
     public void apply() {
         CoolIconsSettings settings = CoolIconsSettings.getInstance();
         settings.setRoleMarks(roleMarks.isSelected());
+        settings.setIconThemeLayers(iconThemeLayers.isSelected());
         settings.setIcons((String) Objects.requireNonNull(iconStyle.getSelectedItem()), filesAssociations.getValue(),
                 foldersAssociations.getValue(), languagesAssociations.getValue());
         CoolIconsSettings.State state = settings.getState();
@@ -249,6 +255,7 @@ public final class CoolIconsConfigurable implements Configurable {
     public void reset() {
         CoolIconsSettings.State state = CoolIconsSettings.getInstance().getState();
         roleMarks.setSelected(state.roleMarks);
+        iconThemeLayers.setSelected(state.iconThemeLayers);
         iconStyle.setSelectedItem(CoolIconsSettings.iconStyle());
         filesAssociations.setValue(orEmpty(state.filesAssociations));
         foldersAssociations.setValue(orEmpty(state.foldersAssociations));
@@ -294,6 +301,7 @@ public final class CoolIconsConfigurable implements Configurable {
     @Override
     public void disposeUIResources() {
         roleMarks = null;
+        iconThemeLayers = null;
         iconStyle = null;
         filesAssociations = null;
         foldersAssociations = null;
