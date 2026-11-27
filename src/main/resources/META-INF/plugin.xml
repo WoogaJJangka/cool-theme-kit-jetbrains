@@ -39,6 +39,8 @@
                             serviceImplementation="com.woogajjangka.coolthemekit.CoolThemeCustomizer"
                             overrides="true"/>
         <notificationGroup id="Cool Theme Kit" displayType="BALLOON" key="settings.title"/>
+        <postStartupActivity implementation="com.woogajjangka.coolthemekit.CoolAccentApplier$Startup"/>
+        <editorFactoryListener implementation="com.woogajjangka.coolthemekit.CoolAccentApplier"/>
     </extensions>
 
     <applicationListeners>

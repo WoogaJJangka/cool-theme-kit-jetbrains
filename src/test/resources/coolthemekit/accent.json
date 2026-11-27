@@ -5922,6 +5922,16 @@
     }
   ],
   "defaultAccent": "#3871e1",
+  "editor": {
+    "dark": {
+      "link": "#548af7",
+      "selection": "#214283"
+    },
+    "light": {
+      "link": "#006dcc",
+      "selection": "#a6d2ff"
+    }
+  },
   "editorBackground": {
     "dark": "#191a1c",
     "light": "#ffffff"

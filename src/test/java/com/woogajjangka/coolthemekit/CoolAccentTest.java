@@ -75,6 +75,17 @@ public class CoolAccentTest {
     }
 
     @Test
+    public void editorColorsOfVsCode() throws Exception {
+        JsonObject editor = fixture("accent.json").getAsJsonObject("editor");
+        for (String[] theme : new String[][]{{"Islands Dark", "dark"}, {"Islands Light", "light"}}) {
+            JsonObject colors = editor.getAsJsonObject(theme[1]);
+            CoolAccentApplier.Islands islands = CoolAccentApplier.EDITORS.get(theme[0]);
+            assertEquals(theme[0], colors.get("selection").getAsString(), islands.selection());
+            assertEquals(theme[0], colors.get("link").getAsString(), islands.link());
+        }
+    }
+
+    @Test
     public void colorsOfTheIde() {
         assertEquals("#3871e1", CoolAccent.toHex(CoolAccent.toColor("#3871E1")));
         assertEquals("#2f5eb9b3", CoolAccent.toHex(CoolAccent.toColor("#2f5eb9b3")));
