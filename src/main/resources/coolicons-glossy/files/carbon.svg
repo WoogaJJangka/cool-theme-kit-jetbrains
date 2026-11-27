@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><filter id="ctk-w" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><filter id="ctk-n" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><mask id="ctk-s" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/></mask><mask id="ctk-e" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/><use href="#ctk-i" y="0.8" filter="url(#ctk-n)"/></mask><linearGradient id="ctk-g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.32"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-opacity="0"/><stop offset="1" stop-opacity="0.24"/></linearGradient></defs><g id="ctk-i"><svg x="0" y="0" width="16" height="16" viewBox="0 0 280 280" overflow="visible"><g >
+  <defs>
+    <mask id="Mask">
+      <g>
+      <path d="M0 1400 l0 -1400 1400 0 1400 0 0 1400 0 1400 -1400 0 -1400 0 0
+-1400z m1583 859 c145 -38 276 -146 340 -279 38 -79 67 -175 67 -222 l0 -28
+-105 0 -104 0 -10 38 c-5 20 -13 51 -17 67 -9 44 -68 146 -101 176 -15 15 -53
+40 -83 55 -50 26 -64 29 -155 29 -92 0 -104 -3 -154 -30 -119 -66 -194 -198
+-220 -388 -14 -101 -14 -452 0 -554 25 -187 93 -314 204 -381 55 -33 67 -37
+150 -40 106 -5 156 7 222 51 79 52 125 135 157 280 l6 27 107 0 106 0 -6 -49
+c-14 -118 -103 -282 -198 -365 -89 -78 -231 -126 -369 -126 -136 0 -240 35
+-351 117 -125 92 -219 281 -248 496 -14 101 -14 432 -1 534 35 258 173 475
+354 558 42 19 104 39 139 44 69 11 211 5 270 -10z" fill="black"/>
+        <circle cx="1400" cy="1400" r="1400" fill="white"/>
+      </g>
+    </mask>
+  </defs>
+
+  <g fill="#7E57C2" data-iconColor="Carbon"
+     transform="translate(0,280) scale(0.1,-0.1)"
+     mask="url(#Mask)">
+    <path d="M0 1400 l0 -1400 1400 0 1400 0 0 1400 0 1400 -1400 0 -1400 0 0
+-1400z m1583 859 c145 -38 276 -146 340 -279 38 -79 67 -175 67 -222 l0 -28
+-105 0 -104 0 -10 38 c-5 20 -13 51 -17 67 -9 44 -68 146 -101 176 -15 15 -53
+40 -83 55 -50 26 -64 29 -155 29 -92 0 -104 -3 -154 -30 -119 -66 -194 -198
+-220 -388 -14 -101 -14 -452 0 -554 25 -187 93 -314 204 -381 55 -33 67 -37
+150 -40 106 -5 156 7 222 51 79 52 125 135 157 280 l6 27 107 0 106 0 -6 -49
+c-14 -118 -103 -282 -198 -365 -89 -78 -231 -126 -369 -126 -136 0 -240 35
+-351 117 -125 92 -219 281 -248 496 -14 101 -14 432 -1 534 35 258 173 475
+354 558 42 19 104 39 139 44 69 11 211 5 270 -10z"/>
+    <path d="M0 1400 l0 -1400 1400 0 1400 0 0 1400 0 1400 -1400 0 -1400 0 0
+-1400z m1583 859 c145 -38 276 -146 340 -279 38 -79 67 -175 67 -222 l0 -28
+-105 0 -104 0 -10 38 c-5 20 -13 51 -17 67 -9 44 -68 146 -101 176 -15 15 -53
+40 -83 55 -50 26 -64 29 -155 29 -92 0 -104 -3 -154 -30 -119 -66 -194 -198
+-220 -388 -14 -101 -14 -452 0 -554 25 -187 93 -314 204 -381 55 -33 67 -37
+150 -40 106 -5 156 7 222 51 79 52 125 135 157 280 l6 27 107 0 106 0 -6 -49
+c-14 -118 -103 -282 -198 -365 -89 -78 -231 -126 -369 -126 -136 0 -240 35
+-351 117 -125 92 -219 281 -248 496 -14 101 -14 432 -1 534 35 258 173 475
+354 558 42 19 104 39 139 44 69 11 211 5 270 -10z"/>
+  </g>
+</g></svg></g><rect width="16" height="16" fill="url(#ctk-g)" mask="url(#ctk-s)"/><rect width="16" height="16" fill="#fff" fill-opacity="0.6" mask="url(#ctk-e)"/></svg>

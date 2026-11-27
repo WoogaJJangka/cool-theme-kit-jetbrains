@@ -17,19 +17,25 @@ final class CoolIconResolver {
     }
 
     static @Nullable Icon forFile(@NotNull String name, @Nullable FileType fileType) {
-        return CoolIcons.load(fileIcon(name, fileType, CoolIconsSettings.roleMarks()));
+        return CoolIcons.load(fileIcon(name, fileType, CoolIconsSettings.roleMarks(), CoolIconsSettings.associations()));
+    }
+
+    static @Nullable String fileIcon(@NotNull String name, @Nullable FileType fileType, boolean roleMarks) {
+        return fileIcon(name, fileType, roleMarks, CoolAssociations.NONE);
     }
 
     /**
      * The name first, as VS Code; then the language of the file type, or the language it is a dialect of (PostgreSQL is
-     * SQL, Angular templates are HTML) when VS Code has no icon for the dialect.
+     * SQL, Angular templates are HTML) when VS Code has no icon for the dialect. The associations of the user come first
+     * at each step ({@link CoolAssociations}).
      */
-    static @Nullable String fileIcon(@NotNull String name, @Nullable FileType fileType, boolean roleMarks) {
-        String icon = CoolIcons.nameIcon(name);
-        if (icon != null) return roleMarks ? icon : CoolIcons.withoutRoleMark(icon);
+    static @Nullable String fileIcon(@NotNull String name, @Nullable FileType fileType, boolean roleMarks,
+                                     @NotNull CoolAssociations associations) {
+        String icon = associations.nameIcon(name, roleMarks);
+        if (icon != null) return icon;
         if (fileType instanceof LanguageFileType languageFileType) {
             for (Language language = languageFileType.getLanguage(); language != null; language = language.getBaseLanguage()) {
-                icon = CoolIcons.languageIcon(language.getID());
+                icon = associations.languageIcon(language.getID());
                 if (icon != null) return icon;
             }
         }
@@ -52,6 +58,7 @@ final class CoolIconResolver {
             }
         }
         String name = folder.getName();
-        return CoolIcons.loadFolder(CoolIcons.folderIcon(name, false), CoolIcons.folderIcon(name, true));
+        CoolAssociations associations = CoolIconsSettings.associations();
+        return CoolIcons.loadFolder(associations.folderIcon(name, false), associations.folderIcon(name, true));
     }
 }

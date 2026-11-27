@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><filter id="ctk-w" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><filter id="ctk-n" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><mask id="ctk-s" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/></mask><mask id="ctk-e" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/><use href="#ctk-i" y="0.8" filter="url(#ctk-n)"/></mask><linearGradient id="ctk-g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.32"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-opacity="0"/><stop offset="1" stop-opacity="0.24"/></linearGradient></defs><g id="ctk-i"><svg x="0" y="0" width="16" height="16" viewBox="0 0 24 24" overflow="visible"><g fill="none">
+  <path fill="#00897b" data-folderColor="Verdaccio"
+        d="M20,18H4V8H20M20,6H12L10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6Z"/>
+  <g transform="translate(2.03e-4,-1.7e-5)" fill="#b2dfdb" data-folderIconColor="Verdaccio">
+    <path
+        d="m19.258 9.6055v0.00977h3.9141v-0.00977zm-8.416 0.029297 5.5547 11.107h1.8145l3.4707-6.9414h-3.1035l-1.2734 2.5488-3.3594-6.7148zm9.8926 2.7832 1.5938 0.0078 0.0039-0.0078z"/>
+    <path
+        d="m19.258 9.605v0.64258h1.2383l-0.20312 0.40625h-2.0273v0.64062h1.7012l-0.24219 0.48242h-2.4277v0.64062h5.0352l1.3867-2.8027h-0.54688v-0.00976z"/>
+  </g>
+</g></svg></g><rect width="16" height="16" fill="url(#ctk-g)" mask="url(#ctk-s)"/><rect width="16" height="16" fill="#fff" fill-opacity="0.6" mask="url(#ctk-e)"/></svg>

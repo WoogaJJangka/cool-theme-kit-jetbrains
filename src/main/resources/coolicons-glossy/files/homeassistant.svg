@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><filter id="ctk-w" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><filter id="ctk-n" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><mask id="ctk-s" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/></mask><mask id="ctk-e" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/><use href="#ctk-i" y="0.8" filter="url(#ctk-n)"/></mask><linearGradient id="ctk-g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.32"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-opacity="0"/><stop offset="1" stop-opacity="0.24"/></linearGradient></defs><g id="ctk-i"><svg x="0" y="0" width="16" height="16" viewBox="0 0 32 32" overflow="visible"><g >
+    <defs>
+        <mask id="Mask">
+            <rect x="0" y="0" width="32" height="32" fill="white"/>
+            <path
+                    d="M21.718,15.07a2.841,2.841,0,0,0-2.826,2.857,2.876,2.876,0,0,0,.224,1.116l-2.061,2.083V14.791a2.826,2.826,0,1,0-2.12,0v6.335l-2.061-2.083a2.876,2.876,0,0,0,.224-1.116,2.826,2.826,0,1,0-2.826,2.858,2.791,2.791,0,0,0,1.1-.227l3.559,3.6V28.5h2.12V24.157l3.56-3.6a2.782,2.782,0,0,0,1.1.227,2.858,2.858,0,0,0,0-5.715Zm-11.446,4a1.143,1.143,0,1,1,1.13-1.143A1.136,1.136,0,0,1,10.272,19.07ZM16,13.284a1.143,1.143,0,1,1,1.131-1.143A1.136,1.136,0,0,1,16,13.284Zm5.723,5.786a1.143,1.143,0,1,1,1.131-1.143A1.136,1.136,0,0,1,21.718,19.07Z"
+                    fill="black"/>
+        </mask>
+    </defs>
+    <g fill="#3dbcf3" data-iconColor="HomeAssistant" mask="url(#Mask)">
+        <path
+                d="M5.114,27.944V18.427H2.66a.668.668,0,0,1-.47-1.134L15.41,3.748h0a.819.819,0,0,1,1.166-.008l.007.007,6.9,7.037v-1.3h0a.553.553,0,0,1,.55-.556h2.292a.553.553,0,0,1,.549.556v4.78L29.812,17.3h0a.671.671,0,0,1-.01.942.657.657,0,0,1-.462.19H26.876v9.517a.553.553,0,0,1-.549.556H5.664A.553.553,0,0,1,5.114,27.944Z"/>
+        <path
+                d="M21.718,15.07a2.841,2.841,0,0,0-2.826,2.857,2.876,2.876,0,0,0,.224,1.116l-2.061,2.083V14.791a2.826,2.826,0,1,0-2.12,0v6.335l-2.061-2.083a2.876,2.876,0,0,0,.224-1.116,2.826,2.826,0,1,0-2.826,2.858,2.791,2.791,0,0,0,1.1-.227l3.559,3.6V28.5h2.12V24.157l3.56-3.6a2.782,2.782,0,0,0,1.1.227,2.858,2.858,0,0,0,0-5.715Zm-11.446,4a1.143,1.143,0,1,1,1.13-1.143A1.136,1.136,0,0,1,10.272,19.07ZM16,13.284a1.143,1.143,0,1,1,1.131-1.143A1.136,1.136,0,0,1,16,13.284Zm5.723,5.786a1.143,1.143,0,1,1,1.131-1.143A1.136,1.136,0,0,1,21.718,19.07Z"/>
+    </g>
+</g></svg></g><rect width="16" height="16" fill="url(#ctk-g)" mask="url(#ctk-s)"/><rect width="16" height="16" fill="#fff" fill-opacity="0.6" mask="url(#ctk-e)"/></svg>

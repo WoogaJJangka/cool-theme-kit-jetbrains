@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><filter id="ctk-w" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><filter id="ctk-n" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><mask id="ctk-s" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/></mask><mask id="ctk-e" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/><use href="#ctk-i" y="0.8" filter="url(#ctk-n)"/></mask><linearGradient id="ctk-g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.32"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-opacity="0"/><stop offset="1" stop-opacity="0.24"/></linearGradient></defs><g id="ctk-i"><svg x="0" y="0" width="16" height="16" viewBox="0 0 72 72" overflow="visible"><g >
+  <defs>
+    <mask id="Mask" maskUnits="userSpaceOnUse" x="0" y="0" width="72" height="72" fill="white">
+      <path d="M56 48H60C61.104 48 62 48.896 62 50V56C62 57.104 61.104 58 60 58H56V48Z"/>
+      <path d="M56 36H60C61.104 36 62 36.896 62 38V44C62 45.104 61.104 46 60 46H56V36Z"/>
+      <path d="M56 24H60C61.104 24 62 24.896 62 26V32C62 33.104 61.104 34 60 34H56V24Z"/>
+      <path d="M56 12H60C61.104 12 62 12.896 62 14V20C62 21.104 61.104 22 60 22H56V12Z"/>
+      <path d="M15 60V49H57V60C57 61.6477 55.6477 63 54 63H18C16.3523 63 15 61.6477 15 60Z"
+            stroke-width="2"/>
+      <path
+          d="M58 14V52C58 54.2 56.2 56 54 56H18C15.8 56 14 57.8 14 60V14C14 10.68 16.68 8 20 8H52C55.32 8 58 10.68 58 14Z"
+      />
+      <rect x="23" y="16" width="27" height="9" rx="2" fill="black"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#Mask)" fill="#A35CFF" data-iconColor="Polyglot Notebooks">
+    <path d="M56 48H60C61.104 48 62 48.896 62 50V56C62 57.104 61.104 58 60 58H56V48Z"/>
+    <path d="M56 36H60C61.104 36 62 36.896 62 38V44C62 45.104 61.104 46 60 46H56V36Z"/>
+    <path d="M56 24H60C61.104 24 62 24.896 62 26V32C62 33.104 61.104 34 60 34H56V24Z"/>
+    <path d="M56 12H60C61.104 12 62 12.896 62 14V20C62 21.104 61.104 22 60 22H56V12Z"/>
+    <path d="M15 60V49H57V60C57 61.6477 55.6477 63 54 63H18C16.3523 63 15 61.6477 15 60Z"
+          stroke-width="2"/>
+    <path
+        d="M58 14V52C58 54.2 56.2 56 54 56H18C15.8 56 14 57.8 14 60V14C14 10.68 16.68 8 20 8H52C55.32 8 58 10.68 58 14Z"
+    />
+    <rect x="23" y="16" width="27" height="9" rx="2" fill="white"/>
+  </g>
+</g></svg></g><rect width="16" height="16" fill="url(#ctk-g)" mask="url(#ctk-s)"/><rect width="16" height="16" fill="#fff" fill-opacity="0.6" mask="url(#ctk-e)"/></svg>

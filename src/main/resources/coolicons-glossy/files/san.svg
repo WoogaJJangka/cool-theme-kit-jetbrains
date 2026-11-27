@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><filter id="ctk-w" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><filter id="ctk-n" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><mask id="ctk-s" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/></mask><mask id="ctk-e" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/><use href="#ctk-i" y="0.8" filter="url(#ctk-n)"/></mask><linearGradient id="ctk-g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.32"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-opacity="0"/><stop offset="1" stop-opacity="0.24"/></linearGradient></defs><g id="ctk-i"><svg x="0" y="0" width="16" height="16" viewBox="0 0 300 300" overflow="visible"><g >
+    <g transform="matrix(1.0943 0 0 1.0943 -16.991 -8.4865)" fill="#295892" data-iconColor="San">
+        <g>
+            <g transform="matrix(.43318 0 0 .43318 52.078 -17.73)">
+                <polygon points="481.54 410.67 -17.453 511.76 -17.453 636.48 481.54 535.39"/>
+            </g>
+          <g transform="matrix(.43318 0 0 .43318 52.078 -17.73)">
+                <polygon points="481.54 212.46 -17.453 313.56 -17.453 438.27 481.54 337.18"/>
+            </g>
+          <g transform="matrix(.43318 0 0 .43318 52.078 -17.73)">
+                <polygon points="481.54 336.56 -17.453 238.75 -17.453 114.03 481.54 211.84"/>
+            </g>
+          <g transform="matrix(.43318 0 0 .43318 52.078 -17.73)">
+                <polygon points="481.54 534.77 -17.453 436.96 -17.453 312.24 481.54 410.05"/>
+            </g>
+        </g>
+    </g>
+</g></svg></g><rect width="16" height="16" fill="url(#ctk-g)" mask="url(#ctk-s)"/><rect width="16" height="16" fill="#fff" fill-opacity="0.6" mask="url(#ctk-e)"/></svg>

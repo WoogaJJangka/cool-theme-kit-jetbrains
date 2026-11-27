@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><filter id="ctk-w" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><filter id="ctk-n" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 1"/></feComponentTransfer></filter><mask id="ctk-s" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/></mask><mask id="ctk-e" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><use href="#ctk-i" filter="url(#ctk-w)"/><use href="#ctk-i" y="0.8" filter="url(#ctk-n)"/></mask><linearGradient id="ctk-g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.32"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-opacity="0"/><stop offset="1" stop-opacity="0.24"/></linearGradient></defs><g id="ctk-i"><svg x="0" y="0" width="16" height="16" viewBox="0 0 24 24" overflow="visible"><g >
+  <path data-folderColor="Scons" fill="#EF5350"
+        d="M20,18H4V8H20M20,6H12L10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6Z"/>
+  <g fill="#FFCDD2" data-folderIconColor="Scons">
+    <rect x="9" y="20.368" width="6.612" height="2.515"/>
+    <rect x="16.519" y="8.412" transform="matrix(0.4462 -0.8949 0.8949 0.4462 -0.6419 22.3977)" width="2.515"
+          height="6.612"/>
+    <rect x="16.388" y="20.368" width="6.612" height="2.515"/>
+    <rect x="9" y="17.345" width="3.676" height="2.515"/>
+    <rect x="19.324" y="17.345" width="3.676" height="2.515"/>
+    <path d="M16.55,16.962v-1.895c0-0.562,0.203-0.878,0.381-1.159c0.059-0.092,0.111-0.174,0.15-0.25l-0.976-0.508
+			c-0.026,0.05-0.062,0.105-0.101,0.166c-0.207,0.325-0.554,0.868-0.554,1.751v1.895h-0.874l1.431,2.898l1.418-2.898
+			C17.425,16.962,16.55,16.962,16.55,16.962z"/>
+  </g>
+</g></svg></g><rect width="16" height="16" fill="url(#ctk-g)" mask="url(#ctk-s)"/><rect width="16" height="16" fill="#fff" fill-opacity="0.6" mask="url(#ctk-e)"/></svg>
