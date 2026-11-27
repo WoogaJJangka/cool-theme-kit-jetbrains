@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-b" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#657983"/><stop offset="1" stop-color="#4f5f67"/></linearGradient><linearGradient id="ctk-f" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a1b1ba" stop-opacity="0.97"/><stop offset="1" stop-color="#738a96" stop-opacity="0.92"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.75"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><path d="M.5 3.9A1.9 1.9 0 0 1 2.4 2h3.3c.5 0 .98.2 1.34.55l.62.6c.36.36.84.55 1.34.55h4.6a1.9 1.9 0 0 1 1.9 1.9v7a1.9 1.9 0 0 1-1.9 1.9H2.4a1.9 1.9 0 0 1-1.9-1.9Z" fill="url(#ctk-b)"/><rect x=".5" y="5.1" width="15" height="9.4" rx="1.9" fill="url(#ctk-f)"/><rect x=".9" y="5.5" width="14.2" height="8.6" rx="1.5" fill="none" stroke="url(#ctk-r)" stroke-width=".7"/><svg x="0.125" y="2.025" width="10.9884" height="10.9884" viewBox="0 0 24 24" overflow="visible"><g clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.4142">
+    
+  <g id="image" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo" transform="translate(10 10) scale(0.08)" fill="#616161" data-folderIconColor="Cypress">
+            <circle cx="90" cy="90" r="86"/>
+          <path
+              d="M64,56 C71.5490744,56 78.4876056,58.7774238 83.9597969,63.4229874 L75.9013457,74.4302155 C73.151103,71.0556355 69.5027384,69 65.5,69 C56.9395864,69 50,78.4020203 50,90 C50,101.59798 56.9395864,111 65.5,111 C69.8072991,111 73.7042455,108.619645 76.5132895,104.776905 L84.2559877,116.322496 C78.739004,121.120951 71.6859434,124 64,124 C46.326888,124 32,108.777681 32,90 C32,71.2223185 46.326888,56 64,56 Z"
+              id="C" fill="#FFFFFF"></path>
+          <path
+              d="M85.5,58.5874023 L103.203613,58.5874023 L115.477051,109.667969 L129.157715,58.5874023 L147.118652,58.5874023 L123.617188,128.739258 C122.775391,130.755859 121.020508,133.252604 118.352539,136.229492 C114.350586,140.694824 113.276198,140.816073 109.259277,143.235352 C105.242356,145.65463 104.953681,145.72072 100.856934,146.766602 C98.1257683,147.463856 95.3404493,147.712879 92.5009766,147.513672 L90,136.229492 C94.2547967,135.295813 97.6177524,134.291744 100.088867,133.217285 C102.559982,132.142827 104.939214,130.650151 107.226562,128.739258 L85.5,58.5874023 Z"
+              id="Y" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</g></svg></svg>

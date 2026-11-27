@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-b" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#20a6b7"/><stop offset="1" stop-color="#198390"/></linearGradient><linearGradient id="ctk-f" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#67d7e5" stop-opacity="0.97"/><stop offset="1" stop-color="#24bed1" stop-opacity="0.92"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.75"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#12363a"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><path d="M.5 3.9A1.9 1.9 0 0 1 2.4 2h3.3c.5 0 .98.2 1.34.55l.62.6c.36.36.84.55 1.34.55h4.6a1.9 1.9 0 0 1 1.9 1.9v7a1.9 1.9 0 0 1-1.9 1.9H2.4a1.9 1.9 0 0 1-1.9-1.9Z" fill="url(#ctk-b)"/><rect x=".5" y="5.1" width="15" height="9.4" rx="1.9" fill="url(#ctk-f)"/><rect x=".9" y="5.5" width="14.2" height="8.6" rx="1.5" fill="none" stroke="url(#ctk-r)" stroke-width=".7"/><g filter="url(#ctk-k)"><svg x="-0.793" y="2.2521" width="11.9905" height="11.9905" viewBox="0 0 24 24" overflow="visible"><g >
+  
+  <g fill="#FFECB3" data-folderIconColor="Tauri">
+    <path d="M19.81 13.59a1.2 1.2 0 1 1-2.4.001 1.2 1.2 0 0 1 2.4 0Z"/>
+    <path d="M16.59 15.828a1.2 1.2 0 1 0 0 2.401 1.2 1.2 0 0 0 0-2.4Z"/>
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M21.097 17.438c-.482.312-1.02.53-1.582.644.163-.465.217-.962.158-1.451a3.22 3.22 0 1 0-3.678-4.917 5.347 5.347 0 0 0-1.757.513 4.583 4.583 0 1 1 6.86 5.211Zm-6.805-4.376 1.125.136c.025-.217.073-.43.142-.638a4.587 4.587 0 0 0-1.266.502Z"
+    />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M14.096 13.182a4.583 4.583 0 0 1 1.594-.65 3.213 3.213 0 0 0-.18 1.457 3.22 3.22 0 1 0 3.694 4.912 5.345 5.345 0 0 0 1.757-.508 4.583 4.583 0 1 1-6.865-5.211Zm6.805 4.376-.022.011.022-.01Z"
+    />
+  </g>
+</g></svg></g></svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5e6269"/><stop offset="1" stop-color="#32363c"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><svg x="2.1714" y="2.1714" width="11.6571" height="11.6571" viewBox="0 0 32 32" overflow="visible"><g >
+  <defs>
+    <mask id="Mask">
+      <g fill="#000">
+        <rect x="9" y="23" width="7" height="7"/>
+        <rect x="2" y="16" width="7" height="7"/>
+        <rect x="23" y="9" width="7" height="7"/>
+        <rect x="16" y="2" width="7" height="7"/>
+        <rect x="23" y="23" width="7" height="7"/>
+        <rect x="16" y="16" width="7" height="7"/>
+        <rect x="9" y="9" width="7" height="7"/>
+        <rect x="2" y="2" width="7" height="7"/>
+      </g>
+    </mask>
+  </defs>
+  <g fill="#f24b08" data-iconColor="Dylan">
+    <rect x="16" y="9" width="7" height="7"/>
+    <rect x="23" y="2" width="7" height="7"/>
+    <rect x="2" y="23" width="7" height="7"/>
+    <rect x="9" y="16" width="7" height="7"/>
+    <rect x="16" y="23" width="7" height="7"/>
+    <rect x="23" y="16" width="7" height="7"/>
+    <rect x="2" y="9" width="7" height="7"/>
+    <rect x="9" y="2" width="7" height="7"/>
+  </g>
+  <g mask="url(#Mask)">
+    <rect x="9" y="23" width="7" height="7"/>
+    <rect x="2" y="16" width="7" height="7"/>
+    <rect x="23" y="9" width="7" height="7"/>
+    <rect x="16" y="2" width="7" height="7"/>
+    <rect x="23" y="23" width="7" height="7"/>
+    <rect x="16" y="16" width="7" height="7"/>
+    <rect x="9" y="9" width="7" height="7"/>
+    <rect x="2" y="2" width="7" height="7"/>
+  </g>
+</g></svg><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

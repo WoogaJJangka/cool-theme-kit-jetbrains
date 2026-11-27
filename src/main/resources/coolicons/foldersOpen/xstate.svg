@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-b" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#00839b"/><stop offset="1" stop-color="#00677a"/></linearGradient><linearGradient id="ctk-f" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#4dbace" stop-opacity="0.97"/><stop offset="1" stop-color="#0096b2" stop-opacity="0.92"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.75"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><path d="M.5 3.9A1.9 1.9 0 0 1 2.4 2h3.3c.5 0 .98.2 1.34.55l.62.6c.36.36.84.55 1.34.55h4.6a1.9 1.9 0 0 1 1.9 1.9v7a1.9 1.9 0 0 1-1.9 1.9H2.4a1.9 1.9 0 0 1-1.9-1.9Z" fill="url(#ctk-b)"/><rect x="1.9" y="4.9" width="12.2" height="4.4" rx="1" fill="#fff" opacity=".6"/><rect x=".5" y="7.3" width="15" height="7.2" rx="1.9" fill="url(#ctk-f)"/><rect x=".9" y="7.7" width="14.2" height="6.4" rx="1.5" fill="none" stroke="url(#ctk-r)" stroke-width=".7"/><g filter="url(#ctk-k)"><svg x="0.7925" y="3.65" width="8.9091" height="10.6909" viewBox="0 -4 20 24" overflow="visible"><g >
+
+  
+
+  <g id="X-state-logo" transform="translate(11.000000, 7.000000)" fill="#e1f5fe" data-folderIconColor="XState"
+     fill-rule="nonzero">
+    <path d="M7.25999961,0 L9.6835443,0 L7.23514274,5 C6.48943668,3.43567251 6.50186511,1.53508772 7.25999961,0 Z"
+          id="Path"></path>
+    <polygon id="Path"
+             points="9.6835443 11 3.40869958 0 0.683544304 0 3.81397909 5.50707851 0.683544304 11 3.40869958 11 5.1835443 7.8996139 6.94441387 11"></polygon>
+  </g>
+</g></svg></g></svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#df4d42"/><stop offset="1" stop-color="#b52015"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="1.2751" y="1.2774" width="13.4363" height="13.4363" viewBox="0 0 300 300" overflow="visible"><g style="enable-background:new 0 0 300 300;">
+  <g fill="#D82619" data-iconColor="NextJS Error">
+	<path class="st0" d="M124.9,188.3L112,36.9c-0.8-8.7,6.3-16.3,15.4-16.3h45.6c8.9,0,16,7.4,15.4,16.2l-11.2,151.3
+		c-0.6,7.9-7.2,14-15.4,14h-21.4C132.3,202.1,125.7,196.1,124.9,188.3z M130.6,224.8H170c6,0,10.8,5.4,10.8,11.9v31
+		c0,6.6-4.8,11.9-10.8,11.9h-39.4c-6,0-10.8-5.4-10.8-11.9v-31C119.8,230.2,124.6,224.8,130.6,224.8z"/>
+</g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

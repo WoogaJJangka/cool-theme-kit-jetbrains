@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#309dd9"/><stop offset="1" stop-color="#0272b0"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="2.4481" y="2.4481" width="11.103" height="11.103" viewBox="0 0 300 300" overflow="visible"><g >
+  <g transform="translate(0,3)" fill="#0288d1" data-iconColor="Velocity">
+    <g transform="translate(-.00014751 .00011708)">
+      <path
+          d="m150 58.553a88.446 88.446 0 0 0 -88.447 88.447 88.446 88.446 0 0 0 88.447 88.446 88.446 88.446 0 0 0 88.446 -88.446 88.446 88.446 0 0 0 -88.446 -88.447zm.0114 25.082a63.353 63.353 0 0 1 63.353 63.353 63.353 63.353 0 0 1 -63.353 63.353 63.353 63.353 0 0 1 -63.353 -63.353 63.353 63.353 0 0 1 63.353 -63.353z"
+          style="paint-order:fill markers stroke"/>
+      <path transform="matrix(.26458 0 0 .26458 0 -3)"
+            d="m170.11 729.82-123.95 123.95 123.95 123.95v-76.521h396.82v-94.859h-396.82z"
+            style="stroke-width:15.81"/>
+      <path transform="matrix(.26458 0 0 .26458 0 -3)"
+            d="m280.02 46.154-123.95 123.95h76.521v396.82h94.861v-396.82h76.52z" style="stroke-width:15.81"/>
+      <path transform="matrix(.26458 0 0 .26458 0 -3)"
+            d="m963.75 156.11v76.521h-396.82v94.859h396.82v76.521l123.95-123.95z" style="stroke-width:15.81"/>
+      <path transform="matrix(.26458 0 0 .26458 0 -3)"
+            d="m806.26 566.93v396.82h-76.52l123.95 123.95 123.95-123.95h-76.521v-396.82z"
+            style="stroke-width:15.81"/>
+    </g>
+  </g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

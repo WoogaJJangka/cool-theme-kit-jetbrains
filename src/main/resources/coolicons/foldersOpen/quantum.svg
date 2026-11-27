@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-b" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#475c66"/><stop offset="1" stop-color="#374951"/></linearGradient><linearGradient id="ctk-f" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#879aa2" stop-opacity="0.97"/><stop offset="1" stop-color="#516a75" stop-opacity="0.92"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.75"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><path d="M.5 3.9A1.9 1.9 0 0 1 2.4 2h3.3c.5 0 .98.2 1.34.55l.62.6c.36.36.84.55 1.34.55h4.6a1.9 1.9 0 0 1 1.9 1.9v7a1.9 1.9 0 0 1-1.9 1.9H2.4a1.9 1.9 0 0 1-1.9-1.9Z" fill="url(#ctk-b)"/><rect x="1.9" y="4.9" width="12.2" height="4.4" rx="1" fill="#fff" opacity=".6"/><rect x=".5" y="7.3" width="15" height="7.2" rx="1.9" fill="url(#ctk-f)"/><rect x=".9" y="7.7" width="14.2" height="6.4" rx="1.5" fill="none" stroke="url(#ctk-r)" stroke-width=".7"/><g filter="url(#ctk-k)"><svg x="2.049" y="6.0486" width="8.1103" height="8.1103" viewBox="0 0 24 24" overflow="visible"><g >
+  
+
+  <g fill="#CFD8DC" data-folderIconColor="Quantum">
+    <path
+        d="M17.61,7.402l-5.241,2.604v9.295l5.241,2.603l5.241-2.604v-9.294L17.61,7.402z M21.186,18.393l-1.797,0.953l0.007,1.671l-5.362-2.623v-7.482l3.576-1.896l3.576,1.896V18.393L21.186,18.393z"/>
+    <path d="M17.611,10.913l-2.101,1.022v5.437l2.1,1.022l2.1-1.022v-5.437L17.611,10.913z"/>
+  </g>
+</g></svg></g></svg>

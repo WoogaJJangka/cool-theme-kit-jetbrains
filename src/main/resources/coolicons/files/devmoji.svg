@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5e6269"/><stop offset="1" stop-color="#32363c"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><svg x="2.4575" y="2.4633" width="11.085" height="11.085" viewBox="0 0 47.5 47.5" overflow="visible"><g >
+    <g transform="matrix(1.25,0,0,-1.25,0,47.5)" fill="#ffcc4d" data-iconColor="Devmoji">
+        <g transform="translate(36,20)">
+            <path d="m 0,0 c 0,-9.389 -7.611,-17 -17,-17 -9.388,0 -17,7.611 -17,17 0,9.388 7.612,17 17,17 C -7.611,17 0,9.388 0,0"/>
+        </g>
+        <g transform="translate(16.457,21.2031)">
+            <path d="m 0,0 c -0.06,0.135 -1.499,3.297 -4.457,3.297 -2.957,0 -4.397,-3.162 -4.457,-3.297 -0.092,-0.207 -0.032,-0.449 0.144,-0.591 0.177,-0.143 0.427,-0.147 0.61,-0.014 0.013,0.009 1.262,0.902 3.703,0.902 2.426,0 3.674,-0.881 3.702,-0.901 0.088,-0.066 0.193,-0.099 0.298,-0.099 0.11,0 0.221,0.036 0.311,0.109 C 0.033,-0.452 0.092,-0.208 0,0"
+                  fill="#664500"/>
+        </g>
+        <g transform="translate(32,23.5)">
+            <path d="m 0,0 c 0,-3.59 -2.91,-6.5 -6.5,-6.5 -3.59,0 -6.5,2.91 -6.5,6.5 0,3.59 2.91,6.5 6.5,6.5 C -2.91,6.5 0,3.59 0,0"
+                  fill="#f5f8fa"/>
+        </g>
+        <g transform="translate(28,23.5)">
+            <path d="M 0,0 C 0,-1.381 -1.119,-2.5 -2.5,-2.5 -3.881,-2.5 -5,-1.381 -5,0 -5,1.381 -3.881,2.5 -2.5,2.5 -1.119,2.5 0,1.381 0,0"
+                  fill="#292f33"/>
+        </g>
+        <g transform="translate(8,15)">
+            <path d="m 0,0 c 0,-3.964 4.596,-9 11,-9 6.404,0 11,5 11,9 0,0 -10.333,-2.756 -22,0" fill="#664500"/>
+        </g>
+        <g transform="translate(13,13.1191)">
+            <path d="m 0,0 0,-6.083 c 0,-3 2,-6 6,-6 4,0 6,3 6,6 l 0,6.042 C 5.708,-1.333 0,0 0,0" fill="#e75a70"/>
+        </g>
+    </g>
+</g></svg><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-b" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#379b6e"/><stop offset="1" stop-color="#2b7956"/></linearGradient><linearGradient id="ctk-f" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7acda8" stop-opacity="0.97"/><stop offset="1" stop-color="#3eb17e" stop-opacity="0.92"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.75"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><path d="M.5 3.9A1.9 1.9 0 0 1 2.4 2h3.3c.5 0 .98.2 1.34.55l.62.6c.36.36.84.55 1.34.55h4.6a1.9 1.9 0 0 1 1.9 1.9v7a1.9 1.9 0 0 1-1.9 1.9H2.4a1.9 1.9 0 0 1-1.9-1.9Z" fill="url(#ctk-b)"/><rect x="1.9" y="4.9" width="12.2" height="4.4" rx="1" fill="#fff" opacity=".6"/><rect x=".5" y="7.3" width="15" height="7.2" rx="1.9" fill="url(#ctk-f)"/><rect x=".9" y="7.7" width="14.2" height="6.4" rx="1.5" fill="none" stroke="url(#ctk-r)" stroke-width=".7"/><svg x="0.3519" y="4.9681" width="9.8" height="9.8" viewBox="0 0 24 24" overflow="visible"><g clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.4142">
+  
+
+  <g transform="translate(.31059 -.41355)">
+    <path
+        d="m14.924 9.1855c-0.82833 0-1.4997 0.6715-1.4997 1.5v9c0 0.8285 0.67137 1.5 1.4997 1.5h7.0006c0.82833 0 1.4997-0.6715 1.4997-1.5v-9c0-0.8285-0.67137-1.5-1.4997-1.5z"
+        fill="#e8f5e9" stroke-width="1.2326" data-folderIconColor="VuePress"/>
+    <g transform="matrix(.34054 0 0 .34054 14.337 10.928)">
+      <path d="m1.791 3.6914 10.209 17.619 10.209-17.533v-0.085938h-3.9688l-6.1816 10.615-6.1523-10.615z"
+            fill="#41b883" data-folderColor="VuePress"/>
+      <path d="m5.9072 3.6914 6.1521 10.617 6.1809-10.617h-3.7228l-2.4337 4.1783-2.4226-4.1783z" fill="#35495e"/>
+    </g>
+  </g>
+</g></svg></svg>

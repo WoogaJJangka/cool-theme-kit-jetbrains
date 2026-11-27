@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e14e8f"/><stop offset="1" stop-color="#b82164"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="2.1827" y="2.1827" width="11.4768" height="11.4768" viewBox="-2 -2 32 32" overflow="visible"><g fill="none">
+  <path
+      d="M0 14.221c0 11.47 2.752 14.221 14.221 14.221 11.47 0 14.221-2.751 14.221-14.22C28.442 2.751 25.691 0 14.222 0 2.751 0 0 2.752 0 14.221Z"
+      fill="#DB2777" data-iconColor="Japa">
+  </path>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

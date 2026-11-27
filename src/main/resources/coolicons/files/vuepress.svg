@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#98d19a"/><stop offset="1" stop-color="#6ca76f"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#223422"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="2.658" y="2.658" width="10.6839" height="10.6839" viewBox="0 0 24 24" overflow="visible"><g >
+  <g clip-rule="evenodd" fill-rule="evenodd" fill="#81c784" data-iconColor="Vuepress">
+    <path
+        d="m5 0c-.79565 0-1.55871.31607-2.12132.878679-.56261.562611-.87868 1.325671-.87868 2.121321v18c0 .7957.31607 1.5587.87868 2.1213s1.32567.8787 2.12132.8787h14c.7956 0 1.5587-.3161 2.1213-.8787s.8787-1.3256.8787-2.1213v-18c0-.79565-.3161-1.55871-.8787-2.121321-.5626-.562609-1.3257-.878679-2.1213-.878679z"
+        fill="none" stroke="#81c784" data-iconColor="Vuepress"/>
+    <path d="m5 6.002 7 11.998 7-11.94001v-.05999h-2.7219l-4.2378 7.2288-4.21775-7.2268z"/>
+    <path d="m8 6 3.9895 7 4.0105-7h-2.4158l-1.5775 2.75353-1.5718-2.75353z"/>
+  </g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#df447d"/><stop offset="1" stop-color="#b51751"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="1.8526" y="1.846" width="12.361" height="12.361" viewBox="0 0 28 28" overflow="visible"><g >
+  <g fill="#d81b60" data-iconColor="Turborepo">
+    <path
+        d="M13.94 6.42a7.53 7.53 0 1 0 .02 15.05 7.53 7.53 0 0 0-.02-15.05Zm0 11.41a3.89 3.89 0 1 1 0-7.78 3.89 3.89 0 0 1 0 7.78Z"/>
+    <path fill-rule="evenodd"
+          d="M14.57 5.19V2.38a11.58 11.58 0 0 1 0 23.12v-2.8a8.79 8.79 0 0 0 0-17.51ZM7.31 19.68a8.74 8.74 0 0 1-2.12-5.11H2.38c.15 2.72 1.23 5.2 2.94 7.1l1.99-1.99Zm6 5.82v-2.8a8.73 8.73 0 0 1-5.11-2.13l-2 1.99c1.9 1.7 4.38 2.8 7.1 2.94Z"/>
+  </g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

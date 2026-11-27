@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#47aef2"/><stop offset="1" stop-color="#1983c9"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="out"/></filter><clipPath id="ctk-c"><rect x="2.2" y="5.5017" width="11.6" height="4.9965"/></clipPath></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g clip-path="url(#ctk-c)"><g filter="url(#ctk-k)"><svg x="0.2664" y="0.1852" width="15.467" height="15.467" viewBox="0 0 439.875 439.875" overflow="visible"><g >
+<g fill="#1E9CEF" data-iconColor="ASP">
+    <path d="M114.75,172.125H95.625c-11.475,0-19.125,7.65-19.125,19.125v19.125h57.375V191.25
+C133.875,179.775,126.225,172.125,114.75,172.125z"/>
+  <path d="M344.25,172.125H306v38.25h38.25c11.475,0,19.125-7.65,19.125-19.125S355.725,172.125,344.25,172.125z"/>
+  <path d="M382.5,95.625H57.375C24.862,95.625,0,120.487,0,153v133.875c0,32.513,24.862,57.375,57.375,57.375H382.5
+c32.513,0,57.375-24.862,57.375-57.375V153C439.875,120.487,415.013,95.625,382.5,95.625z M153,229.5v57.375h-19.125V229.5H76.5
+v57.375H57.375v-66.938V191.25c0-21.038,17.212-38.25,38.25-38.25h19.125c21.038,0,38.25,17.212,38.25,38.25V229.5z
+ M210.375,210.375H229.5c21.037,0,38.25,17.213,38.25,38.25s-17.213,38.25-38.25,38.25h-19.125
+c-21.038,0-38.25-17.213-38.25-38.25l0,0h19.125l0,0c0,9.562,7.65,19.125,19.125,19.125H229.5c11.475,0,19.125-7.65,19.125-19.125
+S239.062,229.5,229.5,229.5h-19.125c-21.038,0-38.25-17.213-38.25-38.25c0-21.038,17.212-38.25,38.25-38.25H229.5
+c21.037,0,38.25,17.212,38.25,38.25h-19.125c0-9.562-7.65-19.125-19.125-19.125h-19.125c-11.475,0-19.125,7.65-19.125,19.125
+S200.812,210.375,210.375,210.375z M344.25,229.5H306v57.375h-19.125V191.25V153h57.375c21.037,0,38.25,17.212,38.25,38.25
+C382.5,212.287,365.287,229.5,344.25,229.5z"/>
+</g>
+</g></svg></g></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

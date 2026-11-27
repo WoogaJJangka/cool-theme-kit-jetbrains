@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8dfe2"/><stop offset="1" stop-color="#aeb5b9"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#363839"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="1.1268" y="0.9785" width="13.7407" height="13.7407" viewBox="0 0 24 24" overflow="visible"><g >
+  <g transform="matrix(.49799 0 0 .49799 -309.62 -27.09)" fill-rule="evenodd" fill="#cfd8dc" data-iconColor="Now"
+     stroke="#cfd8dc">
+    <g transform="translate(628,63)">
+      <g style="fill:none;stroke-width:2;stroke:#cfd8dc">
+        <polygon points="0 31.997 17.844 .046641 35.689 31.997" style="fill:none;stroke:#cfd8dc"/>
+      </g>
+      <path d="m34.085 31.59-16.851-30.359" style="fill:none;stroke-linecap:square;stroke:#cfd8dc"/>
+      <path d="m34.851 31.59-16.851-30.359" style="fill:none;stroke-linecap:square;stroke:#cfd8dc"/>
+      <path d="m33.319 31.59-16.085-29.538" style="fill:none;stroke-linecap:square;stroke:#cfd8dc"/>
+      <path d="m32.553 31.59-15.319-28.718" style="fill:none;stroke-linecap:square;stroke:#cfd8dc"/>
+      <path d="m16.468 2.8718 16.851 28.718" style="fill:none;stroke-linecap:square;stroke:#cfd8dc"/>
+      <path d="m31.787 31.59-15.319-27.897" style="fill:none;stroke-linecap:square;stroke:#cfd8dc"/>
+      <path d="m28.723 25.026-6.1277-10.667" style="fill:none;stroke-linecap:square;stroke:#cfd8dc"/>
+    </g>
+  </g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

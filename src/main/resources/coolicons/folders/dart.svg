@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-b" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#3ca5d3"/><stop offset="1" stop-color="#2f82a6"/></linearGradient><linearGradient id="ctk-f" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7ed6fc" stop-opacity="0.97"/><stop offset="1" stop-color="#44bdf1" stop-opacity="0.92"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.75"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#193542"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><path d="M.5 3.9A1.9 1.9 0 0 1 2.4 2h3.3c.5 0 .98.2 1.34.55l.62.6c.36.36.84.55 1.34.55h4.6a1.9 1.9 0 0 1 1.9 1.9v7a1.9 1.9 0 0 1-1.9 1.9H2.4a1.9 1.9 0 0 1-1.9-1.9Z" fill="url(#ctk-b)"/><rect x=".5" y="5.1" width="15" height="9.4" rx="1.9" fill="url(#ctk-f)"/><rect x=".9" y="5.5" width="14.2" height="8.6" rx="1.5" fill="none" stroke="url(#ctk-r)" stroke-width=".7"/><g filter="url(#ctk-k)"><svg x="-2.6213" y="1.3723" width="13.6462" height="13.6462" viewBox="0 0 24 24" overflow="visible"><g fill="none">
+  
+  <g fill='#bbdefb' data-folderIconColor="Dart" transform="translate(2 2)">
+    <path d="M12.9166 9.5L13.7916 16.7917L11.4528 14.4528C11.106 14.106 11.0129 13.579 11.2206 13.1345L12.9166 9.5Z"/>
+    <path
+        d="M17.9681 7.84308C17.7216 7.59662 17.3876 7.45837 17.0394 7.45837C16.8221 7.45837 16.608 7.51233 16.4167 7.61529L12.9167 9.50004V15.4334C12.9167 15.7429 13.0395 16.0395 13.2585 16.2582L13.7917 16.7917H20.2084V15.3334L22.25 12.125L17.9681 7.84308Z"
+    />
+    <path d="M12.9167 9.5H19.1417C19.4512 9.5 19.7478 9.62279 19.9666 9.84183L22.25 12.125V16.7917H20.2084L12.9167 9.5Z"/>
+    <path d="M20.2084 16.7916H13.7917L15.5417 18.5416H20.2084V16.7916Z"/>
+  </g>
+</g></svg></g></svg>

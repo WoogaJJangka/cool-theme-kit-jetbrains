@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#73ffef"/><stop offset="1" stop-color="#47d6c5"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#16423d"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="2.2" y="2.2" width="11.6" height="11.6" viewBox="0 0 512 512" overflow="visible"><g >
+  <g fill="#54FFEB" data-iconColor="Scilla">
+    <path
+        d="m72.633296 93.24691-72.633296 131.9907 111.61818 193.45349l81.3626-0.1027-33.86299-58.50532 155.88668-1.09156s37.97211-67.68973 38.06127-67.90945c0.12738-0.31845-234.12079-0.39806-234.12079-0.39806l-38.319378-66.19897 73.059338-130.73123z"/>
+    <path
+        d="m432.61275 289.14873c-0.72606 1.62885-74.61907 129.12598-74.61907 129.4906 0 0.21336 81.3637 0.0611 81.3637 0.0611l72.64263-131.2443-111.46269-194.20917h-81.50561l34.42897 58.275143s-155.10271 0.93862-156.24116 1.066l-38.31635 68.19619 235.2932 0.0218z"/>
+  </g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

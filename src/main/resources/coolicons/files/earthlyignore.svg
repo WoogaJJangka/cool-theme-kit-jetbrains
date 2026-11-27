@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a4b4bd"/><stop offset="1" stop-color="#798a92"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="1.49" y="1.533" width="13.1226" height="13.1226" viewBox="0 0 32 32" overflow="visible"><g >
+  <g data-themed="true"
+     data-iconColor="Earthlyignore"  fill="#90a4ae">
+    <path d="M17.45,10.29l-3.19,5.48h0l-3.11-5.39Z"
+    />
+    <path d="M17.45,10.29h0l-6.21.09H4.86v-.09L8,4.82h6.3Z"/>
+    <path d="M14.26,15.77h0l-3.11,5.47H4.86L1.75,15.77l3.11-5.48L8,15.58l6.3.19Z"
+    />
+    <path d="M14.26,15.77H8l-3.1-5.48,6.29.09Z"
+    />
+    <path d="M17.45,21.15,15,21.24H11.15l3.11-5.47,6.2.09Z"
+    />
+    <path d="M20.64,26.53l-.09.19H14.16l-3.1-5.48h0l3.1-5.38h0l-3,5.38H15l2.37-.09.09.09,3.19,5.29Z"
+    />
+    <path d="M23.65,21.24h-6.2l-.09-.09,3.1-5.47.09.09Z"
+    />
+    <path d="M23.65,21.24l-3,5.29-.09-.18-3.1-5.2,6.11-.09Z"/>
+    <path d="M26.76,15.68l-3.11,5.47h0l-3.1-5.38h-6.2v-.09h0l3.1-5.39h6.3l3,5.39Z"
+    />
+    <path d="M30,21.15l-3.19,5.57H20.55l3-5.39v-.09h0l3.11-5.47v-.09h.09Z"
+    />
+  </g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

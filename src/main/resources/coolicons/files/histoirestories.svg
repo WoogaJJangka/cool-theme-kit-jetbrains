@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#59dbab"/><stop offset="1" stop-color="#2cb181"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#0e3728"/><feComposite in2="SourceAlpha" operator="out"/></filter><clipPath id="ctk-c"><rect x="2.7751" y="3.0219" width="10.4497" height="9.9563"/></clipPath></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g clip-path="url(#ctk-c)"><g filter="url(#ctk-k)"><svg x="-4.3848" y="-4.409" width="24.7697" height="24.7697" viewBox="0 0 512 512" overflow="visible"><g >
+  <defs>
+    <mask id="Mask">
+      <rect fill="white" width="314.30923" height="406.60901" x="-26.565063" y="134.75079"
+            transform="rotate(-23.821262)" ry="8"/>
+      <rect width="314.30923" fill="white" height="406.60901" x="77.571838" y="72.808708" ry="8"
+            transform="rotate(-4.5744534)"/>
+      <path fill="black"
+            d="M 359.38947,355.95134 320.72935,176.52942 238.34613,238.94118 Z M 273.64124,273.06608 152.59788,156.05591 191.25804,335.47786 Z"/>
+    </mask>
+  </defs>
+  <g fill="#34d399" data-iconColor="Histoire Stories" mask="url(#Mask)">
+    <rect fill-opacity="0.5" width="314.30923" height="406.60901" x="-26.565063" y="134.75079"
+          transform="rotate(-23.821262)" ry="8"/>
+    <rect width="314.30923" height="406.60901" x="77.571838" y="72.808708" ry="8" transform="rotate(-4.5744534)"/>
+    <path fill="red"
+          d="M 359.38947,355.95134 320.72935,176.52942 238.34613,238.94118 Z M 273.64124,273.06608 152.59788,156.05591 191.25804,335.47786 Z"/>
+  </g>
+</g></svg></g></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

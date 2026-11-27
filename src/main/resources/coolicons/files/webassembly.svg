@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#946dff"/><stop offset="1" stop-color="#6841d6"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="out"/></filter><clipPath id="ctk-c"><rect x="2.2" y="4.8839" width="11.6" height="6.2322"/></clipPath></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g clip-path="url(#ctk-c)"><g filter="url(#ctk-k)"><svg x="-3.4826" y="-5.9911" width="20.7143" height="20.7143" viewBox="0 0 300 300" overflow="visible"><g >
+  <g transform="translate(0,142.97)" fill="#7c4dff" data-iconColor="WebAssembly">
+    <g id="icon" transform="matrix(2.2365 0 0 2.2365 -188.25 -113.32)">
+      <polygon points="177.3 67.39 174.19 81.38 183.87 81.38 180.3 67.39"/>
+      <path transform="translate(-.21)"
+            d="m163.77 0a5.62 5.62 0 0 1 0 .58 12.34 12.34 0 0 1 -12.34 12.34 12.33 12.33 0 0 1 -12.32 -12.34 5.62 5.62 0 0 1 0 -.58h-41.47v107.62h107.62v-107.62zm-14.77 96.1-5.25-25.93h-.09l-5.66 25.93h-7.22l-8.18-38.1h7.13l4.88 25.94h.09l5.88-25.94h6.67l5.28 26.26h.1l5.56-26.26h7l-9.09 38.1zm39.26 0-2.43-8.48h-12.83l-1.87 8.48h-7.13l9.22-38.1h11.25l11.21 38.1z"/>
+    </g>
+  </g>
+</g></svg></g></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

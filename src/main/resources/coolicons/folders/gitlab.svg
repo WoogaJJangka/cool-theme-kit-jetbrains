@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-b" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#be3822"/><stop offset="1" stop-color="#952c1b"/></linearGradient><linearGradient id="ctk-f" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#eb7b69" stop-opacity="0.97"/><stop offset="1" stop-color="#d94027" stop-opacity="0.92"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.75"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><path d="M.5 3.9A1.9 1.9 0 0 1 2.4 2h3.3c.5 0 .98.2 1.34.55l.62.6c.36.36.84.55 1.34.55h4.6a1.9 1.9 0 0 1 1.9 1.9v7a1.9 1.9 0 0 1-1.9 1.9H2.4a1.9 1.9 0 0 1-1.9-1.9Z" fill="url(#ctk-b)"/><rect x=".5" y="5.1" width="15" height="9.4" rx="1.9" fill="url(#ctk-f)"/><rect x=".9" y="5.5" width="14.2" height="8.6" rx="1.5" fill="none" stroke="url(#ctk-r)" stroke-width=".7"/><g filter="url(#ctk-k)"><svg x="-0.3023" y="1.5977" width="11.7209" height="11.7209" viewBox="0 0 24 24" overflow="visible"><g clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.4142">
+    
+
+  <g fill="#FFCDD2" transform="scale(0.5) translate(18 18)" data-folderIconColor="GitLab">
+        <polygon points="16 28.896 16 28.896 21.156 13.029 10.844 13.029 16 28.896"/>
+    <polygon points="16 28.896 10.844 13.029 3.619 13.029 16 28.896"/>
+    <path d="M3.619,13.029h0L2.052,17.851a1.067,1.067,0,0,0,.388,1.193L16,28.9,3.619,13.029Z"/>
+    <path d="M3.619,13.029h7.225L7.739,3.473a.534.534,0,0,0-1.015,0L3.619,13.029Z"/>
+    <polygon points="16 28.896 21.156 13.029 28.381 13.029 16 28.896"/>
+    <path d="M28.381,13.029h0l1.567,4.822a1.067,1.067,0,0,1-.388,1.193L16,28.9,28.381,13.029Z"/>
+    <path d="M28.381,13.029H21.156l3.105-9.557a.534.534,0,0,1,1.015,0l3.105,9.557Z"/>
+    </g>
+</g></svg></g></svg>

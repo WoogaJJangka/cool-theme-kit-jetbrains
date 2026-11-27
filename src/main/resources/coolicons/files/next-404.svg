@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f6be64"/><stop offset="1" stop-color="#cd9437"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#3f2e11"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="1.617" y="1.617" width="12.766" height="12.766" viewBox="0 0 300 300" overflow="visible"><g >
+  <g fill="#F4B042" data-iconColor="NextJS 404">
+	<polygon class="st0" points="63.3,88.2 63.3,155.6 38.1,155.6 38.1,88.2 13.7,88.2 13.7,180 28.5,180 38.1,180 63.3,180
+		63.3,211.5 87.5,211.5 87.5,88.2 	"/>
+    <path class="st0" d="M113.5,88.2v123.3h12.8h11.5h25h12.1H187V88.2H113.5z M137.7,187.3v-74.7h25v74.7H137.7z"/>
+    <polygon class="st0" points="261.9,88.5 261.9,155.9 236.7,155.9 236.7,88.5 212.5,88.5 212.5,156.1 212.5,180.1 227.1,180.1
+		236.7,180.1 261.9,180.1 261.9,211.8 286.3,211.8 286.3,88.5 	"/>
+</g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

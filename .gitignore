@@ -1,0 +1,16 @@
+# Gradle / IntelliJ Platform
+.gradle/
+build/
+.intellijPlatform/
+.kotlin/
+out/
+
+# IDE
+.idea/
+.vs/
+.vscode/
+*.iml
+
+# Claude Code
+.claude/settings.local.json
+.claude/worktrees/

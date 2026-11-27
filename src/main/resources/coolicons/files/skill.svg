@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffc46d"/><stop offset="1" stop-color="#d69a41"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#423014"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="0.8338" y="1.2674" width="14.7302" height="14.7302" viewBox="0 0 32 32" overflow="visible"><g >
+  <g transform="scale(2)" fill="#FFB74D"
+     data-iconColor="Skill"
+  >
+    <path d="m6.3847 12.215v1.4002h2.8005v-1.4002z" stroke-linecap="round" stroke-linejoin="round"
+          stroke-miterlimit="2.6131" stroke-width="1.633"/>
+    <path
+      d="m6.3847 1.0131-2.8005 2.8005v2.8005l1.4002 1.4002v1.4002l1.4002 1.4002h2.8005l1.4002-1.4002v-1.4002l1.4002-1.4002v-2.8005l-2.8005-2.8005-1.4002 1.4002v1.4002l-1.4002 1.4002h-1.4002v-1.4002l1.4002-1.4002h1.4002l1.4002-1.4002z"/>
+  </g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

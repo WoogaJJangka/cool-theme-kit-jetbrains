@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a4b4bd"/><stop offset="1" stop-color="#798a92"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="1.88" y="1.88" width="12.24" height="12.24" viewBox="0 0 48 48" overflow="visible"><g >
+  <g fill-rule="evenodd" stroke="none" stroke-width="1"  fill="#90a4ae" data-themed="true" data-iconColor="VSTS Ignore">
+    <polygon id="Fill-3"
+             points="4 30.204 4 18.815 8.122 13.579 21.823 8.231 21.823 4 34.072 13.076 8.122 18.029 8.122 30.802"/>
+    <polygon id="Fill-5"
+             points="8.122 30.802 19.19 44 19.19 38.841 34.072 44 44 36.005 44 11.182 34.072 13.076 34.072 34.566"/>
+  </g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

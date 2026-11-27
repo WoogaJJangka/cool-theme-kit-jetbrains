@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a4b4bd"/><stop offset="1" stop-color="#798992"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="1.9633" y="1.9653" width="12.0775" height="12.0775" viewBox="0 0 300 300" overflow="visible"><g >
+  <g fill="#90A3AE" data-iconColor="NextJS Page">
+	<path d="M258.8,29.1H41.2c-13.3,0-24.1,10.9-24.1,24.1v193.4c0,13.3,10.9,24.1,24.1,24.1h217.5
+		c13.3,0,24.1-10.9,24.1-24.1V53.4C283.1,40.1,272.2,29.1,258.8,29.1 M258.8,246.8H41.2V77.5h217.5V246.8z"/>
+</g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

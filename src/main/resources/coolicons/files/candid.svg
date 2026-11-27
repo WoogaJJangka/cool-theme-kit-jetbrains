@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c256a0"/><stop offset="1" stop-color="#972975"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="2.4246" y="2.3375" width="11.3289" height="11.3289" viewBox="0 0 10.583 10.583" overflow="visible"><g >
+  <g transform="translate(24.963 -27.198)" fill="#b4318b" data-iconColor="Candid">
+    <g transform="matrix(.07754 0 0 .07754 -27.502 20.904)">
+      <g transform="translate(15.823 28.158) scale(.82216)">
+        <g transform="matrix(1.00067 0 0 1.00067 2.387 -.15)">
+          <path transform="scale(.26458)"
+                d="M407.857 736.338v119.14c104.036-.076 185.864-52.16 237.055-115.853-51.229-29.482-58.675-33.863-106.33-61.355-11.895 12.235-54.983 57.932-130.725 58.068z"/>
+          <path transform="scale(.26458)"
+                d="M238.164 613.764 133.7 674.916c45.55 106.18 151.038 180.57 273.932 180.57.076 0 .15-.008.226-.008v-119.14c-.112 0-.217.012-.33.012-80.63 0-146.004-52.93-169.363-122.586z"/>
+          <path transform="scale(.26458)"
+                d="M407.63 259.797c-164.554 0-297.95 133.347-297.95 297.844 0 41.646 8.578 81.28 24.02 117.275l104.464-61.152c-5.979-17.83-9.344-36.698-9.344-56.121 0-95.311 77.128-178.71 178.707-178.71 75.952 0 119.142 45.565 131.055 58.08 47.655-27.687 55.101-31.996 106.33-61.357-51.229-63.74-133.137-115.86-237.281-115.86Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

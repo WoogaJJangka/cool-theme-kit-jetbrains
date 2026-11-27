@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#48ba6a"/><stop offset="1" stop-color="#1b903d"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#ffffff"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="2.9055" y="2.8945" width="10.211" height="10.211" viewBox="0 0 512 512" overflow="visible"><g >
+  <g fill="#20ab49" data-iconColor="Minecraft">
+    <rect width="169.8474426" height="172.5011444"/>
+    <rect x="340.7752991" width="170.0938568" height="172.5011444"/>
+    <polygon
+        points="340.7752991,172.5020294 169.8474426,172.5020294 169.8474426,258.4169006 84.78479,258.4169006 84.78479,512 169.8474426,512 169.8474426,425.3323364 340.7752991,425.3323364 340.7752991,512 426.6405334,512 426.6405334,258.4169006 340.7752991,258.4169006 "/>
+  </g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

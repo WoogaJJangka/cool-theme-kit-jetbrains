@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffcc34"/><stop offset="1" stop-color="#d6a206"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#423202"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="2.1714" y="2.1714" width="11.6571" height="11.6571" viewBox="0 0 16 16" overflow="visible"><g >
+  <g fill="#ffc107" stroke-width=".33333" data-iconColor="Toon">
+    <path d="m1 9v6h6v-6zm2 2h2v2h-2z"/>
+    <path d="m9 1v6h6v-6zm2 2h2v2h-2z"/>
+    <path d="m1 1h6v2h-2v4h-2v-4h-2z"/>
+    <path d="m9 9v6h2v-4h2v-2zm4 2v4h2v-4z"/>
+  </g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

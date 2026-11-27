@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2edbc6"/><stop offset="1" stop-color="#00b19b"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient><filter id="ctk-k" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#003730"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><g filter="url(#ctk-k)"><svg x="3.2067" y="2.5737" width="9.5866" height="10.9964" viewBox="0 0 34 39" overflow="visible"><g >
+  <defs>
+    <mask id="Mask">
+      <g id="bloc" fill="white">
+        <g id="black-hex">
+          <polygon id="Rectangle"
+                   transform="translate(25.467925, 23.864151) scale(1, -1) translate(-25.467925, -23.864151) "
+                   points="16.9358491 9.23773585 33.8689605 18.4754717 34 38.490566 16.9358491 29.2528302"></polygon>
+          <polygon id="Rectangle"
+                   transform="translate(17.000000, 9.237736) scale(1, -1) translate(-17.000000, -9.237736) "
+                   points="16.934475 0 34 9.23773585 17 18.4754717 0 9.23773585"></polygon>
+          <polygon id="Rectangle"
+                   points="0 9.23773585 16.9358491 18.4754717 16.9358491 38.490566 2.23582855e-15 29.2528302"></polygon>
+        </g>
+      </g>
+    </mask>
+  </defs>
+  <g fill="#00D3B9" fill-rule="evenodd" mask="url(#Mask)" data-iconColor="Bloc">
+    <g id="bloc">
+      <g id="black-hex">
+        <polygon id="Rectangle"
+                 transform="translate(25.467925, 23.864151) scale(1, -1) translate(-25.467925, -23.864151) "
+                 points="16.9358491 9.23773585 33.8689605 18.4754717 34 38.490566 16.9358491 29.2528302"></polygon>
+        <polygon id="Rectangle"
+                 transform="translate(17.000000, 9.237736) scale(1, -1) translate(-17.000000, -9.237736) "
+                 points="16.934475 0 34 9.23773585 17 18.4754717 0 9.23773585"></polygon>
+        <polygon id="Rectangle"
+                 points="0 9.23773585 16.9358491 18.4754717 16.9358491 38.490566 2.23582855e-15 29.2528302"></polygon>
+      </g>
+    </g>
+  </g>
+</g></svg></g><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>

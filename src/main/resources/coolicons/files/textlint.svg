@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px"><defs><linearGradient id="ctk-t" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5e6269"/><stop offset="1" stop-color="#32363c"/></linearGradient><linearGradient id="ctk-r" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset=".45" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0.22"/></linearGradient></defs><rect width="16" height="16" rx="4.6" fill="url(#ctk-t)"/><path d="M0 4.6A4.6 4.6 0 0 1 4.6 0h6.8A4.6 4.6 0 0 1 16 4.6v2C11.4 8.4 4.6 8.4 0 6.6Z" fill="#fff" opacity=".13"/><svg x="0.9159" y="0.9165" width="14.1682" height="14.1682" viewBox="0 0 256 256" overflow="visible"><g >
+    <path d="m35.853 35.857v184.29h184.29v-41.187h-143.11v-143.12z" fill="#f06292"/>
+    <g transform="matrix(1.3001 0 0 1.3001 -38.617 -38.624)">
+        <path d="m57.279 57.279v31.682h54.561v110.09h31.68v-110.09h55.52v-31.682z" fill="#00e5ff"
+              data-iconColor="Textlint"/>
+    </g>
+</g></svg><rect x=".5" y=".5" width="15" height="15" rx="4.1" fill="none" stroke="url(#ctk-r)" stroke-width=".9"/></svg>
