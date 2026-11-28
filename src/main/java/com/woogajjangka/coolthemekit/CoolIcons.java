@@ -221,6 +221,11 @@ final class CoolIcons {
         return icon != null ? icon : DEFAULTS.get(expanded ? "folderexpanded" : "folder");
     }
 
+    /** The plain folder icon, closed or open. */
+    static @Nullable String defaultFolderIcon(boolean expanded) {
+        return DEFAULTS.get(expanded ? "folderexpanded" : "folder");
+    }
+
     static @Nullable String folderIcon(@NotNull String folderName) {
         return folderIcon(folderName, false);
     }

@@ -50,7 +50,17 @@ public final class CoolIconsSettings implements PersistentStateComponent<CoolIco
         public double saturation = 1;
         /** VS Code {@code iconThemeLayers}: the names Cool Icons has no icon for get the one of Material Icon Theme */
         public boolean iconThemeLayers = true;
+        /** VS Code {@code folderTheme}: {@code specific} (the default), {@code classic} (the plain folder) or {@code none} */
+        public String folderTheme = FOLDERS_SPECIFIC;
+        /** VS Code {@code hideFileIcons}: no file icon at all (the folder icons are kept) */
+        public boolean hideFileIcons = false;
     }
+
+    static final String FOLDERS_SPECIFIC = "specific";
+    static final String FOLDERS_CLASSIC = "classic";
+    static final String FOLDERS_NONE = "none";
+    /** The values of {@code folderTheme}, in the order of VS Code */
+    static final List<String> FOLDER_THEMES = List.of(FOLDERS_SPECIFIC, FOLDERS_CLASSIC, FOLDERS_NONE);
 
     static final String GLASS = "glass";
     static final String GLOSSY = "glossy";
@@ -83,7 +93,7 @@ public final class CoolIconsSettings implements PersistentStateComponent<CoolIco
         return known(getInstance().state.accentTargets);
     }
 
-    private static List<String> known(@Nullable List<String> targets) {
+    static List<String> known(@Nullable List<String> targets) {
         return targets == null ? List.of() : CoolAccent.TARGETS.stream().filter(targets::contains).toList();
     }
 
@@ -104,6 +114,26 @@ public final class CoolIconsSettings implements PersistentStateComponent<CoolIco
     /** A color of the settings ({@code #rgb} or {@code #rrggbb}, as VS Code accepts), or null */
     static @Nullable String hexColor(@Nullable String value) {
         return value != null && value.trim().matches("#([\\dA-Fa-f]{6}|[\\dA-Fa-f]{3})") ? value.trim() : null;
+    }
+
+    /** The folder theme, one of {@link #FOLDER_THEMES}; specific in the unit tests or for an unknown value. */
+    static @NotNull String folderTheme() {
+        if (ApplicationManager.getApplication() == null) return FOLDERS_SPECIFIC;
+        String theme = getInstance().state.folderTheme;
+        return FOLDER_THEMES.contains(theme) ? theme : FOLDERS_SPECIFIC;
+    }
+
+    /** Whether the file icons are hidden; false in the unit tests. */
+    static boolean hideFileIcons() {
+        return ApplicationManager.getApplication() != null && getInstance().state.hideFileIcons;
+    }
+
+    void setFolderTheme(@NotNull String folderTheme, boolean hideFileIcons) {
+        String theme = FOLDER_THEMES.contains(folderTheme) ? folderTheme : FOLDERS_SPECIFIC;
+        if (theme.equals(state.folderTheme) && hideFileIcons == state.hideFileIcons) return;
+        state.folderTheme = theme;
+        state.hideFileIcons = hideFileIcons;
+        refreshIcons();
     }
 
     /** Whether the icons of Material Icon Theme fill the names Cool Icons has no icon for; true in the unit tests. */

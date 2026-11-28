@@ -16,7 +16,11 @@ final class CoolIconResolver {
     private CoolIconResolver() {
     }
 
+    /** VS Code {@code hideFileIcons} and {@code folderTheme: "none"}: no icon at all (an empty one, so the IDE draws none either). */
+    private static final Icon NO_ICON = com.intellij.util.ui.EmptyIcon.ICON_16;
+
     static @Nullable Icon forFile(@NotNull String name, @Nullable FileType fileType) {
+        if (CoolIconsSettings.hideFileIcons()) return NO_ICON;
         return CoolIcons.load(fileIcon(name, fileType, CoolIconsSettings.roleMarks(), CoolIconsSettings.associations()));
     }
 
@@ -48,17 +52,21 @@ final class CoolIconResolver {
      * a content root gets the root folder icon.
      */
     static @Nullable Icon forFolder(@NotNull VirtualFile folder, @Nullable Project project) {
+        String folderTheme = CoolIconsSettings.folderTheme();
         if (project != null && !project.isDisposed()) {
             ProjectFileIndex index = ProjectFileIndex.getInstance(project);
             if (folder.equals(index.getContentRootForFile(folder))) {
+                if (CoolIconsSettings.FOLDERS_NONE.equals(folderTheme)) return NO_ICON;
                 return CoolIcons.loadFolder(CoolIcons.rootFolderIcon(false), CoolIcons.rootFolderIcon(true));
             }
             if (folder.equals(index.getSourceRootForFile(folder)) || index.isExcluded(folder)) {
                 return null;
             }
         }
+        if (CoolIconsSettings.FOLDERS_NONE.equals(folderTheme)) return NO_ICON;
         String name = folder.getName();
         CoolAssociations associations = CoolIconsSettings.associations();
-        return CoolIcons.loadFolder(associations.folderIcon(name, false), associations.folderIcon(name, true));
+        boolean specific = CoolIconsSettings.FOLDERS_SPECIFIC.equals(folderTheme);
+        return CoolIcons.loadFolder(associations.folderIcon(name, false, specific), associations.folderIcon(name, true, specific));
     }
 }
