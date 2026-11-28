@@ -15,6 +15,11 @@ other JetBrains IDEs.
   draws them), and your own icons for names (`filesAssociations`,
   `foldersAssociations`, `languagesAssociations`: `*.foo` → `rust`, `README.md` → `docs`, a folder `src` → `tests`, or
   the path of an SVG file). The entries of your VS Code settings can be copied as they are.
+- The icon colors of VS Code too: the folder color (`folderColor`), one color for every icon (`monochrome`,
+  `monochromeColor`), `opacity` and `saturation`.
+- Names Cool Icons has no icon for (about 5,500: `.resx`, a folder `cargo`) get the icon of
+  [Material Icon Theme](https://github.com/material-extensions/vscode-material-icon-theme), as VS Code does with
+  `iconThemeLayers` by default. It can be turned off in the same settings.
 - Source, test and resource roots and excluded folders keep the icons of the IDE, which tell what the folder is in the
   project.
 
@@ -67,8 +72,13 @@ Install the zip with **Settings | Plugins | ⚙ | Install Plugin from Disk...**.
   painted is the one at the renderer's position. Outside a tree it is the closed folder.
 - The other icon styles (`src/main/resources/coolicons-<style>/`, `iconStyles` in `gradle.properties`: `flat`,
   `glossy`) are the same names drawn with that `iconStyle`: Cool Theme Kit writes those themes with
-  `bun run export:jetbrains-icons`, and `syncIcons` checks that each points every name to the same icons. The glossy
-  style needs a Cool Theme Kit that has it (`iconStyle: "glossy"`, its pull request #96 until it is merged).
+  `bun run export:jetbrains-icons`, and `syncIcons` checks that each points every name to the same icons.
+- The names Cool Icons has no icon for: the same export mixes each theme with Material Icon Theme as VS Code does by
+  default (read from the VS Code of the computer that exports), and its icons go to `coolicons*/layers/` with its
+  license. A layer icon whose light variant has another name (`<x>_light.svg`) gets its dark one as `<x>_light_dark.svg`.
+- `CoolIconFilters` draws the icons again with the folder color, monochrome, opacity and saturation, as
+  `MonochromeService`, `OpacityService` and `SaturationService` of Cool Theme Kit do; the result goes to the system
+  folder of the IDE, where it loads them from. `CoolIconFiltersTest` compares sample icons with what VS Code writes.
 - `CoolAssociations` applies the associations as Cool Theme Kit does when it generates the theme: they win over the
   theme, a file name of the theme still wins over an extension of yours, and a name with a role (`main.py`) under an
   extension you give a bundled icon gets that icon with the mark of its role. `CoolAssociationsParityTest` checks sample
@@ -78,5 +88,6 @@ Install the zip with **Settings | Plugins | ⚙ | Install Plugin from Disk...**.
 ## License
 
 MIT, as Cool Theme Kit. The icons come from Atom Material Icons (MIT) and the JetBrains New UI icons
-(Apache 2.0): see the
+(Apache 2.0), the icons of the names Cool Icons has no icon for from Material Icon Theme (MIT, its license in
+`src/main/resources/coolicons/layers/`): see the
 [third-party notices of Cool Theme Kit](https://github.com/WoogaJJangka/cool-theme-kit/blob/main/THIRD-PARTY-NOTICES.md).

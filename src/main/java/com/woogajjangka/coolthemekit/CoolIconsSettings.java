@@ -40,6 +40,16 @@ public final class CoolIconsSettings implements PersistentStateComponent<CoolIco
         public Map<String, String> foldersAssociations = new LinkedHashMap<>();
         /** VS Code {@code languagesAssociations}: a language id -> a bundled icon name or an SVG file */
         public Map<String, String> languagesAssociations = new LinkedHashMap<>();
+        /** VS Code {@code folderColor}: the color of the folder icons, unless {@code accentTargets} has {@code folders} */
+        public String folderColor = CoolFolderColor.DEFAULT_COLOR;
+        /** VS Code {@code monochrome} and {@code monochromeColor}: every icon in one color */
+        public boolean monochrome = false;
+        public String monochromeColor = CoolFolderColor.DEFAULT_COLOR;
+        /** VS Code {@code opacity} and {@code saturation}, from 0 to 1 */
+        public double opacity = 1;
+        public double saturation = 1;
+        /** VS Code {@code iconThemeLayers}: the names Cool Icons has no icon for get the one of Material Icon Theme */
+        public boolean iconThemeLayers = true;
     }
 
     static final String GLASS = "glass";
@@ -82,9 +92,57 @@ public final class CoolIconsSettings implements PersistentStateComponent<CoolIco
      * {@code effectiveFolderColor} in VS Code; null for the icons as they are drawn.
      */
     static @Nullable String folderColor() {
-        if (!accentTargets().contains("folders")) return null;
+        if (!accentTargets().contains("folders")) {
+            if (ApplicationManager.getApplication() == null) return null;
+            String color = hexColor(getInstance().state.folderColor);
+            return color == null || color.equalsIgnoreCase(CoolFolderColor.DEFAULT_COLOR) ? null : color;
+        }
         String accent = accent();
         return accent != null ? accent : CoolAccent.DEFAULT_ACCENT;
+    }
+
+    /** A color of the settings ({@code #rgb} or {@code #rrggbb}, as VS Code accepts), or null */
+    static @Nullable String hexColor(@Nullable String value) {
+        return value != null && value.trim().matches("#([\\dA-Fa-f]{6}|[\\dA-Fa-f]{3})") ? value.trim() : null;
+    }
+
+    /** Whether the icons of Material Icon Theme fill the names Cool Icons has no icon for; true in the unit tests. */
+    static boolean iconThemeLayers() {
+        return ApplicationManager.getApplication() == null || getInstance().state.iconThemeLayers;
+    }
+
+    void setIconThemeLayers(boolean iconThemeLayers) {
+        if (state.iconThemeLayers == iconThemeLayers) return;
+        state.iconThemeLayers = iconThemeLayers;
+        refreshIcons();
+    }
+
+    /** The filters of the icons: the folder color (or accent), monochrome, opacity, saturation; none in the unit tests. */
+    static @NotNull CoolIconFilters.Settings filters() {
+        if (ApplicationManager.getApplication() == null) return CoolIconFilters.Settings.NONE;
+        State s = getInstance().state;
+        String monochrome = s.monochrome ? hexColor(s.monochromeColor) : null;
+        return new CoolIconFilters.Settings(folderColor(), monochrome, unit(s.opacity), unit(s.saturation));
+    }
+
+    /** A value of 0 to 1 (VS Code limits the settings to it); 1 for one that is not a number */
+    private static double unit(double value) {
+        return Double.isNaN(value) ? 1 : Math.max(0, Math.min(1, value));
+    }
+
+    /** Sets the folder color and the filters of the icons; the icons change at once. */
+    void setFilters(@NotNull String folderColor, boolean monochrome, @NotNull String monochromeColor, double opacity, double saturation) {
+        if (folderColor.equals(state.folderColor) && monochrome == state.monochrome && monochromeColor.equals(state.monochromeColor)
+                && opacity == state.opacity && saturation == state.saturation) {
+            return;
+        }
+        state.folderColor = folderColor;
+        state.monochrome = monochrome;
+        state.monochromeColor = monochromeColor;
+        state.opacity = opacity;
+        state.saturation = saturation;
+        CoolIcons.clearRecolored();
+        refreshIcons();
     }
 
     /** The icon style, one of {@link #STYLES}; glass without an application (the unit tests) or for an unknown value. */

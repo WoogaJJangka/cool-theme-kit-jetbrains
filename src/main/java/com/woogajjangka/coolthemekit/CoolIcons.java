@@ -124,19 +124,27 @@ final class CoolIcons {
     /** The icon of a file from its name alone (the whole name, then its extensions from the longest), or null. */
     static @Nullable String nameIcon(@NotNull String fileName) {
         String name = normalize(fileName);
-        String icon = FILE_NAMES.get(name);
+        String icon = fileNameIcon(name);
         if (icon != null) return icon;
         for (int dot = name.indexOf('.'); dot >= 0; dot = name.indexOf('.', dot + 1)) {
-            icon = FILE_EXTENSIONS.get(name.substring(dot + 1));
+            icon = fileExtensionIcon(name.substring(dot + 1));
             if (icon != null) return icon;
         }
         return null;
     }
 
+    /** The icons of the other themes mixed in ({@code iconThemeLayers}: Material Icon Theme for the names Cool Icons has no icon for). */
+    static final String LAYERS = "layers/";
+
+    /** The icon, or null when it is one of another theme and the layers are off ({@code iconThemeLayers: []}). */
+    private static @Nullable String shown(@Nullable String icon) {
+        return icon != null && icon.startsWith(LAYERS) && !CoolIconsSettings.iconThemeLayers() ? null : icon;
+    }
+
     /** The icon of a language, from its VS Code id or its JetBrains id ({@code Shell Script}), or null. */
     static @Nullable String languageIcon(@Nullable String languageId) {
         String id = vscodeLanguageId(languageId);
-        return id == null ? null : LANGUAGE_IDS.get(id);
+        return id == null ? null : shown(LANGUAGE_IDS.get(id));
     }
 
     /** The VS Code id of a language id, VS Code or JetBrains, in lower case; null for none. */
@@ -149,12 +157,12 @@ final class CoolIcons {
 
     /** The icon of a whole file name in the theme ({@code name} normalized), or null. */
     static @Nullable String fileNameIcon(@NotNull String name) {
-        return FILE_NAMES.get(name);
+        return shown(FILE_NAMES.get(name));
     }
 
     /** The icon of one extension in the theme ({@code d.ts}, normalized), or null. */
     static @Nullable String fileExtensionIcon(@NotNull String extension) {
-        return FILE_EXTENSIONS.get(extension);
+        return shown(FILE_EXTENSIONS.get(extension));
     }
 
     /** A bundled file icon by its VS Code name ({@code rust}, {@code typeScript}), in any case, or null. */
@@ -165,6 +173,11 @@ final class CoolIcons {
     /** A bundled folder icon by its VS Code name ({@code tests} is {@code folder-tests}), closed or open, or null. */
     static @Nullable String bundledFolderIcon(@NotNull String name, boolean expanded) {
         return (expanded ? FOLDER_ICONS_EXPANDED : FOLDER_ICONS).get(normalize(name.trim()));
+    }
+
+    /** The icon of a dark variant ({@code files/readme_dark} -> {@code files/readme}); any other is returned as it is. */
+    static @NotNull String withoutDark(@NotNull String ref) {
+        return ref.endsWith("_dark") ? ref.substring(0, ref.length() - "_dark".length()) : ref;
     }
 
     /** Whether an icon ({@code files/rust}) is one of the plugin. */
@@ -204,7 +217,7 @@ final class CoolIcons {
 
     /** The icon of a folder from its name, or the plain folder icon; {@code expanded}: the icon of the open folder. */
     static @Nullable String folderIcon(@NotNull String folderName, boolean expanded) {
-        String icon = (expanded ? FOLDER_NAMES_EXPANDED : FOLDER_NAMES).get(normalize(folderName));
+        String icon = shown((expanded ? FOLDER_NAMES_EXPANDED : FOLDER_NAMES).get(normalize(folderName)));
         return icon != null ? icon : DEFAULTS.get(expanded ? "folderexpanded" : "folder");
     }
 
@@ -228,11 +241,13 @@ final class CoolIcons {
         if (ref == null) return null;
         if (ref.startsWith(CoolAssociations.USER_FILE)) return loadUserFile(ref.substring(CoolAssociations.USER_FILE.length()));
         String style = CoolIconsSettings.iconStyle();
-        String folderColor = CoolIconsSettings.folderColor();
-        // each style lists the icons it draws in the folder color (folder-color.txt of coolicons and coolicons-flat)
-        if (folderColor != null && CoolRecoloredIcons.takesFolderColor(ref, style)) {
-            Icon recolored = CoolRecoloredIcons.load(ref, folderColor, style);
-            if (recolored != null) return recolored;
+        // the folder color, monochrome, opacity, saturation: the icon drawn again (CoolIconFilters)
+        CoolIconFilters.Settings filters = CoolIconsSettings.filters();
+        boolean changed = filters.monochromeColor() != null || filters.opacity() < 1 || filters.saturation() < 1
+                || filters.folderColor() != null && CoolRecoloredIcons.takesFolderColor(ref, style);
+        if (changed) {
+            Icon filtered = CoolRecoloredIcons.load(ref, style, filters);
+            if (filtered != null) return filtered;
         }
         return IconLoader.findIcon(root(style) + ref + ".svg", CoolIcons.class.getClassLoader());
     }
@@ -261,7 +276,7 @@ final class CoolIcons {
         }
     }
 
-    /** Forgets the icons drawn in another folder color (the accent changed) */
+    /** Forgets the icons drawn with other filters (the accent or the icon filters changed) */
     static void clearRecolored() {
         CoolRecoloredIcons.clear();
     }

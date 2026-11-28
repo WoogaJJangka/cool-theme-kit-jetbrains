@@ -67,8 +67,20 @@ PyCharm·JetBrains IDE 에서 쓰게 하는 플러그인. 2026-11-26 만듦.
   폴더는 `-open.svg`/`_open.svg`). 역할 이름은 사용자 확장자 아이콘 위에 표시를 다시 얹는다(`role-<역할>-<x>`), 단 표시 없이도
   제 아이콘이 있는 이름(`roleOwn`, `__init__.py` 등)은 그 아이콘 그대로. `CoolAssociationsParityTest` 가 VS Code 생성기로 만든
   `associations.tsv` 와 비교한다. 일부러 다른 것: 없는 아이콘 이름·없는 SVG 는 무시(VS Code 는 빈 아이콘).
-- 남은 차이 후보: 테마 섞기(`iconThemeLayers`, 기본 Material Icon Theme 이 Cool Icons 가 모르는 이름을 채움), 폴더 색·채도·
-  불투명도·단색, 번들에 없는 역할 표시 아이콘(연결로 생긴 `role-<역할>-<x>` 가 dist 에 없으면 표시 없이).
+- **아이콘 색(2026-11-27)**: VS Code `folderColor`·`monochrome`·`monochromeColor`·`opacity`·`saturation` = 설정의 "Icon colors".
+  `CoolIconFilters` 가 VS Code `filterSvg` 순서(폴더 색 → 스타일 → 단색 → 불투명도 → 채도) 그대로, 단 폴더 색은 다 그린 아이콘에
+  (`CoolFolderColor`). 단색·불투명도·채도는 `MonochromeService`·`OpacityService`·`SaturationService` 줄 단위 포팅(색 계산은 JS 처럼
+  double, 숫자는 JS 표기 `0.6`). 거른 아이콘은 `CoolRecoloredIcons` 가 `_dark` 짝까지 시스템 폴더 `cool-theme-kit/icons/<style>/<해시>/`
+  에 쓰고 읽는다. 폴더 색 = 강조색 대상에 폴더가 있으면 강조색, 아니면 `folderColor`(VS Code `effectiveFolderColor`).
+  `bun run export:jetbrains-icons` 의 `filters.json`(샘플 21개 × 경우 5개 × 스타일 3개)과 `CoolIconFiltersTest` 가 비교.
+- **모르는 이름 = Material Icon Theme(2026-11-27)**: VS Code 기본 `iconThemeLayers: ["material-icon-theme"]`(fill). 내보내기가
+  이 PC VS Code 의 확장(`~/.vscode/extensions`, 언어 목록은 VS Code 설치의 내장 확장까지, `getLanguageLookup` 처럼)으로 모든
+  스타일을 층과 함께 만들고, `syncIcons` 는 이제 `dist/` 대신 `out/jetbrains-icons/glass/` 에서 이름을 가져온다(Cool Icons 의 이름은
+  그대로, `layers/` 약 5,500개 추가). 층 아이콘의 라이트 판 이름이 다르면(`<x>_light.svg`) 다크 판을 `<x>_light_dark.svg` 로 복사.
+  라이선스는 `coolicons/layers/LICENSE-material-icon-theme.txt`. 설정에서 끄면(`iconThemeLayers` 체크박스) `layers/` 아이콘을 건너뛴다.
+- 남은 차이 후보: `folderTheme`(classic·none)·`hideFileIcons`·`activeIconPacks`, 층 설정의 세부(`iconThemeByName`, 모드 override,
+  다른 테마), 번들에 없는 역할 표시 아이콘(연결로 생긴 `role-<역할>-<x>` 가 dist 에 없으면 표시 없이), VS Code 사용자 설정을 직접 읽기
+  (지금은 설정 화면에 같은 값을 넣어야 한다).
 - **강조색(2026-11-27)**: VS Code `accentColor`·`accentTargets`(`controls`·`tabs`·`folders`)와 같은 설정·프리셋·색
   (`CoolAccent` = Cool Theme Kit `src/themes/accent.ts` 포팅). Islands Dark·Light 에만 적용(VS Code 가 Cool Islands 에만 칠하듯).
   - 테마 색: `CoolThemeCustomizer` 가 플랫폼의 `UIThemeCustomizer`(`open` 서비스, `overrides="true"`)로 테마를 읽을 때
@@ -80,7 +92,7 @@ PyCharm·JetBrains IDE 에서 쓰게 하는 플러그인. 2026-11-26 만듦.
     사용자 설정에 남는다(2026-11-27 샌드박스에서 확인). 그래서 편집기마다 자기 색(`editor.getColorsScheme()`, 메모리에만 있음)을
     바꾸고, 구성표 색이 Islands 값 그대로일 때만(사용자가 바꾼 색은 둔다). 시작 때는 `ProjectActivity`·`EditorFactoryListener` 가 건다.
   - `folders`: 폴더 색으로 칠해지는 아이콘(`folder-color.txt`, 일반 폴더·`*ignore` 파일)을 `CoolRecoloredIcons` 가 그 색으로 다시
-    그려 시스템 폴더(`cool-theme-kit/folder-color/<style>/<rrggbb>/`)에 쓰고 읽는다.
+    그려 시스템 폴더(`cool-theme-kit/icons/<style>/<해시>/`)에 쓰고 읽는다(아래 "아이콘 색" 과 같은 길).
   - 같은 값인지: Cool Theme Kit `bun run export:jetbrains` → `out/jetbrains/accent.json`(프리셋, `accentColors` 결과 896개,
     Islands 편집기 색)·`folder-color.json`(스타일마다 기본색·시험색으로 그린 아이콘) → `syncIcons` 가 `src/test/resources/coolthemekit/`
     로 복사 → `CoolAccentTest`·`CoolFolderColorTest` 가 비교.
